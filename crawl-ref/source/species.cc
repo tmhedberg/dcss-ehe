@@ -408,7 +408,6 @@ monster_type player_species_to_mons_species(species_type species)
         return MONS_FORMICID;
     case SP_ELF:
     case SP_HILL_DWARF:
-    case SP_MOUNTAIN_DWARF:
     case SP_OGRE_MAGE:
     case SP_GREY_ELF:
     case SP_GNOME:
@@ -465,7 +464,7 @@ int species_exp_modifier(species_type species)
     case SP_GARGOYLE:
         return 0;
     case SP_SPRIGGAN:
-    case MOUNTAIN_DWARF:
+    case SP_MOUNTAIN_DWARF:
     case SP_DEEP_DWARF:
     case SP_MINOTAUR:
     case SP_BASE_DRACONIAN:
