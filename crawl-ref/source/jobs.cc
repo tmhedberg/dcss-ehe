@@ -11,10 +11,7 @@ static const char * Job_Abbrev_List[ NUM_JOBS ] =
       "Cj", "En", "FE", "IE", "Su", "AE", "EE", "Sk",
       "VM",
       "CK", "Tm", "He",
-#if TAG_MAJOR_VERSION == 34
-      "St",
-#endif
-      "Mo", "Wr", "Wn", "Ar", "AM",
+      "St", "Mo", "Wr", "Wn", "Ar", "AM",
       "DK", "AK", "Jr" };
 
 static const char * Job_Name_List[ NUM_JOBS ] =
@@ -25,9 +22,7 @@ static const char * Job_Name_List[ NUM_JOBS ] =
       "Earth Elementalist", "Skald",
       "Venom Mage",
       "Chaos Knight", "Transmuter", "Healer",
-#if TAG_MAJOR_VERSION == 34
       "Stalker",
-#endif
       "Monk", "Warper", "Wanderer", "Artificer", "Arcane Marksman",
       "Death Knight", "Abyssal Knight", "Jester" };
 
