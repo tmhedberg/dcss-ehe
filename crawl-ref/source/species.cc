@@ -23,9 +23,9 @@ static species_type species_order[] =
     // comparatively human-like looks
     SP_HUMAN,          SP_HIGH_ELF,
     SP_DEEP_ELF,       SP_SLUDGE_ELF,
-    SP_DEEP_DWARF,     SP_HILL_ORC,
-    SP_LAVA_ORC,       SP_MERFOLK,
-    SP_FORMICID,
+    SP_MOUNTAIN_DWARF, SP_DEEP_DWARF,
+    SP_HILL_ORC,       SP_LAVA_ORC,
+    SP_MERFOLK,        SP_FORMICID,
     // small species
     SP_HALFLING,       SP_KOBOLD,
     SP_SPRIGGAN,
@@ -41,7 +41,8 @@ static species_type species_order[] =
     SP_MUMMY,          SP_GHOUL,
     SP_VAMPIRE,
     // not humanoid at all
-    SP_FELID,          SP_OCTOPODE,
+    SP_FELID,
+    SP_OCTOPODE,
 };
 
 species_type random_draconian_player_species()
@@ -179,6 +180,21 @@ string species_name(species_type speci, bool genus, bool adj)
             }
         }
         break;
+    case GENPC_DWARVEN:
+        if (adj)  // doesn't care about species/genus
+            res = "Dwarven";
+        else if (genus)
+            res = "Dwarf";
+        else
+        {
+            switch (speci)
+            {
+            case SP_MOUNTAIN_DWARF: res = "Mountain Dwarf";            break;
+            case SP_DEEP_DWARF:     res = "Deep Dwarf";                break;
+            default:                res = "Dwarf";                     break;
+            }
+        }
+        break;
     case GENPC_NONE:
     default:
         switch (speci)
@@ -272,7 +288,14 @@ genus_type species_genus(species_type species)
     case SP_HIGH_ELF:
     case SP_DEEP_ELF:
     case SP_SLUDGE_ELF:
-        return GENPC_ELVEN;
+        return (GENPC_ELVEN);
+
+    case SP_MOUNTAIN_DWARF:
+    case SP_DEEP_DWARF:
+        return (GENPC_DWARVEN);
+
+    case SP_OGRE:
+        return (GENPC_OGREISH);
 
     case SP_HILL_ORC:
     case SP_LAVA_ORC:
@@ -314,7 +337,9 @@ monster_type player_species_to_mons_species(species_type species)
     case SP_HIGH_ELF:
     case SP_DEEP_ELF:
     case SP_SLUDGE_ELF:
-        return MONS_ELF;
+        return (MONS_ELF);
+    case SP_MOUNTAIN_DWARF:
+        return (MONS_DWARF);
     case SP_HALFLING:
         return MONS_HALFLING;
     case SP_HILL_ORC:
@@ -440,6 +465,7 @@ int species_exp_modifier(species_type species)
     case SP_GARGOYLE:
         return 0;
     case SP_SPRIGGAN:
+    case MOUNTAIN_DWARF:
     case SP_DEEP_DWARF:
     case SP_MINOTAUR:
     case SP_BASE_DRACONIAN:
@@ -504,6 +530,7 @@ int species_hp_modifier(species_type species)
     case SP_PURPLE_DRACONIAN:
     case SP_MOTTLED_DRACONIAN:
     case SP_PALE_DRACONIAN:
+    case SP_MOUNTAIN_DWARF:
     case SP_GHOUL:
     case SP_HILL_ORC:
     case SP_LAVA_ORC:
@@ -525,6 +552,8 @@ int species_mp_modifier(species_type species)
     case SP_TROLL:
     case SP_MINOTAUR:
         return -2;
+    case SP_MOUNTAIN_DWARF:
+    case SP_HILL_ORC:
     case SP_CENTAUR:
     case SP_GHOUL:
         return -1;

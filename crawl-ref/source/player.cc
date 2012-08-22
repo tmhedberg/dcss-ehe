@@ -3338,6 +3338,11 @@ void level_change(int source, const char* aux, bool skip_attribute_increase)
                 }
                 break;
 
+            case SP_MOUNTAIN_DWARF:
+                if (!(you.experience_level % 4))
+                    modify_stat(STAT_STR, 1, false, "level gain");
+                break;
+
             case SP_DEEP_DWARF:
                 if (you.experience_level == 14)
                 {
@@ -7030,6 +7035,10 @@ int player_res_magic(bool calc_unid, bool temp)
     case SP_HIGH_ELF:
     case SP_SLUDGE_ELF:
     case SP_DEEP_ELF:
+<<<<<<< HEAD
+=======
+    case SP_MOUNTAIN_DWARF:
+>>>>>>> parent of 0edc768... Give mountain dwarves the axe.
     case SP_VAMPIRE:
     case SP_DEMIGOD:
     case SP_OGRE:
