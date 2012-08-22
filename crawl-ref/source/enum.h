@@ -3026,6 +3026,7 @@ enum species_type
     SP_HIGH_ELF,
     SP_DEEP_ELF,
     SP_SLUDGE_ELF,
+    SP_MOUNTAIN_DWARF,
     SP_HALFLING,
     SP_HILL_ORC,
     SP_KOBOLD,
@@ -3055,13 +3056,11 @@ enum species_type
     SP_DEEP_DWARF,
     SP_FELID,
     SP_OCTOPODE,
-// The high scores viewer still needs enums for removed species.
     SP_ELF,                            // (placeholder)
     SP_HILL_DWARF,                     // (placeholder)
     SP_OGRE_MAGE,                      // (placeholder)
     SP_GREY_ELF,                       // (placeholder)
     SP_GNOME,                          // (placeholder)
-    SP_MOUNTAIN_DWARF,                 // (placeholder)
     NUM_SPECIES,                       // always after the last species
 
     SP_UNKNOWN  = 100,
