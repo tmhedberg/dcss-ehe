@@ -332,13 +332,16 @@ static void _give_wanderer_book(skill_type skill, int & slot)
         break;
 
     case SK_TRANSMUTATIONS:
-        switch (random2(2))
+        switch (random2(3))
         {
         case 0:
             book_type = BOOK_GEOMANCY;
             break;
         case 1:
             book_type = BOOK_CHANGES;
+            break;
+        case 2:
+            book_type = BOOK_STALKING;
             break;
         }
         break;

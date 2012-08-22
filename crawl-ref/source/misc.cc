@@ -732,7 +732,7 @@ bool maybe_coagulate_blood_potions_inv(item_def &blood)
 }
 
 // Removes the oldest timer of a stack of blood potions.
-// Mostly used for (q)uaff and (f)ire.
+// Mostly used for (q)uaff, (f)ire, and Evaporate.
 int remove_oldest_blood_potion(item_def &stack)
 {
     ASSERT(stack.defined());
