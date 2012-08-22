@@ -374,10 +374,7 @@ bool potion_effect(potion_type pot_eff, int pow, item_def *potion, bool was_know
             xom_is_stimulated(50 / xom_factor);
         break;
 
-#if TAG_MAJOR_VERSION == 34
     case POT_WATER:
-#endif
-    case NUM_POTIONS:
         if (you.species == SP_VAMPIRE)
             mpr("Blech - this tastes like water.");
         else
@@ -517,6 +514,10 @@ bool potion_effect(potion_type pot_eff, int pow, item_def *potion, bool was_know
         }
         else
             mpr("You feel woody for a moment.");
+        break;
+
+    case NUM_POTIONS:
+        mpr("You feel bugginess flow through your body.");
         break;
     }
 

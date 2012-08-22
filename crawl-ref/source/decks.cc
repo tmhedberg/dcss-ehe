@@ -1987,7 +1987,7 @@ static void _potion_card(int power, deck_rarity_type rarity)
     if (you_worship(GOD_CHEIBRIADOS) && pot == POT_SPEED)
     {
         simple_god_message(" protects you from inadvertent hurry.");
-        return;
+        pot = POT_WATER;
     }
 
     potion_effect(pot, random2(power/4));

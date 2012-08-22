@@ -2527,6 +2527,14 @@ bool can_ingest(int what_isit, int kindof_thing, bool suppress_msg,
                     return false;
                 }
                 return true;
+            case POT_WATER:
+                if (you.species == SP_VAMPIRE)
+                {
+                    if (!suppress_msg)
+                        mpr("Blech - you need blood!");
+                    return false;
+                }
+                return true;
              case POT_PORRIDGE:
                 if (you.species == SP_VAMPIRE)
                 {

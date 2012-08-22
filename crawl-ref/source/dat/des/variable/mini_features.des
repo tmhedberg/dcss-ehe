@@ -413,8 +413,9 @@ ENDMAP
 
 NAME:  minmay_liquid_box
 TAGS:  extra no_monster_gen
+ITEM:  potion of water / nothing
 DEPTH: D, Depths
-SUBST: w : wWWl
+SUBST: w : wWWld
 MAP
 xx+xx
 xwwwx
@@ -2547,7 +2548,7 @@ ENDMAP
 NAME:   supply_closet_lemuel
 DEPTH:  D:1-9
 TAGS:   no_monster_gen extra
-ITEM:   bread ration / meat ration / arrow /\
+ITEM:   potion of water w:20 / bread ration / meat ration / arrow /\
         bolt / spear / any potion w:5
 MAP
 x+xx
