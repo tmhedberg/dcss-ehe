@@ -1894,6 +1894,10 @@ unsigned int item_value(item_def item, bool ident)
             case POT_BLOOD_COAGULATED:
                 valued += 5;
                 break;
+
+            case POT_WATER:
+                valued++;
+                break;
             }
         }
         break;
@@ -2274,6 +2278,7 @@ bool is_worthless_consumable(const item_def &item)
         case POT_POISON:
         case POT_SLOWING:
         case POT_STRONG_POISON:
+        case POT_WATER:
             return true;
         default:
             return false;

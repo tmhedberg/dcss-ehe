@@ -327,7 +327,7 @@ MONS:   gnoll ; spear / goblin ; spear
 : end
 SUBST:  . = ...;!
 COLOUR: ; = red
-KITEM:  ! = potion of confusion w:2
+KITEM:  ! = potion of confusion w:2 / potion of water w:1
 KFEAT:  ! = floor
 SUBST:  ; = .
 MAP
