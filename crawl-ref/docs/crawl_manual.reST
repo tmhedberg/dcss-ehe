@@ -1791,6 +1791,20 @@ Sludge Elves
   and elemental magic. As fighters, they are often more dangerous unarmed than
   armed. They advance in levels slightly slower than Humans.
 
+Mountain Dwarves
+  Mountain Dwarves, as opposed to the subterranean specimen, come from cities
+  far above the Dungeon. They love to fight, and often venture forth to seek
+  fame and fortune through battle. As such, they are very robust and excellent
+  at hand combat, especially favouring axes or bludgeoning weapons, and are good
+  at using armour and shields. They are poor at missile combat, the single
+  exception being crossbows. Polearms usually are too big for them to wield
+  comfortably and so make quite bad weapons for Mountain Dwarves.
+
+  In general, they are rather more resistant to magic than capable of using it
+  themselves. However, they are very proficient at earth and fire magic. Thus,
+  many a Mountain Dwarf started a career as an elementalist in those schools.
+  They advance in levels at a similar rate to Deep Elves.
+
 The Undead
 ========================================
 
