@@ -1672,6 +1672,20 @@ Demonspawn
   and conjurations and much better at necromancy and invocations. Note that
   unlike Demigods, they can take on gods, although not all will accept them.
 
+Mountain Dwarves
+  Mountain Dwarves, as opposed to the subterranean specimen, come from cities
+  far above the Dungeon. They love to fight, and often venture forth to seek
+  fame and fortune through battle. As such, they are very robust and excellent
+  at hand combat, especially favouring axes or bludgeoning weapons, and are good
+  at using armour and shields. They are poor at missile combat, the single
+  exception being crossbows. Polearms usually are too big for them to wield
+  comfortably and so make quite bad weapons for Mountain Dwarves.
+
+  In general, they are rather more resistant to magic than capable of using it
+  themselves. However, they are very proficient at earth and fire magic. Thus,
+  many a Mountain Dwarf started a career as an elementalist in those schools.
+  They advance in levels at a similar rate to Deep Elves.
+
 Deep Dwarves
   Deep Dwarves are short, hardy people who, unlike their extinct surface
   relatives, never left the underground homelands. Living there for countless
@@ -1847,6 +1861,16 @@ Deep Elves
   other Elves and losing all colouration. They are poor at hand-to-hand combat,
   but excellent at fighting from a distance. They advance in levels as fast as
   High Elves.
+
+Sludge Elves
+  This is a somewhat degenerate species of Elves. They are mirror images of
+  High Elves in some respects: they have no special proficiency with bows or
+  swords (long or short), nor do they have any aptitude in the traditional areas
+  of High Elven magic (charms and conjurations). On the other hand, they are
+  superlative transmuters, and are comfortable dabbling in necromantic, poison
+  and elemental magic. As fighters, they are often more dangerous unarmed than
+  armed. They advance in levels slightly slower than Humans, but faster than all
+  other Elves.
 
 The Undead
 ========================================
