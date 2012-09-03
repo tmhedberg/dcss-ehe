@@ -321,7 +321,6 @@ static const weapon_def Weapon_prop[NUM_WEAPONS] =
         DAMV_CHOPPING, 2 },
 
     // Staves
-    // WPN_STAFF is for weapon stats for magical staves only.
     { WPN_STAFF,             "staff",               5,  5, 12, 150,  6,
         SK_STAVES,       HANDS_ONE,    SIZE_MEDIUM, MI_NONE, false,
         DAMV_CRUSHING, 0 },
@@ -1364,6 +1363,7 @@ int weapon_rarity(int w_type)
     case WPN_BROAD_AXE:
     case WPN_SPIKED_FLAIL:
     case WPN_WHIP:
+    case WPN_STAFF:
         return 4;
 
     case WPN_GREAT_MACE:
@@ -1397,7 +1397,6 @@ int weapon_rarity(int w_type)
     case WPN_BLESSED_TRIPLE_SWORD:
     case WPN_SACRED_SCOURGE:
     case WPN_TRISHULA:
-    case WPN_STAFF:
         // Zero value weapons must be placed specially -- see make_item() {dlb}
         return 0;
 
