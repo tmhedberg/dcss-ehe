@@ -1105,7 +1105,7 @@ Staves player ghost
 
 @The_monster@ says, "I excel at staving off weak adventurers."
 
-VISUAL:@The_monster@ twirls @possessive@ quarterstaff.
+VISUAL:@The_monster@ twirls @possessive@ staff.
 
 @The_monster@ threatens to break your skull. @player_only@
 %%%%

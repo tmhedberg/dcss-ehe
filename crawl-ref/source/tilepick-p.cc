@@ -212,11 +212,9 @@ tileidx_t tilep_equ_weapon(const item_def &item)
     case WPN_GLAIVE:
         tile = TILEP_HAND1_GLAIVE;
         break;
-#if TAG_MAJOR_VERSION == 34
     case WPN_STAFF:
         tile = TILEP_HAND1_STAFF;
         break;
-#endif
     case WPN_QUARTERSTAFF:
         tile = TILEP_HAND1_QUARTERSTAFF1;
         break;

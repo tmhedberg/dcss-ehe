@@ -39,7 +39,7 @@ loud, but the nature of that power is not a priori apparent.
 %%%%
 staff
 
-A staff improved with arcane powers of unknown nature.
+A quarterstaff improved with arcane powers of unknown nature.
 %%%%
 wand
 

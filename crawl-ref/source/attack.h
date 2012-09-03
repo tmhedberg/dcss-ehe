@@ -53,7 +53,7 @@ public:
     skill_type      wpn_skill;
 
     // Attacker's shield, stored so we can reference it and determine
-    // the attacker's combat effectiveness
+    // the attacker's combat effectiveness (staff + shield == bad)
     item_def  *shield;
 
     // If weapon is an artefact, its properties.

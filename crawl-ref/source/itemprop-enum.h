@@ -490,7 +490,7 @@ enum weapon_type
     WPN_DEMON_TRIDENT,
     WPN_SCYTHE,
 
-    WPN_STAFF,          // Just used for the weapon stats for magical staves.
+    WPN_STAFF,
     WPN_QUARTERSTAFF,
     WPN_LAJATANG,
 
