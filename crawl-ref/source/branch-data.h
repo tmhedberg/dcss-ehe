@@ -36,7 +36,7 @@ const Branch branches[NUM_BRANCHES] =
       true, BROWN, BROWN,
       'O', false, 4 },
 
-    { BRANCH_ELF, BRANCH_ORC, 3, 4, 3, 15,
+    { BRANCH_ELF, BRANCH_ORC, 3, 4, 5, 15,
       0, 0,
       DNGN_ENTER_ELF, DNGN_RETURN_FROM_ELF,
       "Elven Halls", "the Elven Halls", "Elf",
