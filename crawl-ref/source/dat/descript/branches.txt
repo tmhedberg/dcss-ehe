@@ -34,7 +34,7 @@ Whereas most elven folk would never move into a dark subterranean complex like
 this, the deep elves did. Their halls are filled with riches, but any
 passers-by should be aware of the legendary magical prowess of this species.
 
-The Elven Halls are three levels deep.
+The Elven Halls are five levels deep.
 %%%%
 Dwarven Hall
 

@@ -1033,7 +1033,7 @@ int mons_hallelf_level(monster_type mcls)
     case MONS_DEEP_ELF_CONJURER:
     case MONS_SHAPESHIFTER:
     case MONS_ORC_KNIGHT:
-        return 2;
+        return 1;
 
     case MONS_ORC_SORCERER:
     case MONS_DEEP_ELF_PRIEST:
@@ -1041,18 +1041,18 @@ int mons_hallelf_level(monster_type mcls)
     case MONS_DEEP_ELF_KNIGHT:
     case MONS_ORC_PRIEST:
     case MONS_ORC_HIGH_PRIEST:
-        return 3;
+        return 2;
 
     case MONS_DEEP_ELF_HIGH_PRIEST:
     case MONS_DEEP_ELF_DEMONOLOGIST:
     case MONS_DEEP_ELF_ANNIHILATOR:
     case MONS_DEEP_ELF_SORCERER:
     case MONS_DEEP_ELF_DEATH_MAGE:
-        return 4;
+        return 3;
 
     case MONS_DEEP_ELF_BLADEMASTER:
     case MONS_DEEP_ELF_MASTER_ARCHER:
-        return 7;
+        return 5;
 
     default:
         return DEPTH_NOWHERE;

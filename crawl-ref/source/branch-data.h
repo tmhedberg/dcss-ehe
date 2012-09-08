@@ -42,7 +42,7 @@ const Branch branches[NUM_BRANCHES] = {
       mons_mineorc_rare, mons_mineorc_level,
       'O', false, 4 },
 
-    { BRANCH_ELVEN_HALLS, BRANCH_ORCISH_MINES, 3, 4, 3, 15,
+    { BRANCH_ELVEN_HALLS, BRANCH_ORCISH_MINES, 3, 4, 5, 15,
       0, 0,
       DNGN_ENTER_ELVEN_HALLS, DNGN_RETURN_FROM_ELVEN_HALLS,
       "Elven Halls", "the Elven Halls", "Elf",
