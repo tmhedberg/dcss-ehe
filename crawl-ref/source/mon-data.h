@@ -1259,7 +1259,7 @@ static monsterentry mondata[] = {
 // drakes (also 'l', but dragon type)
 {
     MONS_SWAMP_DRAKE, 'l', BROWN, "swamp drake",
-    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS,
     MR_RES_POISON,
     900, 16, MONS_DRAGON, MONS_SWAMP_DRAKE, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 14}, AT_NO_ATK, AT_NO_ATK, AT_NO_ATK },
@@ -1271,7 +1271,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_FIRE_DRAKE, 'l', RED, "fire drake",
-    M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_WARM_BLOOD | M_FAKE_SPELLS,
     MR_RES_FIRE,
     1000, 10, MONS_DRAGON, MONS_FIRE_DRAKE, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 8}, AT_NO_ATK, AT_NO_ATK, AT_NO_ATK },
@@ -1283,7 +1283,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_LINDWURM, 'l', LIGHTCYAN, "lindwurm",
-    M_WARM_BLOOD | M_GLOWS_LIGHT | M_FLEES,
+    M_WARM_BLOOD | M_GLOWS_LIGHT,
     MR_NO_FLAGS,
     950, 13, MONS_DRAGON, MONS_LINDWURM, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 20}, {AT_CLAW, AF_PLAIN, 10},
@@ -1296,7 +1296,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_DEATH_DRAKE, 'l', LIGHTGREY, "death drake",
-    M_SPELLCASTER | M_COLD_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_COLD_BLOOD | M_FAKE_SPELLS,
     MR_RES_POISON | MR_RES_ROTTING,
     900, 11, MONS_DRAGON, MONS_DEATH_DRAKE, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 12}, AT_NO_ATK, AT_NO_ATK, AT_NO_ATK },
@@ -1994,7 +1994,7 @@ static monsterentry mondata[] = {
 {
     MONS_ORB_SPIDER, 's', MAGENTA, "orb spider",
     M_NO_SKELETON | M_SPELLCASTER | M_FAKE_SPELLS | M_WEB_SENSE
-        | M_MAINTAIN_RANGE,
+        | M_MAINTAIN_RANGE | M_NO_FLEE,
     MR_VUL_POISON,
     300, 13, MONS_SPIDER, MONS_ORB_SPIDER, MH_NATURAL, -4,
     { {AT_BITE, AF_POISON_MEDIUM, 5}, AT_NO_ATK, AT_NO_ATK, AT_NO_ATK },
@@ -2071,7 +2071,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_FIRE_CRAB, 't', LIGHTRED, "fire crab",
-    M_NO_SKELETON | M_FLEES,
+    M_NO_SKELETON,
     MR_VUL_POISON | mrd(MR_RES_FIRE, 3),
     320, 13, MONS_FIRE_CRAB, MONS_FIRE_CRAB, MH_NATURAL, -4,
     { {AT_BITE, AF_FIRE, 15}, {AT_CLAW, AF_FIRE, 15}, AT_NO_ATK, AT_NO_ATK },
@@ -2083,7 +2083,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_APOCALYPSE_CRAB, 't', WHITE, "apocalypse crab",
-    M_NO_SKELETON | M_FLEES | M_SEE_INVIS,
+    M_NO_SKELETON | M_SEE_INVIS,
     MR_VUL_POISON | mrd(MR_RES_FIRE | MR_RES_COLD, 2),
     320, 13, MONS_APOCALYPSE_CRAB, MONS_APOCALYPSE_CRAB, MH_DEMONIC, -5,
     { {AT_BITE, AF_CHAOS, 15}, {AT_CLAW, AF_CHAOS, 15}, AT_NO_ATK, AT_NO_ATK },
@@ -2243,7 +2243,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_GIANT_LEECH, 'w', RED, "giant leech",
-    M_NO_SKELETON | M_BLOOD_SCENT,
+    M_NO_SKELETON | M_BLOOD_SCENT | M_NO_FLEE,
     MR_NO_FLAGS,
     1000, 8, MONS_WORM, MONS_GIANT_LEECH, MH_NATURAL, -2,
     { {AT_BITE, AF_VAMPIRIC, 35}, AT_NO_ATK, AT_NO_ATK, AT_NO_ATK },
@@ -2370,7 +2370,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_GHOST_MOTH, 'y', MAGENTA, "ghost moth",
-    M_NO_SKELETON | M_INVIS,
+    M_NO_SKELETON | M_INVIS | M_NO_FLEE,
     MR_RES_POISON | MR_RES_COLD,
     600, 18, MONS_MOTH, MONS_GHOST_MOTH, MH_NATURAL, -6,
     { {AT_HIT, AF_DRAIN_STAT, 18}, {AT_HIT, AF_DRAIN_STAT, 18},
@@ -2740,7 +2740,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_DRAGON, 'D', GREEN, "dragon",
-    M_WARM_BLOOD | M_FLEES,
+    M_WARM_BLOOD,
     MR_RES_POISON | mrd(MR_RES_FIRE, 2) | MR_VUL_COLD,
     2400, 12, MONS_DRAGON, MONS_DRAGON, MH_NATURAL, -4,
     { {AT_BITE, AF_PLAIN, 20}, {AT_CLAW, AF_PLAIN, 13},
@@ -2765,7 +2765,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_ICE_DRAGON, 'D', WHITE, "ice dragon",
-    M_COLD_BLOOD | M_FLEES,
+    M_COLD_BLOOD,
     MR_RES_POISON | MR_VUL_FIRE | mrd(MR_RES_COLD, 2),
     2400, 10, MONS_DRAGON, MONS_ICE_DRAGON, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 17}, {AT_CLAW, AF_PLAIN, 17},
@@ -2778,7 +2778,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_STEAM_DRAGON, 'D', BLUE, "steam dragon",
-    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS,
     MR_RES_STEAM,
     1500, 29, MONS_DRAGON, MONS_STEAM_DRAGON, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 12}, {AT_CLAW, AF_PLAIN, 6}, AT_NO_ATK, AT_NO_ATK },
@@ -2790,7 +2790,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_SWAMP_DRAGON, 'D', BROWN, "swamp dragon",
-    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS,
     MR_RES_POISON,
     2200, 11, MONS_DRAGON, MONS_SWAMP_DRAGON, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 20}, {AT_CLAW, AF_PLAIN, 11},
@@ -2803,7 +2803,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_MOTTLED_DRAGON, 'D', LIGHTMAGENTA, "mottled dragon",
-    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS,
     MR_RES_POISON | MR_RES_FIRE | MR_RES_STICKY_FLAME,
     1300, 16, MONS_DRAGON, MONS_MOTTLED_DRAGON, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 15}, {AT_CLAW, AF_PLAIN, 6}, AT_NO_ATK, AT_NO_ATK },
@@ -2815,7 +2815,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_QUICKSILVER_DRAGON, 'D', LIGHTCYAN, "quicksilver dragon",
-    M_SPELLCASTER | M_SENSE_INVIS | M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_SENSE_INVIS | M_WARM_BLOOD | M_FAKE_SPELLS,
     MR_NO_FLAGS,
     1900, 14, MONS_DRAGON, MONS_QUICKSILVER_DRAGON, MH_NATURAL, -7,
     { {AT_BITE, AF_PLAIN, 25}, {AT_CLAW, AF_PLAIN, 20}, AT_NO_ATK, AT_NO_ATK },
@@ -2827,7 +2827,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_IRON_DRAGON, 'D', CYAN, "iron dragon",
-    M_SPELLCASTER | M_SENSE_INVIS | M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_SENSE_INVIS | M_WARM_BLOOD | M_FAKE_SPELLS,
     MR_RES_POISON | MR_RES_FIRE | MR_RES_COLD,
     2800, 14, MONS_DRAGON, MONS_IRON_DRAGON, MH_NATURAL, -7,
     { {AT_BITE, AF_PLAIN, 25}, {AT_CLAW, AF_PLAIN, 25},
@@ -2840,7 +2840,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_STORM_DRAGON, 'D', LIGHTBLUE, "storm dragon",
-    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS,
     mrd(MR_RES_ELEC, 3) | MR_RES_COLD,
     2700, 13, MONS_DRAGON, MONS_STORM_DRAGON, MH_NATURAL, -5,
     { {AT_BITE, AF_PLAIN, 25}, {AT_CLAW, AF_PLAIN, 15},
@@ -2853,7 +2853,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_GOLDEN_DRAGON, 'D', YELLOW, "golden dragon",
-    M_SPELLCASTER | M_SENSE_INVIS | M_WARM_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_SENSE_INVIS | M_WARM_BLOOD | M_FAKE_SPELLS,
     MR_RES_ELEC | MR_RES_POISON | MR_RES_FIRE | MR_RES_COLD,
     3000, 26, MONS_DRAGON, MONS_GOLDEN_DRAGON, MH_NATURAL, -8,
     { {AT_BITE, AF_PLAIN, 40}, {AT_CLAW, AF_PLAIN, 20},
@@ -2866,7 +2866,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_SHADOW_DRAGON, 'D', MAGENTA, "shadow dragon",
-    M_SPELLCASTER | M_SEE_INVIS | M_COLD_BLOOD | M_FAKE_SPELLS | M_FLEES,
+    M_SPELLCASTER | M_SEE_INVIS | M_COLD_BLOOD | M_FAKE_SPELLS,
     MR_RES_POISON | mrd(MR_RES_COLD, 2) | mrd(MR_RES_NEG, 3),
     1800, 12, MONS_DRAGON, MONS_SHADOW_DRAGON, MH_NATURAL, -5,
     { {AT_BITE, AF_DRAIN_XP, 20}, {AT_CLAW, AF_PLAIN, 15},
@@ -2892,7 +2892,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_PEARL_DRAGON, 'D', ETC_HOLY, "pearl dragon",
-    M_SPELLCASTER | M_SENSE_INVIS | M_WARM_BLOOD | M_GLOWS_LIGHT | M_FLEES,
+    M_SPELLCASTER | M_SENSE_INVIS | M_WARM_BLOOD | M_GLOWS_LIGHT,
     MR_NO_FLAGS,
     1900, 16, MONS_DRAGON, MONS_PEARL_DRAGON, MH_HOLY, -7,
     { {AT_BITE, AF_HOLY, 35}, {AT_CLAW, AF_HOLY, 20}, AT_NO_ATK, AT_NO_ATK },
@@ -3131,7 +3131,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_MANTICORE, 'H', RED, "manticore",
-    M_WARM_BLOOD,
+    M_WARM_BLOOD | M_NO_FLEE,
     MR_NO_FLAGS,
     1200, 10, MONS_MANTICORE, MONS_MANTICORE, MH_NATURAL, -3,
     { {AT_BITE, AF_PLAIN, 14}, {AT_CLAW, AF_PLAIN, 8}, {AT_CLAW, AF_PLAIN, 8},
@@ -3360,7 +3360,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_ACID_BLOB, 'J', LIGHTCYAN, "acid blob",
-    M_SENSE_INVIS | M_ACID_SPLASH | M_FLEES,
+    M_SENSE_INVIS | M_ACID_SPLASH,
     MR_RES_POISON | MR_RES_ASPHYX | MR_RES_ACID,
     0, 12, MONS_JELLY, MONS_ACID_BLOB, MH_NATURAL, -7,
     { {AT_HIT, AF_ACID, 42}, AT_NO_ATK, AT_NO_ATK, AT_NO_ATK },
@@ -4126,7 +4126,7 @@ static monsterentry mondata[] = {
 
 {
     MONS_CATOBLEPAS, 'Y', MAGENTA, "catoblepas",
-    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS,
+    M_SPELLCASTER | M_WARM_BLOOD | M_FAKE_SPELLS | M_NO_FLEE,
     MR_NO_FLAGS,
     1400, 8, MONS_YAK, MONS_CATOBLEPAS, MH_NATURAL, -5,
     { {AT_GORE, AF_PLAIN, 36}, AT_NO_ATK, AT_NO_ATK, AT_NO_ATK },
