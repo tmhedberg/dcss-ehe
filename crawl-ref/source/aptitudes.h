@@ -177,7 +177,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_MOUNTAIN_DWARF,  SK_STEALTH,        -2),
     APT(SP_MOUNTAIN_DWARF,  SK_STABBING,       -2),
     APT(SP_MOUNTAIN_DWARF,  SK_SHIELDS,         2),
-    APT(SP_MOUNTAIN_DWARF,  SK_TRAPS_DOORS,     1),
+    APT(SP_MOUNTAIN_DWARF,  SK_TRAPS,           1),
     APT(SP_MOUNTAIN_DWARF,  SK_UNARMED_COMBAT,  0),
     APT(SP_MOUNTAIN_DWARF,  SK_SPELLCASTING,   -4),
     APT(SP_MOUNTAIN_DWARF,  SK_CONJURATIONS,   -1),
