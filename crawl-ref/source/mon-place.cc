@@ -2161,6 +2161,10 @@ static band_type _choose_band(monster_type mon_type, int &band_size,
         band = BAND_WOLVES;
         band_size = 2 + random2(3);
         break;
+    case MONS_BUMBLEBEE:
+        band = BAND_BUMBLEBEES;
+        band_size = 2 + random2(4);
+        break;
     case MONS_CENTAUR_WARRIOR:
         natural_leader = true;
     case MONS_CENTAUR:
@@ -2726,6 +2730,9 @@ static monster_type _band_member(band_type band, int which)
                                        2, MONS_DEEP_DWARF_BERSERKER,
                                        1, MONS_DEEP_DWARF_DEATH_KNIGHT,
                                        0);
+
+    case BAND_BUMBLEBEES:
+        return MONS_BUMBLEBEE;
 
     case BAND_CENTAURS:
         return MONS_CENTAUR;

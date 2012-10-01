@@ -7,6 +7,15 @@ A broken pillar
  I have no son to keep my name in remembrance...”
     -KJV Bible, 2 Samuel 18:18.
 %%%%
+A gas trap
+
+“Good your grace, an’ I had room for such a thundergust within mine ancient
+bowels, ’tis not in reason I coulde discharge ye same and live to thank God for
+yt. He did choose handmaid so humble whereby to shew his power. Nay, ’tis not I
+yt have broughte forth this rich o’ermastering fog, this fragrant gloom, so
+pray you seeke ye further.”
+    -Mark Twain, “1601”, 1880.
+%%%%
 A gateway to Hell
 
 “I am the way into the city of woe.
@@ -764,6 +773,15 @@ bow
 “You are the bows from which your children as living arrows are sent forth.”
     -Khalil Ghibran, _The Prophet_, “On Children”. 1923.
 %%%%
+bumblebee
+
+“How doth the little busy Bee
+     Improve each shining Hour,
+ And gather Honey all the day
+     From every opening Flower!”
+    -Isaac Watts, "Against Idleness and Mischief", in _Divine Songs for
+Children_. 1715.
+%%%%
 bread ration
 
 “It is further reported that in the provinces [Caesar] gave banquets constantly
@@ -1168,6 +1186,10 @@ excellent fancy. He hath bore me on his back a thousand times, and now how
 abhorr’d in my imagination it is! My gorge rises at it.”
     -William Shakespeare, _The Tragedy of Hamlet, Prince of Denmark_, V, 1.
 1603.
+%%%%
+fruity bat
+
+<bat>
 %%%%
 ghost moth
 
@@ -1940,6 +1962,18 @@ orb of fire
  Still quiring to the young-eyed cherubins.”
     -William Shakespeare, _The Merchant of Venice_, V, i. 1597.
 %%%%
+paladin
+
+“Now shame to knighthood, brothers!
+ Must Summer plead in vain?
+ And shall I wait till others
+ My crown of sunshine gain?
+ Alone this day I ’ll dare the fray,
+ Alone the victory win;
+ In me my queen shall find, I ween,
+ A sturdy paladin.”
+    -Katharine Lee Bates, “The Little Knight in Green”. ca. 1890.
+%%%%
 pandemonium lord
 
 “Mean while the winged heralds by command
@@ -2270,11 +2304,35 @@ robe
  Immortal longings in me”
     -William Shakespeare, _Anthony & Cleopatra_, V, ii. ca. 1605.
 %%%%
+rod of demonology
+
+<rod>
+%%%%
+rod of destruction
+
+<rod>
+%%%%
+rod of inaccuracy
+
+<rod>
+%%%%
 rod of striking
 
 “He that spares his rod hates his son: but he that loves him chastens him
  early.”
     -King James 2000 Bible, Proverbs 13:24
+%%%%
+rod of the swarm
+
+<rod>
+%%%%
+rod of venom
+
+<rod>
+%%%%
+rod of warding
+
+<rod>
 %%%%
 rotten bat
 
@@ -2743,6 +2801,10 @@ spirit
  High expectation, high delights and deeds,
  Thy fluttering heart with hope and terror moved.”
     -Robert Louis Stevenson, “Et Tu In Arcadia Vixisti”, _Underwoods _. 1887.
+%%%%
+splint mail
+
+<leather armour>
 %%%%
 spriggan assassin
 

@@ -261,6 +261,7 @@ NAME:    box_level_dp
 DEPTH:   Depths:2-, !Depths:$
 ORIENT:  encompass
 TAGS:    no_pool_fixup no_rotate uniq_d_encompass
+SHUFFLE: zZ
 NSUBST:  A = 1:+ / *:b
 NSUBST:  B = 1:+ / *:b
 NSUBST:  C = 1:+ / *:b
@@ -284,7 +285,9 @@ KMONS:   l = fire vortex / lava snake / lava fish / fire elemental w:1 /\
              nothing w:50
 KFEAT:   l = l
 KMONS:   z = killer bee
+KMONS:   Z = bumblebee
 KITEM:   z = royal jelly / honeycomb w:20 / nothing w:120
+KITEM:   Z = royal jelly / honeycomb w:20 / nothing w:120
 : if crawl.one_chance_in(3) then
 KMONS:   ! = orc / orc warrior / orc knight / nothing w:30
 KMONS:   & = orc warlord / orc knight / nothing w:20

@@ -258,7 +258,7 @@ function arena_sprint_get_monster_set(round, boss)
                 "w:15 adder / ball python / water moccasin / naga / w:2 black mamba /\
                     w:1 naga mage / w:1 naga warrior",
                 "jelly / w:5 ooze / w:3 brown ooze / giant eyeball / w:2 shining eye",
-                "killer bee w:20 / w:5 queen bee",
+                "killer bee w:20 / w:5 queen bee / w:5 bumblebee",
                 "deep dwarf scion / deep dwarf artificer / deep dwarf",
                 "zombie / skeleton / wight / necrophage /\
                     phantom w:5 / w:1 josephine",
@@ -301,7 +301,7 @@ function arena_sprint_get_monster_set(round, boss)
                 "place:Snake",
                 "jelly / w:5 brown ooze / giant eyeball / w:2 shining eye /\
                     w:2 golden eye / w:2 eye of draining / w:1 slime creature",
-                "killer bee w:15 / w:5 queen bee / w:1 oklob plant",
+                "killer bee w:15 / w:5 queen bee / w:5 bumblebee / w:1 oklob plant",
                 "deep dwarf scion / deep dwarf artificer / w:3 deep dwarf death knight /\
                     w:5 deep dwarf berserker",
                 "w:3 skeletal warrior / wight / necrophage / zombie w:5 /\

@@ -736,6 +736,19 @@ brown ooze
 A viscous liquid being that flows along the floor in search of matter to
 dissolve and consume.
 %%%%
+bumblebee
+
+A huge and solitary bee.
+%%%%
+bumblebee:quote
+
+“How doth the little busy Bee
+     Improve each shining Hour,
+ And gather Honey all the day
+     From every opening Flower!”
+    -Isaac Watts, "Against Idleness and Mischief", in _Divine Songs for
+Children_. 1715.
+%%%%
 bush
 
 A woody plant. It looks dry enough to be easily set on fire, and its foliage is
@@ -746,6 +759,10 @@ burning bush
 
 A mass of blackened twigs wreathed in orange flames. The walls and floor
 surrounding it are covered in scorch marks.
+%%%%
+bumblebee
+
+A huge and solitary bee.
 %%%%
 butterfly
 

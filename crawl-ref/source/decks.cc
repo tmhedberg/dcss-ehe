@@ -2622,7 +2622,7 @@ static void _summon_animals(int power)
     // guarantee that it is mobile)?
     const monster_type animals[] =
     {
-        MONS_ORANGE_RAT, MONS_SHEEP, MONS_YAK,
+        MONS_ORANGE_RAT, MONS_BUMBLEBEE, MONS_SHEEP, MONS_YAK,
         MONS_HOG, MONS_SOLDIER_ANT, MONS_WOLF,
         MONS_GRIZZLY_BEAR, MONS_POLAR_BEAR, MONS_BLACK_BEAR,
         MONS_AGATE_SNAIL, MONS_BORING_BEETLE, MONS_BASILISK,
@@ -2741,7 +2741,7 @@ static void _summon_flying(int power, deck_rarity_type rarity)
 
     const monster_type flytypes[] =
     {
-        MONS_BUTTERFLY, MONS_FIREFLY, MONS_INSUBSTANTIAL_WISP,
+        MONS_BUTTERFLY, MONS_INSUBSTANTIAL_WISP, MONS_BUMBLEBEE,
         MONS_VAMPIRE_MOSQUITO, MONS_VAPOUR, MONS_YELLOW_WASP,
         MONS_RED_WASP
     };
