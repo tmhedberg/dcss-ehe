@@ -1508,6 +1508,10 @@ snozzcumber
 
 Eine widerwärtige gurkenförmige Frucht.
 %%%%
+staff
+
+Ein fester Wanderstock.
+%%%%
 staff of conjuration
 
 Dieser Personal vergrößert die Macht von durch seinen Besitzer geworfenen

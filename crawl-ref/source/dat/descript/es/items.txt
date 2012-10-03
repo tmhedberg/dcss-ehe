@@ -1162,6 +1162,10 @@ snozzcumber
 
 Un vegetal repulsivo en forma de pepino.
 %%%%
+staff
+
+Un robusto bastón de paseo.
+%%%%
 staff of conjuration
 
 Este bastón aumenta el poder de los conjuros lanzados por su portador.

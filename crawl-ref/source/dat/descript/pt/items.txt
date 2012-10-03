@@ -521,6 +521,10 @@ snozzcumber
 
 Um vegetal repulsivo no formato de um pepino.
 %%%%
+staff
+
+Uma bengala resistente.
+%%%%
 staff of conjuration
 
 Este cajado aumenta o poder das magias de conjuração lançadas pelo seu usuário.

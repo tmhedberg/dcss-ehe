@@ -1493,6 +1493,10 @@ spear
 Une arme de chasse composée d'un manche en bois avec une tête métallique
 pointue fixée au bout.
 %%%%
+staff
+
+Un solide bâton de marche.
+%%%%
 staff of air
 
 Ce bâton augmente la puissance des sorts d'air lancés par son porteur, mais

@@ -1550,6 +1550,10 @@ spear
 A hunting weapon consisting of a wooden shaft with a pointed metal head
 fastened on one end.
 %%%%
+staff
+
+A stout walking stick.
+%%%%
 staff of air
 
 This staff increases the power of air spells cast by its wielder, but decreases

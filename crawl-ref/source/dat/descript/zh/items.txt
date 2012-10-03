@@ -1247,6 +1247,10 @@ snozzcumber
 
 一种难吃的蔬菜，看上去像黄瓜。
 %%%%
+staff
+
+一根结实的拐杖。
+%%%%
 staff of conjuration
 
 这根木棍能加强使用者施放塑能系法术的威力。
