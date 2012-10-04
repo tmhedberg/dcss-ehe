@@ -6,7 +6,7 @@
 #ifndef VERSION_H
 #define VERSION_H
 
-#define CRAWL "Dungeon Crawl Stone Soup"
+#define CRAWL "Dungeon Crawl Stone Soup (Extra Hearty Edition)"
 
 enum rel_type
 {
