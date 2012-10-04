@@ -2048,13 +2048,6 @@ bool make_item_unrandart(item_def &item, int unrand_index)
     else if (unrand_index == UNRAND_OCTOPUS_KING_RING)
         _make_octoring(item);
 
-    if (!(unrand->flags & UNRAND_FLAG_RANDAPP)
-        && !(unrand->flags & UNRAND_FLAG_UNIDED)
-        && !strcmp(unrand->name, unrand->unid_name))
-    {
-        set_ident_flags(item, ISFLAG_IDENT_MASK | ISFLAG_NOTED_ID);
-    }
-
     return true;
 }
 

@@ -7,7 +7,8 @@
 #
 # Each artefact definition is separated by one or more blank lines.
 #
-# Each artefact definition must have the NAME, OBJ and COLOUR fields.
+# Each artefact definition must have the NAME, APPEAR, OBJ and COLOUR
+# fields.
 #
 # The name and appearance of each unrandart must be unique.
 #
@@ -190,6 +191,7 @@ BOOL:    special
 BRAND:   SPWPN_CHAOS
 
 NAME:    Glaive of Prune
+APPEAR:  purple glaive
 OBJ:     OBJ_WEAPONS/WPN_GLAIVE
 PLUS:    +4/+12
 COLOUR:  MAGENTA
@@ -200,6 +202,7 @@ BOOL:    chaotic
 BRAND:   SPWPN_VORPAL
 
 NAME:    Sword of Power
+APPEAR:  chunky great sword
 OBJ:     OBJ_WEAPONS/WPN_GREAT_SWORD
 PLUS:    0/0 # Set on wield
 COLOUR:  RED
@@ -209,6 +212,7 @@ VALUE:   1000
 BOOL:    tilerim, special
 
 NAME:    Staff of Olgreb
+APPEAR:  green glowing staff
 OBJ:     OBJ_WEAPONS/WPN_STAFF
 PLUS:    0/0 # Set on wield
 COLOUR:  ETC_POISON
@@ -218,6 +222,7 @@ VALUE:   1000
 BOOL:    poison
 
 NAME:    Staff of Wucad Mu
+APPEAR:  ephemeral staff
 OBJ:     OBJ_WEAPONS/WPN_STAFF
 PLUS:    +9/+9
 COLOUR:  ETC_MAGIC
@@ -227,6 +232,7 @@ VALUE:   1000
 BOOL:    special
 
 NAME:    Vampire's Tooth
+APPEAR:  ivory dagger
 OBJ:     OBJ_WEAPONS/WPN_DAGGER
 # it's a dagger made from a tooth -> no TYPE
 PLUS:    +3/+4
@@ -238,6 +244,7 @@ VALUE:   1000
 BOOL:    special
 
 NAME:    Scythe of Curses
+APPEAR:  warped scythe
 OBJ:     OBJ_WEAPONS/WPN_SCYTHE
 PLUS:    +13/+13
 COLOUR:  ETC_DEATH
@@ -249,6 +256,7 @@ CURSED:  3
 BOOL:    evil
 
 NAME:    Sceptre of Torment
+APPEAR:  jewelled golden mace
 OBJ:     OBJ_WEAPONS/WPN_MACE
 PLUS:    +7/+6
 COLOUR:  ETC_GOLD
@@ -258,6 +266,7 @@ VALUE:   1200
 BOOL:    tilerim, special, evil
 
 NAME:    Sword of Zonguldrok
+APPEAR:  bone long sword
 OBJ:     OBJ_WEAPONS/WPN_DOUBLE_SWORD
 PLUS:    +9/+9
 COLOUR:  ETC_BONE
@@ -314,6 +323,7 @@ BOOL:    nogen, unided
 ##################### End of old fixed arts.
 
 NAME:    demon blade "Bloodbane"
+APPEAR:  blackened demon blade
 OBJ:     OBJ_WEAPONS/WPN_DEMON_BLADE
 PLUS:    +7/+8
 COLOUR:  ETC_DARK
@@ -325,6 +335,7 @@ BOOL:    berserk
 STEALTH: -20
 
 NAME:    scimitar of Flaming Death
+APPEAR:  smoking scimitar
 OBJ:     OBJ_WEAPONS/WPN_SCIMITAR
 PLUS:    +7/+5
 COLOUR:  ETC_FIRE
@@ -337,6 +348,7 @@ BOOL:    poison
 MAGIC:   20
 
 NAME:    mace of Brilliance
+APPEAR:  brightly glowing mace
 OBJ:     OBJ_WEAPONS/WPN_MACE
 PLUS:    +5/+5
 COLOUR:  ETC_HOLY
@@ -362,6 +374,7 @@ DEX:     -1
 BOOL:    life
 
 NAME:    dagger of Chilly Death
+APPEAR:  sapphire dagger
 OBJ:     OBJ_WEAPONS/WPN_DAGGER
 PLUS:    +5/+7
 COLOUR:  ETC_ICE
@@ -374,6 +387,7 @@ MAGIC:   20
 BOOL:    poison
 
 NAME:     dagger "Morg"
+APPEAR:   rusty dagger
 OBJ:      OBJ_WEAPONS/WPN_DAGGER
 PLUS:     -1/+4
 COLOUR:   LIGHTRED
@@ -384,6 +398,7 @@ INT:      5
 MAGIC:    30
 
 NAME:    scythe "Finisher"
+APPEAR:  blackened scythe
 OBJ:     OBJ_WEAPONS/WPN_SCYTHE
 PLUS:    +3/+5
 COLOUR:  ETC_DARK
@@ -393,6 +408,7 @@ BRAND:   SPWPN_SPEED
 STR:     3
 
 NAME:    sling "Punk"
+APPEAR:  blue sling
 OBJ:     OBJ_WEAPONS/WPN_SLING
 PLUS:    +9/+12
 COLOUR:  ETC_ICE
@@ -404,6 +420,7 @@ COLD:    1
 ENUM:     KRISHNA
 NAME:     bow of Krishna "Sharnga"
 OBJ:      OBJ_WEAPONS/WPN_LONGBOW
+APPEAR:   golden bow
 PLUS:     +8/+8
 COLOUR:   ETC_GOLD
 TILE:     urand_krishna
@@ -413,6 +430,7 @@ DEX:      3
 BOOL:     seeinv
 
 NAME:    giant club "Skullcrusher"
+APPEAR:  brutal giant club
 OBJ:     OBJ_WEAPONS/WPN_GIANT_CLUB
 PLUS:    +0/+5
 COLOUR:  BROWN
@@ -422,6 +440,7 @@ BRAND:   SPWPN_SPEED
 STR:     5
 
 NAME:     glaive of the Guard
+APPEAR:   polished glaive
 OBJ:      OBJ_WEAPONS/WPN_GLAIVE
 PLUS:     +5/+8
 COLOUR:   ETC_ELECTRICITY
@@ -432,6 +451,7 @@ AC:       5
 BOOL:     seeinv, berserk
 
 NAME:     sword of Jihad
+APPEAR:   crystal sword
 OBJ:      OBJ_WEAPONS/WPN_EUDEMON_BLADE
 PLUS:     +12/+10
 COLOUR:   ETC_HOLY
@@ -445,6 +465,7 @@ STEALTH:  -50
 BOOL:     life
 
 NAME:    crossbow "Hellfire"
+APPEAR:  flaming crossbow
 OBJ:     OBJ_WEAPONS/WPN_CROSSBOW
 PLUS:    +6/+9
 COLOUR:  ETC_FIRE
@@ -456,6 +477,7 @@ COLD:    -1
 MAGIC:   40
 
 NAME:    sword of the Doom Knight
+APPEAR:  adamantine great sword
 OBJ:     OBJ_WEAPONS/WPN_GREAT_SWORD
 PLUS:    +13/+13
 COLOUR:  BLUE
@@ -466,6 +488,7 @@ MAGIC:   50
 BOOL:    nospell
 
 NAME:    morningstar "Eos"
+APPEAR:  encrusted morningstar
 OBJ:     OBJ_WEAPONS/WPN_MORNINGSTAR
 PLUS:    +11/+11
 COLOUR:  ETC_JEWEL
@@ -479,6 +502,7 @@ BOOL:    elec, seeinv, notelep
 # spells designed to do harm. Priests (or rather sorcerers) of bo are
 # called botono.
 NAME:     spear of the Botono
+APPEAR:   ebony spear
 OBJ:      OBJ_WEAPONS/WPN_SPEAR
 PLUS:     +2/+10
 COLOUR:   ETC_UNHOLY
@@ -489,6 +513,7 @@ HP:       -6
 BOOL:     poison, life
 
 NAME:     trident of the Octopus King
+APPEAR:   mangy trident
 OBJ:      OBJ_WEAPONS/WPN_TRIDENT
 PLUS:     +10/+4
 COLOUR:   ETC_WATER
@@ -499,6 +524,7 @@ BOOL:     elec, poison
 MAGIC:    50
 
 NAME:    mithril axe "Arga"
+APPEAR:  mithril axe
 OBJ:     OBJ_WEAPONS/WPN_WAR_AXE
 PLUS:    +10/+6
 COLOUR:  WHITE
@@ -509,6 +535,7 @@ STR:     2
 MAGIC:   30
 
 NAME:     Elemental Staff
+APPEAR:   black staff
 OBJ:      OBJ_WEAPONS/WPN_STAFF
 PLUS:     +3/+1
 COLOUR:   DARKGREY
@@ -522,6 +549,7 @@ METAB:    2
 BOOL:     noises
 
 NAME:    crossbow "Sniper"
+APPEAR:  black crossbow
 OBJ:     OBJ_WEAPONS/WPN_CROSSBOW
 PLUS:    +10/+0
 COLOUR:  ETC_DARK
@@ -531,6 +559,7 @@ BRAND:   SPWPN_VENOM
 BOOL:    seeinv
 
 NAME:    longbow "Piercer"
+APPEAR:  very long metal bow
 OBJ:     OBJ_WEAPONS/WPN_LONGBOW
 PLUS:    +2/+10
 COLOUR:  CYAN
@@ -541,6 +570,7 @@ EV:      -2
 
 ENUM:    BLOWGUN_ASSASSIN
 NAME:    blowgun of the Assassin
+APPEAR:  tiny blowgun
 OBJ:     OBJ_WEAPONS/WPN_BLOWGUN
 PLUS:    +6/+6
 COLOUR:  WHITE
@@ -549,7 +579,8 @@ TILE_EQ: blowgun
 STEALTH: 60
 BOOL:    inv, tilerim
 
-NAME:    lance "Wyrmbane"
+NAME:    Wyrmbane
+APPEAR:  scale-covered lance
 OBJ:     OBJ_WEAPONS/WPN_SPEAR
 TYPE:    lance
 BASE_DAM: +2
@@ -563,6 +594,7 @@ FIRE:    1
 BOOL:    poison, berserk, tilerim
 
 NAME:     Spriggan's Knife
+APPEAR:   dainty little knife
 OBJ:      OBJ_WEAPONS/WPN_DAGGER
 TYPE:     knife
 PLUS:     +4/+10
@@ -576,6 +608,7 @@ MAGIC:    20
 STEALTH:  50
 
 NAME:    plutonium sword
+APPEAR:  glowing triple sword
 OBJ:     OBJ_WEAPONS/WPN_TRIPLE_SWORD
 PLUS:    +12/+16
 COLOUR:  ETC_RANDOM
@@ -585,6 +618,7 @@ BOOL:    mutate
 STEALTH: -20
 
 NAME:     great mace "Undeadhunter"
+APPEAR:   great steel mace
 OBJ:      OBJ_WEAPONS/WPN_GREAT_MACE
 PLUS:     +7/+7
 COLOUR:   LIGHTGREY
@@ -593,6 +627,7 @@ TILE_EQ:  undeadhunter
 BOOL:     life
 
 NAME:    whip "Snakebite"
+APPEAR:  forked whip
 OBJ:     OBJ_WEAPONS/WPN_WHIP
 PLUS:    +5/+10
 COLOUR:  DARKGREY
@@ -602,6 +637,7 @@ BRAND:   SPWPN_VENOM
 BOOL:    poison, tilerim
 
 NAME:     knife of Accuracy
+APPEAR:   thin dagger
 OBJ:      OBJ_WEAPONS/WPN_DAGGER
 TYPE:     knife
 PLUS:     +27/-1
@@ -613,6 +649,7 @@ BOOL:     tilerim
 # A play on the spell of the same name.  Colour taken from crystal walls.
 ENUM:     CRYSTAL_SPEAR
 NAME:     Lehudib's crystal spear
+APPEAR:   crystal spear
 OBJ:      OBJ_WEAPONS/WPN_SPEAR
 PLUS:     +6/+6
 COLOUR:   GREEN
@@ -622,6 +659,7 @@ INT:      3
 BRAND:    SPWPN_RETURNING
 
 NAME:     captain's cutlass
+APPEAR:   black cutlass
 OBJ:      OBJ_WEAPONS/WPN_SABRE
 TYPE:     cutlass
 PLUS:     +6/+7
@@ -633,6 +671,7 @@ TILE_EQ:  cutlass
 BRAND:    SPWPN_SPEED
 
 NAME:     storm bow
+APPEAR:   night blue bow
 OBJ:      OBJ_WEAPONS/WPN_LONGBOW
 PLUS:     +8/+8
 COLOUR:   BLUE
@@ -641,6 +680,7 @@ TILE_EQ:  bow_blue
 BRAND:    SPWPN_ELECTROCUTION
 
 NAME:    large shield of Ignorance
+APPEAR:  dull large shield
 OBJ:     OBJ_ARMOUR/ARM_LARGE_SHIELD
 PLUS:    +8
 COLOUR:  BROWN
@@ -653,6 +693,7 @@ BOOL:    life
 CURSED:  3
 
 NAME:    robe of Augmentation
+APPEAR:  silk robe
 OBJ:     OBJ_ARMOUR/ARM_ROBE
 PLUS:    +4
 COLOUR:  LIGHTRED
@@ -663,6 +704,7 @@ INT:     4
 DEX:     4
 
 NAME:     cloak of the Thief
+APPEAR:   tattered cloak
 OBJ:      OBJ_ARMOUR/ARM_CLOAK
 PLUS:     +2
 COLOUR:   ETC_DARK
@@ -673,6 +715,7 @@ STEALTH:  60
 BOOL:     seeinv, fog
 
 NAME:    shield "Bullseye"
+APPEAR:  round shield
 OBJ:     OBJ_ARMOUR/ARM_SHIELD
 PLUS:    +15
 COLOUR:  RED
@@ -681,6 +724,7 @@ TILE_EQ: shield_bullseye
 EV:      -5
 
 NAME:    crown of Dyrovepreva
+APPEAR:  jewelled bronze crown
 OBJ:     OBJ_ARMOUR/ARM_CAP
 PLUS:    +3
 COLOUR:  ETC_JEWEL
@@ -691,6 +735,7 @@ METAB:   1
 BOOL:    elec, seeinv
 
 NAME:     hat of the Bear Spirit
+APPEAR:   fur hat
 OBJ:      OBJ_ARMOUR/ARM_CAP
 PLUS:     +2
 COLOUR:   DARKGREY
@@ -715,6 +760,7 @@ STEALTH:  -80
 BOOL:     nospell, rnd_tele, randapp, unided, mutate
 
 NAME:     cloak of Flash
+APPEAR:   vibrating cloak
 OBJ:      OBJ_ARMOUR/ARM_CLOAK
 PLUS:     +3
 COLOUR:   ETC_FLASH
@@ -725,6 +771,7 @@ BOOL:     fly
 
 ENUM:     BOOTS_ASSASSIN
 NAME:     boots of the Assassin
+APPEAR:   soft boots
 OBJ:      OBJ_ARMOUR/ARM_BOOTS
 PLUS:     +2
 COLOUR:   BROWN
@@ -736,6 +783,7 @@ BOOL:     inv
 
 ENUM:    LEAR
 NAME:    Lear's chain mail
+APPEAR:  golden chain mail
 OBJ:     OBJ_ARMOUR/ARM_CHAIN_MAIL
 PLUS:    -1
 COLOUR:  ETC_GOLD
@@ -745,6 +793,7 @@ DEX:     -3
 BOOL:    cursed, nospell, randapp, unided
 
 NAME:    skin of Zhor
+APPEAR:  smelly skin
 OBJ:     OBJ_ARMOUR/ARM_ANIMAL_SKIN
 PLUS:    +4
 COLOUR:  BROWN
@@ -754,6 +803,7 @@ COLD:    2
 
 ENUM:    SALAMANDER
 NAME:    salamander hide armour
+APPEAR:  red leather armour
 OBJ:     OBJ_ARMOUR/ARM_LEATHER_ARMOUR
 PLUS:    +3
 COLOUR:  ETC_FIRE
@@ -763,6 +813,7 @@ FIRE:    2
 BOOL:    berserk
 
 NAME:    gauntlets of War
+APPEAR:  thick gauntlets
 OBJ:     OBJ_ARMOUR/ARM_GLOVES
 PLUS:    +3
 COLOUR:  BROWN
@@ -772,6 +823,7 @@ ACC:     5
 DAM:     5
 
 NAME:    shield of Resistance
+APPEAR:  bronze shield
 OBJ:     OBJ_ARMOUR/ARM_SHIELD
 PLUS:    +5
 COLOUR:  LIGHTRED
@@ -793,6 +845,7 @@ BOOL:    nospell, randapp, unided
 
 ENUM:    MAXWELL
 NAME:    Maxwell's patent armour
+APPEAR:  weird-looking armour
 OBJ:     OBJ_ARMOUR/ARM_PLATE_ARMOUR
 PLUS:    +15
 COLOUR:  LIGHTGREEN
@@ -804,6 +857,7 @@ BOOL:    nospell, notelep, cursed
 
 ENUM:    DRAGONMASK
 NAME:    mask of the Dragon
+APPEAR:  blue mask
 OBJ:     OBJ_ARMOUR/ARM_CAP
 COLOUR:  ETC_SHIMMER_BLUE
 TILE:    urand_dragonmask
@@ -814,6 +868,7 @@ DAM:     3
 BOOL:    seeinv
 
 NAME:     robe of Night
+APPEAR:   black robe
 OBJ:      OBJ_ARMOUR/ARM_ROBE
 PLUS:     +4
 COLOUR:   ETC_DARK
@@ -824,6 +879,7 @@ STEALTH:  50
 BOOL:     seeinv, inv
 
 NAME:    armour of the Dragon King
+APPEAR:  shiny gold dragon armour
 OBJ:     OBJ_ARMOUR/ARM_GOLD_DRAGON_ARMOUR
 PLUS:    +9
 COLOUR:  ETC_GOLD
@@ -832,6 +888,7 @@ TILE_EQ: dragonarm_gold
 MAGIC:   50
 
 NAME:    hat of the Alchemist
+APPEAR:  dirty hat
 OBJ:     OBJ_ARMOUR/ARM_WIZARD_HAT
 PLUS:    +2
 COLOUR:  MAGENTA
@@ -843,6 +900,7 @@ MAGIC:   30
 BOOL:    elec
 
 NAME:    fencer's gloves
+APPEAR:  silk gloves
 OBJ:     OBJ_ARMOUR/ARM_GLOVES
 PLUS:    +2
 COLOUR:  WHITE
@@ -853,6 +911,7 @@ DEX:     3
 ACC:     8
 
 NAME:     cloak of Starlight
+APPEAR:   phosphorescent cloak
 OBJ:      OBJ_ARMOUR/ARM_CLOAK
 COLOUR:   ETC_ICE
 TILE:     urand_starlight
@@ -863,6 +922,7 @@ STEALTH:  -30
 BOOL:     elec
 
 NAME:     ratskin cloak
+APPEAR:   motley cloak
 OBJ:      OBJ_ARMOUR/ARM_CLOAK
 PLUS:     +1
 COLOUR:   ETC_BEOGH
@@ -873,6 +933,7 @@ DEX:      -1
 BOOL:     life, poison
 
 NAME:     shield of the gong
+APPEAR:   bronze gong
 OBJ:      OBJ_ARMOUR/ARM_SHIELD
 PLUS:     +6
 COLOUR:   ETC_GOLD
@@ -883,6 +944,7 @@ MAGIC:    50
 BOOL:     elec, life
 
 NAME:    amulet of the Air
+APPEAR:  sky-blue amulet
 OBJ:     OBJ_JEWELLERY/AMU_INACCURACY
 COLOUR:  ETC_ELECTRICITY
 TILE:    urand_air
@@ -890,6 +952,7 @@ EV:      5
 BOOL:    elec, fly, rmsl
 
 NAME:    ring of Shadows
+APPEAR:  black ring
 OBJ:     OBJ_JEWELLERY/RING_INVISIBILITY
 COLOUR:  ETC_DARK
 TILE:    urand_shadows
@@ -899,6 +962,7 @@ STEALTH: 40
 BOOL:    life, seeinv
 
 NAME:    amulet of Cekugob
+APPEAR:  crystal amulet
 OBJ:     OBJ_JEWELLERY/AMU_WARDING
 COLOUR:  ETC_SILVER
 TILE:    urand_cekugob
@@ -908,6 +972,7 @@ BOOL:    elec, poison, life, notelep
 METAB:   2
 
 NAME:    amulet of the Four Winds
+APPEAR:  jade amulet
 OBJ:     OBJ_JEWELLERY/AMU_CLARITY
 COLOUR:  ETC_POISON
 TILE:    urand_four_winds
@@ -915,6 +980,7 @@ BOOL:    life
 MAGIC:   100
 
 NAME:    necklace of Bloodlust
+APPEAR:  blood-stained necklace
 OBJ:     OBJ_JEWELLERY/AMU_RAGE
 COLOUR:  ETC_BLOOD
 TILE:    urand_bloodlust
@@ -927,18 +993,21 @@ CURSED:  3
 STEALTH: -20
 
 NAME:    ring of Shaolin
+APPEAR:  jade ring
 OBJ:     OBJ_JEWELLERY/RING_EVASION
 PLUS:    +8
 COLOUR:  ETC_POISON
 TILE:    urand_shaolin
 
 NAME:    ring of Robustness
+APPEAR:  steel ring
 OBJ:     OBJ_JEWELLERY/RING_PROTECTION
 PLUS:    +8
 COLOUR:  ETC_GOLD
 TILE:    urand_robustness
 
 NAME:    ring of the Mage
+APPEAR:  sapphire ring
 OBJ:     OBJ_JEWELLERY/RING_WIZARDRY
 COLOUR:  ETC_ENCHANT
 TILE:    urand_mage
@@ -946,6 +1015,7 @@ INT:     3
 MAGIC:   50
 
 NAME:     brooch of Shielding
+APPEAR:   shield-shaped amulet
 OBJ:      OBJ_JEWELLERY/AMU_WARDING
 COLOUR:   ETC_MAGIC
 TILE:     urand_brooch_of_shielding
@@ -954,6 +1024,7 @@ EV:       4
 
 ENUM:     RCLOUDS
 NAME:     robe of Clouds
+APPEAR:   flimsy blue robe
 OBJ:      OBJ_ARMOUR/ARM_ROBE
 PLUS:     +3
 COLOUR:   ETC_MIST
@@ -962,6 +1033,7 @@ TILE_EQ:  robe_clouds
 BOOL:     elec, fly
 
 NAME:     hat of Pondering
+APPEAR:   slimy wizard hat
 OBJ:      OBJ_ARMOUR/ARM_WIZARD_HAT
 PLUS:     +3
 COLOUR:   LIGHTRED
@@ -974,6 +1046,7 @@ MAGIC:    30
 
 ENUM:     DEMON_AXE
 NAME:     obsidian axe
+APPEAR:   bloodied obsidian axe
 OBJ:      OBJ_WEAPONS/WPN_BROAD_AXE
 PLUS:     +12/+15
 COLOUR:   ETC_UNHOLY
@@ -985,6 +1058,7 @@ STR:      +3
 BOOL:     evil, seeinv, fly, special
 
 NAME:     lightning scales
+APPEAR:   metallic naga barding
 OBJ:      OBJ_ARMOUR/ARM_NAGA_BARDING
 PLUS:     +3
 TILE:     urand_lightning_scales
@@ -995,6 +1069,7 @@ BOOL:     elec
 
 ENUM:     BLACK_KNIGHT_HORSE
 NAME:     Black Knight's horse barding
+APPEAR:   black horse barding
 OBJ:      OBJ_ARMOUR/ARM_CENTAUR_BARDING
 PLUS:     +10
 TILE:     urand_bk_barding
@@ -1005,12 +1080,14 @@ METAB:    -2
 BOOL:     life, evil
 
 NAME:     ring of Vitality
+APPEAR:   amethyst ring with an ankh
 OBJ:      OBJ_JEWELLERY/RING_REGENERATION
 HP:       +15
 COLOUR:   ETC_MUTAGENIC
 TILE:     urand_vitality
 
 NAME:     autumn katana
+APPEAR:   long, slightly curved sword
 OBJ:      OBJ_WEAPONS/WPN_LONG_SWORD
 TYPE:     katana
 TILE:     urand_katana
@@ -1024,6 +1101,7 @@ BOOL:     clarity
 BRAND:    SPWPN_VORPAL
 
 NAME:     shillelagh "Devastator"
+APPEAR:   loaded stick
 OBJ:      OBJ_WEAPONS/WPN_CLUB
 TYPE:     shillelagh
 TILE:     urand_shillelagh
@@ -1047,6 +1125,7 @@ BOOL:     nogen
 
 ENUM:     OCTOPUS_KING_RING
 NAME:     ring of the Octopus King
+APPEAR:   coral ring
 OBJ:      OBJ_JEWELLERY/RING_HUNGER
 COLOUR:   ETC_WATER
 TILE:     urand_octoring
