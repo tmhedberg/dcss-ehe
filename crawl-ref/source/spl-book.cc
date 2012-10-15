@@ -559,6 +559,7 @@ bool you_cannot_memorise(spell_type spell, bool &form)
          || spell == SPELL_WARP_BRAND
          || spell == SPELL_EXCRUCIATING_WOUNDS
          || spell == SPELL_POISON_WEAPON
+         || spell == SPELL_MAXWELLS_SILVER_HAMMER
          || spell == SPELL_SURE_BLADE
          // could be useful if it didn't require wielding
          || spell == SPELL_TUKIMAS_DANCE

@@ -1792,6 +1792,19 @@ struct spell_desc
 },
 
 {
+    SPELL_MAXWELLS_SILVER_HAMMER, "Maxwell's Silver Hammer",
+     SPTYP_CHARMS | SPTYP_EARTH,
+     SPFLAG_HELPFUL | SPFLAG_BATTLE,
+     2,
+     200,
+     -1, -1,
+     0,
+     NULL,
+     false,
+     true
+},
+
+{
     SPELL_CONDENSATION_SHIELD, "Condensation Shield",
      SPTYP_ICE,
      SPFLAG_HELPFUL,

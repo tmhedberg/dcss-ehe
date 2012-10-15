@@ -121,6 +121,7 @@ enum brand_type // item_def.special
 #endif
     SPWPN_DEBUG_RANDART,
     NUM_SPECIAL_WEAPONS,
+    SPWPN_DUMMY_CRUSHING,        // ONLY TEMPORARY USAGE -- converts to VORPAL
 };
 
 enum corpse_type

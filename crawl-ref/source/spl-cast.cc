@@ -1703,6 +1703,9 @@ static spret_type _do_cast(spell_type spell, int powc,
     case SPELL_FREEZING_AURA:
         return brand_weapon(SPWPN_FREEZING, powc, fail);
 
+    case SPELL_MAXWELLS_SILVER_HAMMER:
+        return brand_weapon(SPWPN_DUMMY_CRUSHING, powc, fail);
+
     case SPELL_POISON_WEAPON:
         return brand_weapon(SPWPN_VENOM, powc, fail);
 
