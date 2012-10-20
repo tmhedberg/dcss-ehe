@@ -1892,6 +1892,12 @@ string get_item_description(const item_def &item, bool verbose,
             if (!item_type_known(item))
                 break;
         }
+        else if (is_dangerous_spellbook(item))
+        {
+            description << "\nWARNING: If you fail in an attempt to memorise a "
+                           "spell from this book, the book will lash out at "
+                           "you.";
+        }
 
         if (!verbose
             && (Options.dump_book_spells || is_random_artefact(item)))
@@ -2940,7 +2946,7 @@ void describe_spell(spell_type spelled, const item_def* item)
     if (mem_or_forget == BOOK_MEM && toupper(ch) == 'M')
     {
         redraw_screen();
-        if (!learn_spell(spelled) || !you.turn_is_over)
+        if (!learn_spell(spelled, item->sub_type, false) || !you.turn_is_over)
             more();
         redraw_screen();
     }

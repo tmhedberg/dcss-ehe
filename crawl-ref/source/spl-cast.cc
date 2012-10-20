@@ -1891,10 +1891,9 @@ static double _get_true_fail_rate(int raw_fail)
 
 //Computes the chance of getting a miscast effect of a given severity (or
 //higher).
-double get_miscast_chance(spell_type spell, int severity)
+//Called only by failure_rate_colour.
+static double _get_miscast_chance(int raw_fail, int level, int severity)
 {
-    int raw_fail = spell_fail(spell);
-    int level = spell_difficulty(spell);
     if (severity <= 0)
         return _get_true_fail_rate(raw_fail);
     double C = 70000.0/(150*level*(10+level));
@@ -1912,7 +1911,7 @@ double get_miscast_chance(spell_type spell, int severity)
 // based on the chance of getting a severity >= 2 miscast.
 int failure_rate_colour(spell_type spell)
 {
-    double chance = get_miscast_chance(spell);
+    double chance = _get_miscast_chance(spell_fail(spell), spell_difficulty(spell), 2);
     return (chance < 0.001) ? LIGHTGREY :
            (chance < 0.005) ? YELLOW    :
            (chance < 0.025) ? LIGHTRED  :
