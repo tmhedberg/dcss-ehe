@@ -26,3 +26,4 @@ Changelog
   - Enable the officially unfinished but functional Enchanted Forest and Dwarven Hall branches (experimental)
   - Restore Maxwell's Silver Hammer
   - Restore spell memorization failure
+  - Slightly increase difficulty of orb run monster spawns
