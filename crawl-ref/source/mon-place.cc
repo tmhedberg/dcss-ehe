@@ -411,7 +411,7 @@ void spawn_random_monsters()
 
         // The rules change once the player has picked up the Orb...
         if (you.char_direction == GDT_ASCENDING)
-            prox = (one_chance_in(3) ? PROX_CLOSE_TO_PLAYER : PROX_ANYWHERE);
+            prox = (x_chance_in_y(2, 3) ? PROX_CLOSE_TO_PLAYER : PROX_ANYWHERE);
 
         mgen_data mg(WANDERING_MONSTER);
         mg.proximity = prox;
@@ -3113,7 +3113,7 @@ void mark_interesting_monst(monster* mons, beh_type behaviour)
 
 static monster_type _pick_zot_exit_defender()
 {
-    if (one_chance_in(11))
+    if (one_chance_in(7))
     {
 #ifdef DEBUG_MON_CREATION
         mprf(MSGCH_DIAGNOSTICS, "Create a pandemonium lord!");
