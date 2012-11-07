@@ -610,6 +610,7 @@ static mutation_type appendages[] =
 {
     MUT_HORNS,
     MUT_TENTACLE_SPIKE,
+    MUT_CLAWS,
     MUT_TALONS,
 };
 
