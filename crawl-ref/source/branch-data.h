@@ -116,7 +116,7 @@ const Branch branches[NUM_BRANCHES] =
       true, LIGHTGREY, BROWN,
       'B', false, -7 },
 
-    { BRANCH_CRYPT, BRANCH_VAULTS, 2, 3, 5, 19,
+    { BRANCH_CRYPT, BRANCH_VAULTS, 2, 5, 5, 19,
       0, 0,
       DNGN_ENTER_CRYPT, DNGN_RETURN_FROM_CRYPT,
       "Crypt", "the Crypt", "Crypt",
