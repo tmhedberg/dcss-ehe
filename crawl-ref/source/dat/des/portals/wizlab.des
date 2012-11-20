@@ -1135,7 +1135,9 @@ KMONS:      0 = col:red clay golem name:flesh_golem name_replace \
 KMONS:      & = col:mutagenic tentacled monstrosity name:Cigotuvi's_Monster \
             name_replace hp:250 tile:mons_cigotuvis_monster
 ITEM:       potion of mutation w:60 / potion of beneficial mutation / \
-            potion of cure mutation
+            potion of cure mutation / potion of degeneration / \
+            potion of decay / w:3 potion of strong poison / \
+            w:2 potion of poison
 ITEM:       potion of beneficial mutation, potion of cure mutation
 ITEM:       amulet of resist mutation good_item
 ITEM:       randbook disc:transmutation owner:Cigotuvi
