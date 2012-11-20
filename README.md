@@ -28,3 +28,4 @@ Changelog
   - Restore spell memorization failure
   - Slightly increase difficulty of orb run monster spawns
   - Restore claws effect from beastly appendage
+  - Enable Crypt entrance to spawn in Vault:2-5
