@@ -1830,6 +1830,7 @@ enum held_type
 enum holy_word_source_type
 {
     HOLY_WORD_SCROLL,
+    HOLY_WORD_SPELL,
     HOLY_WORD_ZIN,     // sanctuary
     HOLY_WORD_TSO,     // weapon blessing
 };
@@ -2579,9 +2580,7 @@ enum monster_type                      // menv[].type
     MONS_SERAPH,
     MONS_PHOENIX,
     MONS_SILVER_STAR,
-#if TAG_MAJOR_VERSION == 34
     MONS_BLESSED_TOE,
-#endif
     MONS_SHEDU,
     MONS_OPHAN,
     MONS_SPIRIT,
@@ -3563,10 +3562,8 @@ enum spell_type
     SPELL_RESURRECT,
 #endif
     SPELL_HOLY_LIGHT,
-#if TAG_MAJOR_VERSION == 34
     SPELL_HOLY_WORD,
     SPELL_SUMMON_HOLIES,
-#endif
     SPELL_HEAL_OTHER,
 #if TAG_MAJOR_VERSION == 34
     SPELL_SACRIFICE,

@@ -1179,6 +1179,7 @@ bool setup_mons_cast(monster* mons, bolt &pbolt, spell_type spell_cast,
     case SPELL_SYMBOL_OF_TORMENT:
     case SPELL_CAUSE_FEAR:
     case SPELL_MESMERISE:
+    case SPELL_HOLY_WORD:
     case SPELL_DRAIN_LIFE:
     case SPELL_SUMMON_GREATER_DEMON:
     case SPELL_CANTRIP:
@@ -1210,6 +1211,7 @@ bool setup_mons_cast(monster* mons, bolt &pbolt, spell_type spell_cast,
     case SPELL_AWAKEN_FOREST:
     case SPELL_DRUIDS_CALL:
     case SPELL_SUMMON_SPECTRAL_ORCS:
+    case SPELL_SUMMON_HOLIES:
     case SPELL_REGENERATION:
     case SPELL_CORPSE_ROT:
     case SPELL_LEDAS_LIQUEFACTION:
@@ -3849,11 +3851,16 @@ static bool _mon_spell_bail_out_early(monster* mons, spell_type spell_cast)
 
     case SPELL_CHAIN_LIGHTNING:
     case SPELL_SYMBOL_OF_TORMENT:
+    case SPELL_HOLY_WORD:
     case SPELL_OZOCUBUS_REFRIGERATION:
     case SPELL_SHATTER:
     case SPELL_TORNADO:
-        if (!monsterNearby)
+        if (!monsterNearby
+            // friendly holies don't care if you are friendly
+            || (mons->friendly() && spell_cast != SPELL_HOLY_WORD))
+        {
             return true;
+        }
         break;
 
     default:
@@ -4473,6 +4480,10 @@ void mons_cast(monster* mons, bolt &pbolt, spell_type spell_cast,
         torment(mons, mons->mindex(), mons->pos());
         return;
 
+    case SPELL_HOLY_WORD:
+        holy_word(0, HOLY_WORD_SPELL, mons->pos());
+        return;
+
     case SPELL_MESMERISE:
         _mons_mesmerise(mons);
         return;
@@ -4584,6 +4595,25 @@ void mons_cast(monster* mons, bolt &pbolt, spell_type spell_cast,
                       duration, spell_cast,
                       mons->pos(), mons->foe, 0, god));
 
+    case SPELL_SUMMON_HOLIES: // Holy monsters.
+        if (_mons_abjured(mons, monsterNearby))
+            return;
+
+        sumcount2 = 1 + random2(2) + random2(mons->hit_dice / 4 + 1);
+
+        duration  = min(2 + mons->hit_dice / 5, 6);
+        for (int i = 0; i < sumcount2; ++i)
+        {
+            create_monster(
+                mgen_data(random_choose_weighted(
+                            100, MONS_ANGEL,     80,  MONS_CHERUB,
+                            5,   MONS_SPIRIT,    1,   MONS_SHEDU,
+                            1,   MONS_OPHAN,     1,   MONS_PALADIN,
+                            // No holy dragons
+                          0), SAME_ATTITUDE(mons),
+                          mons, duration, spell_cast, mons->pos(),
+                          mons->foe, 0, god));
+        }
         return;
 
     case SPELL_BATTLESPHERE:

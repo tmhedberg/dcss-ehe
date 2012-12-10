@@ -1609,6 +1609,17 @@
       }
     },
 
+    {  MST_BLESSED_TOE,
+      {
+       SPELL_SUMMON_HOLIES,
+       SPELL_SUMMON_HOLIES,
+       SPELL_HEAL_OTHER,
+       SPELL_HOLY_WORD,
+       SPELL_SUMMON_HOLIES,
+       SPELL_NO_SPELL
+      }
+    },
+
     {  MST_SPIRIT,
       {
        SPELL_BLINK_AWAY,

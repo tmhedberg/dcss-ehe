@@ -116,6 +116,10 @@ static void _holy_word_player(int pow, holy_word_source_type source, actor *atta
         aux = "scroll of holy word";
         break;
 
+    case HOLY_WORD_SPELL:
+        aux = "spell of holy word";
+        break;
+
     case HOLY_WORD_ZIN:
         aux = "Zin's holy word";
         break;
