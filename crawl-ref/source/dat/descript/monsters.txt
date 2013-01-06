@@ -3260,10 +3260,69 @@ An immaculately sculpted porphyry statue of an archer poised to release an
 arrow, with a full quiver at the hip. The individually sculpted arrows look
 almost as if they could be removed one by one and used in a real bow.
 %%%%
+shadowy statue
+
+Made of some black lusterless stone, this statue seems to be the focal point
+for swirling shadows that permeate this room. They seem to be more substantial
+than your usual half-light, so it might be a good idea to blow the statue to
+smithereens before the shadows turn fully real.
+%%%%
 sickly siren
 
 A young woman with a fish tail in place of legs. She looks quite sick, but
 still capable of bespelling her audience.
+%%%%
+sludge elf earth mage
+
+A sludge elf particularly well-attuned to the powers of earth.
+%%%%
+skeletal archer
+
+Since when is having flesh a requirement to be a master archer? These skeletal
+fellows can turn you into a bloody hedgehog with ease. Meatlings like you are
+only good for a supply of sinew for bowstrings anyway.
+%%%%
+skeletal archer:quote
+
+“For a glory of all evil spirits rise for victory
+ Pain for pain, blood for blood
+ Pagan warriors moved quickly forward
+ Bows are ready to shoot out their searing
+ Darts...”
+    -Mastiphal, “For a Glory of All Evil spirits”
+%%%%
+snail statue
+
+This idol to the god Cheibriados has the odd property of turning the ground in
+its presence into difficult-to-slog-through mud.
+%%%%
+spearthrower statue
+
+This statue bristles with sharp shards of green crystal that sparkle with every
+gleam of light. The shards seem to be in motion, migrating to form long spears
+of crystal that the statue can shoot through interlopers.
+%%%%
+spooky statue
+
+You sense a ghostly presence around this statue, and it's not the slightest bit
+friendly.
+%%%%
+spriggan enchanter
+
+A spriggan particularly skilled in the arts of hexes and charms - and,
+apparently, lethal with a quick blade.
+%%%%
+spriggan necromancer
+
+Raising the dead, and then running behind them... these tricks start getting
+annoying.
+%%%%
+spriggan shepherd
+
+Being unable to digest meat, spriggans here need quite a lot of milk to
+maintain a healthy diet. This guy guards the animals from predators and vandals
+like you, brandishing a crooked cane that looks like a fine tool for teaching
+you some respect.
 %%%%
 strange machine
 
