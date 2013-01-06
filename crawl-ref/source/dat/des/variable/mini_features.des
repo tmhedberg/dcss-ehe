@@ -893,7 +893,8 @@ ENDMAP
 
 NAME:   minmay_stone_trees_small
 TAGS:   transparent mini_float extra decor
-DEPTH:  D, Lair
+TAGS:   ruin_lair vaults_room_7_spin_empty
+DEPTH:  D, Vaults, Lair
 WEIGHT: 6
 MAP
 .......
