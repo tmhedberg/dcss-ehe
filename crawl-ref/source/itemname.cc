@@ -2248,7 +2248,6 @@ void check_item_knowledge(bool unknown_items)
 
             if (i == OBJ_JEWELLERY && j == AMU_CONTROLLED_FLIGHT)
                 continue;
-#endif
 
             if (unknown_items ? you.type_ids[i][j] != ID_KNOWN_TYPE
                               : you.type_ids[i][j] == ID_KNOWN_TYPE)
