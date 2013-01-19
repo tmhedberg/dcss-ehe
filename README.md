@@ -31,3 +31,4 @@ Changelog
   - Enable Crypt entrance to spawn in Vault:2-5
   - Restore "bad" potions appearing in Cigotuvi's wizlab
   - Restore blessed toes
+  - Let alarm traps trigger multiple times
