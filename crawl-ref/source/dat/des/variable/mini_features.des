@@ -2415,7 +2415,7 @@ ENDMAP
 NAME:  min_item_tele_traps
 TAGS:  extra
 DEPTH: D:2-, Depths
-KFEAT: ! = known teleport trap
+KFEAT: ! = teleport trap
 MAP
 .....
 .v!v.

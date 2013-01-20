@@ -1511,7 +1511,7 @@ NAME:    xom_teletrap_fun
 TAGS:    temple_overflow_1 temple_overflow_xom uniq_altar_xom
 KFEAT:   _ = altar_xom
 NSUBST:  T = . / T
-KFEAT:   T = known teleport trap
+KFEAT:   T = teleport trap
 MAP
 .....
 .TTT.
@@ -1602,7 +1602,7 @@ NSUBST:  . = 2:T / .
 SUBST:   . = lWwtm_~......
 KFEAT:   _ = altar_xom
 NSUBST:  T = 3:T / .
-KFEAT:   T = known teleport trap
+KFEAT:   T = teleport trap
 : interest_check(_G)
 MAP
       @

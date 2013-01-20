@@ -32,3 +32,4 @@ Changelog
   - Restore "bad" potions appearing in Cigotuvi's wizlab
   - Restore blessed toes
   - Let alarm traps trigger multiple times
+  - Revert revealing of teleport traps in some vaults

@@ -188,7 +188,7 @@ NAME:  lemuel_tele_altar
 TAGS:  transparent mini_float decor
 DEPTH: D:2-, Vaults
 SUBST: Y = X x
-KFEAT: X = known teleport trap
+KFEAT: X = teleport trap
 MAP
 .............
 .xxxxxXxxxxx.
