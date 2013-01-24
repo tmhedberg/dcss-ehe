@@ -33,3 +33,4 @@ Changelog
   - Restore blessed toes
   - Let alarm traps trigger multiple times
   - Revert revealing of teleport traps in some vaults
+  - Revert removal of Xom's hostile animated weapon effect
