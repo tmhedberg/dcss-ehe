@@ -56,6 +56,7 @@
 #include "spl-cast.h"
 #include "spl-goditem.h"
 #include "spl-miscast.h"
+#include "spl-summoning.h"
 #include "spl-transloc.h"
 #include "spl-util.h"
 #include "stairs.h"
@@ -3201,6 +3202,17 @@ static int _xom_draining_torment_effect(int sever, bool debug = false)
     return XOM_DID_NOTHING;
 }
 
+static bool _has_min_animated_weapon_level()
+{
+    if (you.penance[GOD_XOM])
+        return true;
+
+    if (_xom_is_bored())
+        return (you.experience_level >= 4);
+
+    return (you.experience_level >= 7);
+}
+
 static int _xom_summon_hostiles(int sever, bool debug = false)
 {
     bool rc = false;
@@ -3208,69 +3220,89 @@ static int _xom_summon_hostiles(int sever, bool debug = false)
 
     int result = XOM_DID_NOTHING;
 
-    if (debug)
-        return XOM_BAD_SUMMON_HOSTILES;
-
-    int num_summoned = 0;
-    const bool shadow_creatures = one_chance_in(3);
-
-    if (shadow_creatures)
+    // Nasty, but fun.
+    if (player_weapon_wielded() && _has_min_animated_weapon_level()
+        && one_chance_in(4) && !player_in_branch(BRANCH_ABYSS))
     {
-        // Small number of shadow creatures.
-        int count = 2 + random2(4);
-        for (int i = 0; i < count; ++i)
+        if (debug)
+            return XOM_BAD_ANIMATE_WPN;
+
+        const item_def& weapon = *you.weapon();
+        const string wep_name = weapon.name(DESC_PLAIN);
+        rc = cast_tukimas_dance(100, GOD_XOM, true);
+
+        if (rc)
         {
-            if (create_monster(
-                    mgen_data::hostile_at(
-                        RANDOM_MOBILE_MONSTER, "Xom",
-                        true, 4, MON_SUMM_WRATH, you.pos(), 0,
-                        GOD_XOM)))
-            {
-                num_summoned++;
-            }
+            static char wpn_buf[80];
+            snprintf(wpn_buf, sizeof(wpn_buf),
+                     "animates weapon (%s)", wep_name.c_str());
+            take_note(Note(NOTE_XOM_EFFECT, you.piety, -1, wpn_buf), true);
+            result = XOM_BAD_ANIMATE_WPN;
         }
     }
     else
     {
-        // The number of demons is dependent on severity, though heavily
-        // randomised.
-        int numdemons = sever;
-        for (int i = 0; i < 3; ++i)
-            numdemons = random2(numdemons + 1);
-        numdemons = min(numdemons + 1, 14);
+        int num_summoned = 0;
+        const bool shadow_creatures = one_chance_in(3);
 
-        // Limit number of demons by experience level.
-        if (!you.penance[GOD_XOM])
+        if (shadow_creatures)
         {
-            const int maxdemons = (you.experience_level / 2);
-            if (numdemons > maxdemons)
-                numdemons = maxdemons;
-        }
-
-        for (int i = 0; i < numdemons; ++i)
-        {
-            if (create_monster(
-                    mgen_data::hostile_at(
-                        _xom_random_demon(sever), "Xom",
-                        true, 4, MON_SUMM_WRATH, you.pos(), 0,
-                        GOD_XOM)))
+            // Small number of shadow creatures.
+            int count = 2 + random2(4);
+            for (int i = 0; i < count; ++i)
             {
-                num_summoned++;
+                if (create_monster(
+                        mgen_data::hostile_at(
+                            RANDOM_MOBILE_MONSTER, "Xom",
+                            true, 4, MON_SUMM_WRATH, you.pos(), 0,
+                            GOD_XOM)))
+                {
+                    num_summoned++;
+                }
             }
         }
-    }
+        else
+        {
+            // The number of demons is dependent on severity, though heavily
+            // randomised.
+            int numdemons = sever;
+            for (int i = 0; i < 3; ++i)
+                numdemons = random2(numdemons + 1);
+            numdemons = min(numdemons + 1, 14);
 
-    if (num_summoned > 0)
-    {
-        static char summ_buf[80];
-        snprintf(summ_buf, sizeof(summ_buf),
-                 "summons %d hostile %s%s",
-                 num_summoned, shadow_creatures ? "shadow creature" : "demon",
-                 num_summoned > 1 ? "s" : "");
-        take_note(Note(NOTE_XOM_EFFECT, you.piety, -1, summ_buf), true);
+            // Limit number of demons by experience level.
+            if (!you.penance[GOD_XOM])
+            {
+                const int maxdemons = (you.experience_level / 2);
+                if (numdemons > maxdemons)
+                    numdemons = maxdemons;
+            }
 
-        rc = true;
-        result = XOM_BAD_SUMMON_HOSTILES;
+            for (int i = 0; i < numdemons; ++i)
+            {
+                if (create_monster(
+                        mgen_data::hostile_at(
+                            _xom_random_demon(sever), "Xom",
+                            true, 4, MON_SUMM_WRATH, you.pos(), 0,
+                            GOD_XOM)))
+                {
+                    num_summoned++;
+                }
+            }
+        }
+
+        if (num_summoned > 0)
+        {
+            static char summ_buf[80];
+            snprintf(summ_buf, sizeof(summ_buf),
+                     "summons %d hostile %s%s",
+                     num_summoned, shadow_creatures ? "shadow creature" : "demon",
+                     num_summoned > 1 ? "s" : "");
+            take_note(Note(NOTE_XOM_EFFECT, you.piety, -1, summ_buf), true);
+
+            rc = true;
+            result = XOM_BAD_SUMMON_HOSTILES;
+        }
     }
 
     if (rc)
@@ -4065,7 +4097,7 @@ static const string _xom_effect_to_name(int effect)
         "miscast (minor)", "miscast (major)", "miscast (nasty)",
         "stat loss", "teleportation", "swap weapons", "chaos upgrade",
         "mutation", "polymorph", "repel stairs", "confusion", "draining",
-        "torment", "summon demons", "banishment (pseudo)",
+        "torment", "animate weapon", "summon demons", "banishment (pseudo)",
         "banishment"
     };
 
