@@ -2005,10 +2005,19 @@ bool setup_fragmentation_beam(bolt &beam, int pow, const actor *caster,
     {
         switch (mon->type)
         {
+        case MONS_WOOD_GOLEM:
         case MONS_TOENAIL_GOLEM:
             beam.damage.num = 3;
-            beam.name       = "blast of toenail fragments";
-            beam.colour     = RED;
+            if (mon->type == MONS_WOOD_GOLEM)
+            {
+                beam.name       = "blast of splinters";
+                beam.colour     = BROWN;
+            }
+            else
+            {
+                beam.name       = "blast of toenail fragments";
+                beam.colour     = RED;
+            }
             break;
 
         case MONS_IRON_ELEMENTAL:
