@@ -36,3 +36,4 @@ Changelog
   - Revert removal of Xom's hostile animated weapon effect
   - Restore toadstools growing on corpses
   - Keep Dig silent
+  - Restore earth-themed ziggurat levels

@@ -279,6 +279,9 @@ mset(with_props("place:Lair:$ w:85 / catoblepas w:6 / dire elephant w:6 / " ..
                 "blizzard demon", { weight = 2 }),
      with_props("insubstantial wisp / air elemental / titan / raiju / " ..
                 "storm dragon / electric golem / spriggan air mage", { weight = 2 }),
+     with_props("clay golem / earth elemental / stone golem / iron golem / " ..
+                "catoblepas / boulder beetle / iron elemental / " ..
+                "crystal golem / stone giant / iron dragon", { weight = 2 }),
      with_props("swamp drake / fire drake / wind drake w:2 / death drake / " ..
                 "wyvern / hydra / steam dragon / mottled dragon / " ..
                 "swamp dragon / fire dragon / ice dragon / storm dragon / " ..
