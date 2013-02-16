@@ -4191,7 +4191,6 @@ static monsterentry mondata[] =
     MONUSE_OPEN_DOORS, MONEAT_NOTHING, SIZE_LARGE
 },
 
-#if TAG_MAJOR_VERSION == 34
 {
     MONS_ROCK_TROLL, 'T', LIGHTGREY, "rock troll",
     M_WARM_BLOOD | M_SPEAKS | M_CANT_SPAWN | M_FAST_REGEN,
@@ -4204,7 +4203,6 @@ static monsterentry mondata[] =
     I_NORMAL, HT_LAND, FL_NONE, 8, DEFAULT_ENERGY,
     MONUSE_OPEN_DOORS, MONEAT_NOTHING, SIZE_LARGE
 },
-#endif
 
 {
     MONS_IRON_TROLL, 'T', CYAN, "iron troll",

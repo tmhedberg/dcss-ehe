@@ -37,3 +37,4 @@ Changelog
   - Restore toadstools growing on corpses
   - Keep Dig silent
   - Restore earth-themed ziggurat levels
+  - Restore rock trolls

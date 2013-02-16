@@ -3260,6 +3260,11 @@ An immaculately sculpted porphyry statue of an archer poised to release an
 arrow, with a full quiver at the hip. The individually sculpted arrows look
 almost as if they could be removed one by one and used in a real bow.
 %%%%
+rock troll monk
+
+It seems a flimsy representation of a monk; nothing more than a half-formed
+memory.
+%%%%
 shadowy statue
 
 Made of some black lusterless stone, this statue seems to be the focal point
