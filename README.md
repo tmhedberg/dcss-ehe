@@ -39,3 +39,4 @@ Changelog
   - Restore earth-themed ziggurat levels
   - Restore rock trolls
   - Restore wood golems
+  - Restore ant larvae

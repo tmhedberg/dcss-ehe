@@ -2228,9 +2228,7 @@ enum monster_type                      // menv[].type
 #endif
 
     MONS_BUTTERFLY,
-#if TAG_MAJOR_VERSION == 34
     MONS_ANT_LARVA,
-#endif
     MONS_WORKER_ANT,
     MONS_SOLDIER_ANT,
     MONS_QUEEN_ANT,
