@@ -40,3 +40,4 @@ Changelog
   - Restore rock trolls
   - Restore wood golems
   - Restore ant larvae
+  - Various minor vault tweaks

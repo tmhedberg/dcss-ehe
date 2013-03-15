@@ -610,8 +610,8 @@ KMONS: L = deep elf master archer
 KMONS: M = deep elf death mage
 KMONS: N = deep elf sorcerer
 : end
-KMONS: 0 = 0 band w:15 / nothing
-KMONS: 9 = 9 band / 0 band
+KMONS: 0 = 0 band
+KMONS: 9 = 9 band
 KMASK: 1290KLMN = !no_monster_gen
 : if you.where() == dgn.level_name(dgn.br_entrance("Zot")) then
 SUBVAULT: H : grunt_zot_portal
@@ -724,10 +724,8 @@ ENDMAP
 NAME: grunt_profane_temple_geh
 TAGS: grunt_profane_temple no_monster_gen
 : grunt_profane_halls_setup(_G)
-NSUBST: 5 = 1:6 / *:5
 KMONS: 4 = red devil / hell hound / flaming corpse w:5
-KMONS: 5 = sun demon
-KMONS: 6 = hellion / balrug
+KMONS: 5 = hellion / balrug
 KFEAT: A = stone_arch
 MARKER: A = lua:props_marker { portal=1 }
 KMASK: 12345 = !no_monster_gen
@@ -824,10 +822,8 @@ ENDMAP
 NAME: grunt_profane_temple_dis
 TAGS: grunt_profane_temple no_monster_gen
 : grunt_profane_halls_setup(_G)
-NSUBST: 5 = 1:6 / *:5
 KMONS: 4 = iron devil
-KMONS: 5 = skeletal warrior
-KMONS: 6 = iron dragon / iron troll / iron troll
+KMONS: 5 =iron dragon / iron troll / iron golem
 KFEAT: A = stone_arch
 MARKER: A = lua:props_marker { portal=1 }
 COLOUR: G = cyan
