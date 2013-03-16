@@ -41,3 +41,4 @@ Changelog
   - Restore wood golems
   - Restore ant larvae
   - Various minor vault tweaks
+  - Re-enable chaos butterfly spawns
