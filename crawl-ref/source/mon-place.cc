@@ -450,7 +450,10 @@ static bool _is_not_zombifiable(monster_type mt)
 
 static bool _has_big_aura(monster_type mt)
 {
-    return mt == MONS_MOTH_OF_SUPPRESSION || mt == MONS_SILENT_SPECTRE;
+    return
+      mt == MONS_MOTH_OF_SUPPRESSION ||
+        mt == MONS_SILENT_SPECTRE ||
+        mt == MONS_CHAOS_BUTTERFLY && !player_in_branch(BRANCH_ABYSS);
 }
 
 static bool _is_incompatible_monster(monster_type mt)
