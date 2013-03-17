@@ -1346,6 +1346,7 @@ static void _generate_area(const map_bitmask &abyss_genlevel_mask)
         _abyss_postvault_fixup();
     }
     _abyss_create_items(abyss_genlevel_mask, placed_abyssal_rune, use_vaults);
+    generate_random_blood_spatter_on_level(&abyss_genlevel_mask);
     setup_environment_effects();
 
     _ensure_player_habitable(true);
@@ -1605,6 +1606,7 @@ retry:
         }
     }
 
+    generate_random_blood_spatter_on_level();
     setup_environment_effects();
 }
 
