@@ -242,6 +242,10 @@ book of minor magic
 
 Księga czarów.
 %%%%
+book of morphology
+
+Księga czarów.
+%%%%
 book of necromancy
 
 Zakurzony tom zabronionej magii.

@@ -282,6 +282,10 @@ book of minor magic
 
 Un livre de sortilèges magiques.
 %%%%
+book of morphology
+
+Un livre de sortilèges magiques.
+%%%%
 book of necromancy
 
 Un livre macabre de sorts magiques, souvent le tout premier grimoire de

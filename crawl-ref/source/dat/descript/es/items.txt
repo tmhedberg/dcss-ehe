@@ -244,6 +244,10 @@ book of minor magic
 
 Un libro con hechizos mágicos.
 %%%%
+book of morphology
+
+Un libro con hechizos mágicos.
+%%%%
 book of necromancy
 
 Un polvoriento tomo de magia prohibida.
