@@ -155,10 +155,10 @@
 
 {   // Book of Transfigurations
     SPELL_STONESKIN,
-    SPELL_POLYMORPH,
     SPELL_ICE_FORM,
     SPELL_STATUE_FORM,
     SPELL_DRAGON_FORM,
+    SPELL_NO_SPELL,
     SPELL_NO_SPELL,
     SPELL_NO_SPELL,
     SPELL_NO_SPELL,
@@ -297,7 +297,6 @@
     SPELL_NO_SPELL,
 },
 
-#if TAG_MAJOR_VERSION == 34
 {   // Book of Battle
     SPELL_INFUSION,
     SPELL_SHROUD_OF_GOLUBRIA,
@@ -318,7 +317,6 @@
     SPELL_NO_SPELL,
     SPELL_NO_SPELL,
 },
-#endif
 
 {   // Book of Geomancy
     SPELL_SANDBLAST,
@@ -449,7 +447,7 @@
     SPELL_CONDENSATION_SHIELD,
     SPELL_INTOXICATE,
     SPELL_PETRIFY,
-    SPELL_IGNITE_POISON,
+    SPELL_NO_SPELL
 },
 
 {   // Book of Beasts
