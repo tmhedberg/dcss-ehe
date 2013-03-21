@@ -1169,6 +1169,7 @@ static targetter* _spell_targetter(spell_type spell, int pow, int range)
     case SPELL_PETRIFY:
     case SPELL_POLYMORPH:
     case SPELL_DIG:
+    case SPELL_CIGOTUVIS_DEGENERATION:
     case SPELL_DISPEL_UNDEAD:
         return new targetter_beam(&you, range, spell_to_zap(spell), pow, 0, 0);
     default:
@@ -1477,10 +1478,6 @@ static spret_type _do_cast(spell_type spell, int powc,
 
     case SPELL_EVAPORATE:
         return cast_evaporate(powc, beam, potion, fail);
-
-    case SPELL_CIGOTUVIS_DEGENERATION:
-        mpr("Sorry, this spell has degenerated away!");
-        return SPRET_ABORT;
 
     case SPELL_POISONOUS_CLOUD:
         return cast_big_c(powc, CLOUD_POISON, &you, beam, fail);

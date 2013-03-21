@@ -167,6 +167,10 @@ Cette créature peut cracher un large souffle de fumées remplis de l'essence
 même du chaos. Se faire prendre dans cette fumée provoque des effets aussi
 prévisible que Xom lui-même.
 %%%%
+Cigotuvi's Degeneration spell
+
+Ce sort transforme une créature en une masse pulsante de chair.
+%%%%
 Cold Breath spell
 
 Cette créature peut cracher un souffle concentré d'air glacial. Il peut

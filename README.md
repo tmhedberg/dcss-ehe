@@ -42,3 +42,4 @@ Changelog
   - Restore ant larvae
   - Various minor vault tweaks
   - Re-enable chaos butterfly spawns
+  - Restore Cigotuvi's Degeneration
