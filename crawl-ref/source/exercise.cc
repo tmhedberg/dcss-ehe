@@ -321,7 +321,7 @@ void practise(exer_type ex, int param1)
     switch (ex)
     {
     case EX_WILL_STAB:
-        sk = SK_STEALTH;
+        sk = SK_STABBING;
         deg = 1 + random2avg(5, 4);
         exercise(sk, deg);
         break;

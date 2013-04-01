@@ -1887,10 +1887,6 @@ int melee_attack::player_apply_final_multipliers(int damage)
 
 int melee_attack::player_stab_weapon_bonus(int damage)
 {
-    int stab_skill = you.skill(wpn_skill, 50) + you.skill(SK_STEALTH, 50);
-    int modified_wpn_skill = (player_equip_unrand_effect(UNRAND_BOOTS_ASSASSIN)
-                              ? SK_SHORT_BLADES : wpn_skill);
-
     if (weapon && weapon->base_type == OBJ_WEAPONS
         && (weapon->sub_type == WPN_CLUB
             || weapon->sub_type == WPN_SPEAR
@@ -1902,14 +1898,13 @@ int melee_attack::player_stab_weapon_bonus(int damage)
         goto ok_weaps;
     }
 
-    switch (modified_wpn_skill)
+    switch (wpn_skill)
     {
     case SK_SHORT_BLADES:
     {
-        int bonus = (you.dex() * (stab_skill + 100)) / 500;
+        int bonus = (you.dex() * (you.skill(SK_STABBING, 100) + 100)) / 500;
 
-        // We might be unarmed if we're using the boots of the Assassin.
-        if (!weapon || weapon->sub_type != WPN_DAGGER)
+        if (weapon->sub_type != WPN_DAGGER)
             bonus /= 2;
 
         bonus   = stepdown_value(bonus, 10, 10, 30, 30);
@@ -1918,12 +1913,19 @@ int melee_attack::player_stab_weapon_bonus(int damage)
     // fall through
     ok_weaps:
     case SK_LONG_BLADES:
-        damage *= 10 + div_rand_round(stab_skill, 100 *
-                       (stab_bonus + (modified_wpn_skill == SK_SHORT_BLADES ? 0 : 2)));
+        // Boost stab bonus when wearing Boots of the Assassin
+        int modified_stab_bonus;
+        if (player_equip_unrand_effect(UNRAND_BOOTS_ASSASSIN) && stab_bonus > 1)
+            modified_stab_bonus = stab_bonus - 1;
+        else
+            modified_stab_bonus = stab_bonus;
+
+        damage *= 10 + you.skill_rdiv(SK_STABBING) /
+                       (modified_stab_bonus + (wpn_skill == SK_SHORT_BLADES ? 0 : 2));
         damage /= 10;
         // fall through
     default:
-        damage *= 12 + div_rand_round(stab_skill, 100 * stab_bonus);
+        damage *= 12 + you.skill_rdiv(SK_STABBING, 1, stab_bonus);
         damage /= 12;
         break;
     }
@@ -4142,9 +4144,7 @@ void melee_attack::player_stab_check()
     // See if we need to roll against dexterity / stabbing.
     if (stab_attempt && roll_needed)
     {
-        stab_attempt = x_chance_in_y(you.skill_rdiv(wpn_skill, 1, 2)
-                                     + you.skill_rdiv(SK_STEALTH, 1, 2)
-                                     + you.dex() + 1,
+        stab_attempt = x_chance_in_y(you.skill_rdiv(SK_STABBING) + you.dex() + 1,
                                      roll);
     }
 
@@ -5831,12 +5831,9 @@ int melee_attack::calc_damage()
 
 int melee_attack::apply_defender_ac(int damage, int damage_max, bool half_ac)
 {
-    int stab_bypass = 0;
-    if (stab_bonus)
-    {
-        stab_bypass = you.skill(wpn_skill, 50) + you.skill(SK_STEALTH, 50);
-        stab_bypass = random2(div_rand_round(stab_bypass, 100 * stab_bonus));
-    }
+    int stab_bypass = stab_bonus
+                      ? random2(you.skill_rdiv(SK_STABBING) / stab_bonus)
+                      : 0;
     int after_ac = defender->apply_ac(damage, damage_max,
                                       half_ac ? AC_HALF : AC_NORMAL,
                                       stab_bypass);

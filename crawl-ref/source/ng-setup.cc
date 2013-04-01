@@ -806,6 +806,7 @@ static void _give_items_skills(const newgame_def& ng)
         you.skills[SK_SPELLCASTING] = 2;
         you.skills[SK_DODGING]      = 2;
         you.skills[SK_STEALTH]      = 2;
+        you.skills[SK_STABBING]     = 1;
         break;
 
     case JOB_SUMMONER:
@@ -943,7 +944,8 @@ static void _give_items_skills(const newgame_def& ng)
         weap_skill = 2;
         you.skills[SK_FIGHTING]     = 2;
         you.skills[SK_DODGING]      = 1;
-        you.skills[SK_STEALTH]      = 4;
+        you.skills[SK_STEALTH]      = 3;
+        you.skills[SK_STABBING]     = 2;
         you.skills[SK_THROWING]     = 2;
         break;
 

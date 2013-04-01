@@ -44,3 +44,4 @@ Changelog
   - Re-enable chaos butterfly spawns
   - Restore Cigotuvi's Degeneration
   - Restore Book of Morphology
+  - Retain stabbing skill

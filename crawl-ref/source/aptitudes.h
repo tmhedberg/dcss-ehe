@@ -27,9 +27,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_HUMAN,           SK_ARMOUR,          0),
     APT(SP_HUMAN,           SK_DODGING,         0),
     APT(SP_HUMAN,           SK_STEALTH,         1),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_HUMAN,           SK_STABBING,        0),
-#endif
     APT(SP_HUMAN,           SK_SHIELDS,         0),
     APT(SP_HUMAN,           SK_TRAPS,           0),
     APT(SP_HUMAN,           SK_UNARMED_COMBAT,  0),
@@ -64,9 +62,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_HIGH_ELF,        SK_ARMOUR,         -1),
     APT(SP_HIGH_ELF,        SK_DODGING,         1),
     APT(SP_HIGH_ELF,        SK_STEALTH,         2),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_HIGH_ELF,        SK_STABBING,       -1),
-#endif
     APT(SP_HIGH_ELF,        SK_SHIELDS,        -1),
     APT(SP_HIGH_ELF,        SK_TRAPS,           0),
     APT(SP_HIGH_ELF,        SK_UNARMED_COMBAT, -2),
@@ -101,9 +97,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_DEEP_ELF,        SK_ARMOUR,         -2),
     APT(SP_DEEP_ELF,        SK_DODGING,         2),
     APT(SP_DEEP_ELF,        SK_STEALTH,         3),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_DEEP_ELF,        SK_STABBING,        1),
-#endif
     APT(SP_DEEP_ELF,        SK_SHIELDS,        -2),
     APT(SP_DEEP_ELF,        SK_TRAPS,           0),
     APT(SP_DEEP_ELF,        SK_UNARMED_COMBAT, -2),
@@ -138,9 +132,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_SLUDGE_ELF,      SK_ARMOUR,         -2),
     APT(SP_SLUDGE_ELF,      SK_DODGING,         2),
     APT(SP_SLUDGE_ELF,      SK_STEALTH,         2),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_SLUDGE_ELF,      SK_STABBING,        0),
-#endif
     APT(SP_SLUDGE_ELF,      SK_SHIELDS,        -2),
     APT(SP_SLUDGE_ELF,      SK_TRAPS,           0),
     APT(SP_SLUDGE_ELF,      SK_UNARMED_COMBAT,  1),
@@ -210,9 +202,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_HALFLING,        SK_ARMOUR,         -2),
     APT(SP_HALFLING,        SK_DODGING,         2),
     APT(SP_HALFLING,        SK_STEALTH,         4),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_HALFLING,        SK_STABBING,        0),
-#endif
     APT(SP_HALFLING,        SK_SHIELDS,         1),
     APT(SP_HALFLING,        SK_TRAPS,           0),
     APT(SP_HALFLING,        SK_UNARMED_COMBAT, -2),
@@ -247,9 +237,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_HILL_ORC,        SK_ARMOUR,          1),
     APT(SP_HILL_ORC,        SK_DODGING,        -2),
     APT(SP_HILL_ORC,        SK_STEALTH,        -1),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_HILL_ORC,        SK_STABBING,        2),
-#endif
     APT(SP_HILL_ORC,        SK_SHIELDS,         1),
     APT(SP_HILL_ORC,        SK_TRAPS,           0),
     APT(SP_HILL_ORC,        SK_UNARMED_COMBAT,  1),
@@ -284,9 +272,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_KOBOLD,          SK_ARMOUR,         -2),
     APT(SP_KOBOLD,          SK_DODGING,         2),
     APT(SP_KOBOLD,          SK_STEALTH,         4),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_KOBOLD,          SK_STABBING,        2),
-#endif
     APT(SP_KOBOLD,          SK_SHIELDS,        -2),
     APT(SP_KOBOLD,          SK_TRAPS,           0),
     APT(SP_KOBOLD,          SK_UNARMED_COMBAT,  0),
@@ -321,9 +307,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_MUMMY,           SK_ARMOUR,         -2),
     APT(SP_MUMMY,           SK_DODGING,        -2),
     APT(SP_MUMMY,           SK_STEALTH,        -1),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_MUMMY,           SK_STABBING,       -2),
-#endif
     APT(SP_MUMMY,           SK_SHIELDS,        -2),
     APT(SP_MUMMY,           SK_TRAPS,          -2),
     APT(SP_MUMMY,           SK_UNARMED_COMBAT, -2),
@@ -358,9 +342,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_NAGA,            SK_ARMOUR,         -2),
     APT(SP_NAGA,            SK_DODGING,        -2),
     APT(SP_NAGA,            SK_STEALTH,         5),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_NAGA,            SK_STABBING,        0),
-#endif
     APT(SP_NAGA,            SK_SHIELDS,        -2),
     APT(SP_NAGA,            SK_TRAPS,           0),
     APT(SP_NAGA,            SK_UNARMED_COMBAT,  0),
@@ -395,9 +377,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_OGRE,            SK_ARMOUR,         -2),
     APT(SP_OGRE,            SK_DODGING,        -1),
     APT(SP_OGRE,            SK_STEALTH,        -1),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_OGRE,            SK_STABBING,       -2),
-#endif
     APT(SP_OGRE,            SK_SHIELDS,        -1),
     APT(SP_OGRE,            SK_TRAPS,          -2),
     APT(SP_OGRE,            SK_UNARMED_COMBAT, -1),
@@ -432,9 +412,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_TROLL,           SK_ARMOUR,         -2),
     APT(SP_TROLL,           SK_DODGING,        -2),
     APT(SP_TROLL,           SK_STEALTH,        -4),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_TROLL,           SK_STABBING,       -2),
-#endif
     APT(SP_TROLL,           SK_SHIELDS,        -2),
     APT(SP_TROLL,           SK_TRAPS,          -4),
     APT(SP_TROLL,           SK_UNARMED_COMBAT,  0),
@@ -469,9 +447,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_RED_DRACONIAN,   SK_ARMOUR,        -99),
     APT(SP_RED_DRACONIAN,   SK_DODGING,        -1),
     APT(SP_RED_DRACONIAN,   SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_RED_DRACONIAN,   SK_STABBING,        0),
-#endif
     APT(SP_RED_DRACONIAN,   SK_SHIELDS,         0),
     APT(SP_RED_DRACONIAN,   SK_TRAPS,           0),
     APT(SP_RED_DRACONIAN,   SK_UNARMED_COMBAT,  0),
@@ -506,9 +482,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_WHITE_DRACONIAN, SK_ARMOUR,        -99),
     APT(SP_WHITE_DRACONIAN, SK_DODGING,        -1),
     APT(SP_WHITE_DRACONIAN, SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_WHITE_DRACONIAN, SK_STABBING,        0),
-#endif
     APT(SP_WHITE_DRACONIAN, SK_SHIELDS,         0),
     APT(SP_WHITE_DRACONIAN, SK_TRAPS,           0),
     APT(SP_WHITE_DRACONIAN, SK_UNARMED_COMBAT,  0),
@@ -543,9 +517,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_GREEN_DRACONIAN, SK_ARMOUR,        -99),
     APT(SP_GREEN_DRACONIAN, SK_DODGING,        -1),
     APT(SP_GREEN_DRACONIAN, SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_GREEN_DRACONIAN, SK_STABBING,        0),
-#endif
     APT(SP_GREEN_DRACONIAN, SK_SHIELDS,         0),
     APT(SP_GREEN_DRACONIAN, SK_TRAPS,           0),
     APT(SP_GREEN_DRACONIAN, SK_UNARMED_COMBAT,  0),
@@ -580,9 +552,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_YELLOW_DRACONIAN,SK_ARMOUR,        -99),
     APT(SP_YELLOW_DRACONIAN,SK_DODGING,        -1),
     APT(SP_YELLOW_DRACONIAN,SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_YELLOW_DRACONIAN,SK_STABBING,        0),
-#endif
     APT(SP_YELLOW_DRACONIAN,SK_SHIELDS,         0),
     APT(SP_YELLOW_DRACONIAN,SK_TRAPS,           0),
     APT(SP_YELLOW_DRACONIAN,SK_UNARMED_COMBAT,  0),
@@ -617,9 +587,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_GREY_DRACONIAN,  SK_ARMOUR,        -99),
     APT(SP_GREY_DRACONIAN,  SK_DODGING,        -1),
     APT(SP_GREY_DRACONIAN,  SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_GREY_DRACONIAN,  SK_STABBING,        0),
-#endif
     APT(SP_GREY_DRACONIAN,  SK_SHIELDS,         0),
     APT(SP_GREY_DRACONIAN,  SK_TRAPS,           0),
     APT(SP_GREY_DRACONIAN,  SK_UNARMED_COMBAT,  0),
@@ -654,9 +622,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_BLACK_DRACONIAN, SK_ARMOUR,        -99),
     APT(SP_BLACK_DRACONIAN, SK_DODGING,        -1),
     APT(SP_BLACK_DRACONIAN, SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_BLACK_DRACONIAN, SK_STABBING,        0),
-#endif
     APT(SP_BLACK_DRACONIAN, SK_SHIELDS,         0),
     APT(SP_BLACK_DRACONIAN, SK_TRAPS,           0),
     APT(SP_BLACK_DRACONIAN, SK_UNARMED_COMBAT,  0),
@@ -691,9 +657,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_PURPLE_DRACONIAN,SK_ARMOUR,        -99),
     APT(SP_PURPLE_DRACONIAN,SK_DODGING,        -1),
     APT(SP_PURPLE_DRACONIAN,SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_PURPLE_DRACONIAN,SK_STABBING,        0),
-#endif
     APT(SP_PURPLE_DRACONIAN,SK_SHIELDS,         0),
     APT(SP_PURPLE_DRACONIAN,SK_TRAPS,           0),
     APT(SP_PURPLE_DRACONIAN,SK_UNARMED_COMBAT,  0),
@@ -728,9 +692,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_MOTTLED_DRACONIAN,SK_ARMOUR,        -99),
     APT(SP_MOTTLED_DRACONIAN,SK_DODGING,        -1),
     APT(SP_MOTTLED_DRACONIAN,SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_MOTTLED_DRACONIAN,SK_STABBING,        0),
-#endif
     APT(SP_MOTTLED_DRACONIAN,SK_SHIELDS,         0),
     APT(SP_MOTTLED_DRACONIAN,SK_TRAPS,           0),
     APT(SP_MOTTLED_DRACONIAN,SK_UNARMED_COMBAT,  0),
@@ -765,9 +727,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_PALE_DRACONIAN,  SK_ARMOUR,        -99),
     APT(SP_PALE_DRACONIAN,  SK_DODGING,        -1),
     APT(SP_PALE_DRACONIAN,  SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_PALE_DRACONIAN,  SK_STABBING,        0),
-#endif
     APT(SP_PALE_DRACONIAN,  SK_SHIELDS,         0),
     APT(SP_PALE_DRACONIAN,  SK_TRAPS,           0),
     APT(SP_PALE_DRACONIAN,  SK_UNARMED_COMBAT,  0),
@@ -802,9 +762,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_BASE_DRACONIAN,  SK_ARMOUR,        -99),
     APT(SP_BASE_DRACONIAN,  SK_DODGING,        -1),
     APT(SP_BASE_DRACONIAN,  SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_BASE_DRACONIAN,  SK_STABBING,        0),
-#endif
     APT(SP_BASE_DRACONIAN,  SK_SHIELDS,         0),
     APT(SP_BASE_DRACONIAN,  SK_TRAPS,           0),
     APT(SP_BASE_DRACONIAN,  SK_UNARMED_COMBAT,  0),
@@ -839,9 +797,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_CENTAUR,         SK_ARMOUR,         -3),
     APT(SP_CENTAUR,         SK_DODGING,        -3),
     APT(SP_CENTAUR,         SK_STEALTH,        -3),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_CENTAUR,         SK_STABBING,       -3),
-#endif
     APT(SP_CENTAUR,         SK_SHIELDS,        -3),
     APT(SP_CENTAUR,         SK_TRAPS,          -2),
     APT(SP_CENTAUR,         SK_UNARMED_COMBAT,  0),
@@ -876,9 +832,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_DEMIGOD,         SK_ARMOUR,         -1),
     APT(SP_DEMIGOD,         SK_DODGING,        -1),
     APT(SP_DEMIGOD,         SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_DEMIGOD,         SK_STABBING,       -1),
-#endif
     APT(SP_DEMIGOD,         SK_SHIELDS,        -1),
     APT(SP_DEMIGOD,         SK_TRAPS,          -1),
     APT(SP_DEMIGOD,         SK_UNARMED_COMBAT, -1),
@@ -913,9 +867,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_SPRIGGAN,        SK_ARMOUR,         -3),
     APT(SP_SPRIGGAN,        SK_DODGING,         4),
     APT(SP_SPRIGGAN,        SK_STEALTH,         5),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_SPRIGGAN,        SK_STABBING,        4),
-#endif
     APT(SP_SPRIGGAN,        SK_SHIELDS,        -3),
     APT(SP_SPRIGGAN,        SK_TRAPS,           3),
     APT(SP_SPRIGGAN,        SK_UNARMED_COMBAT, -2),
@@ -950,9 +902,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_MINOTAUR,        SK_ARMOUR,          2),
     APT(SP_MINOTAUR,        SK_DODGING,         1),
     APT(SP_MINOTAUR,        SK_STEALTH,        -1),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_MINOTAUR,        SK_STABBING,       -1),
-#endif
     APT(SP_MINOTAUR,        SK_SHIELDS,         2),
     APT(SP_MINOTAUR,        SK_TRAPS,           0),
     APT(SP_MINOTAUR,        SK_UNARMED_COMBAT,  1),
@@ -1024,9 +974,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_DEMONSPAWN,      SK_ARMOUR,         -1),
     APT(SP_DEMONSPAWN,      SK_DODGING,        -1),
     APT(SP_DEMONSPAWN,      SK_STEALTH,         0),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_DEMONSPAWN,      SK_STABBING,       -1),
-#endif
     APT(SP_DEMONSPAWN,      SK_SHIELDS,        -1),
     APT(SP_DEMONSPAWN,      SK_TRAPS,          -1),
     APT(SP_DEMONSPAWN,      SK_UNARMED_COMBAT, -1),
@@ -1061,9 +1009,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_GHOUL,           SK_ARMOUR,         -1),
     APT(SP_GHOUL,           SK_DODGING,        -1),
     APT(SP_GHOUL,           SK_STEALTH,         2),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_GHOUL,           SK_STABBING,        0),
-#endif
     APT(SP_GHOUL,           SK_SHIELDS,        -1),
     APT(SP_GHOUL,           SK_TRAPS,          -1),
     APT(SP_GHOUL,           SK_UNARMED_COMBAT,  1),
@@ -1098,9 +1044,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_TENGU,           SK_ARMOUR,          1),
     APT(SP_TENGU,           SK_DODGING,         1),
     APT(SP_TENGU,           SK_STEALTH,         1),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_TENGU,           SK_STABBING,        1),
-#endif
     APT(SP_TENGU,           SK_SHIELDS,         0),
     APT(SP_TENGU,           SK_TRAPS,           0),
     APT(SP_TENGU,           SK_UNARMED_COMBAT,  1),
@@ -1135,9 +1079,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_MERFOLK,         SK_ARMOUR,         -3),
     APT(SP_MERFOLK,         SK_DODGING,         3),
     APT(SP_MERFOLK,         SK_STEALTH,         2),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_MERFOLK,         SK_STABBING,        2),
-#endif
     APT(SP_MERFOLK,         SK_SHIELDS,         0),
     APT(SP_MERFOLK,         SK_TRAPS,          -1),
     APT(SP_MERFOLK,         SK_UNARMED_COMBAT,  1),
@@ -1172,9 +1114,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_VAMPIRE,         SK_ARMOUR,         -2),
     APT(SP_VAMPIRE,         SK_DODGING,         1),
     APT(SP_VAMPIRE,         SK_STEALTH,         5),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_VAMPIRE,         SK_STABBING,        1),
-#endif
     APT(SP_VAMPIRE,         SK_SHIELDS,        -1),
     APT(SP_VAMPIRE,         SK_TRAPS,           0),
     APT(SP_VAMPIRE,         SK_UNARMED_COMBAT,  1),
@@ -1209,9 +1149,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_DEEP_DWARF,      SK_ARMOUR,          1),
     APT(SP_DEEP_DWARF,      SK_DODGING,         1),
     APT(SP_DEEP_DWARF,      SK_STEALTH,         3),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_DEEP_DWARF,      SK_STABBING,       -1),
-#endif
     APT(SP_DEEP_DWARF,      SK_SHIELDS,         1),
     APT(SP_DEEP_DWARF,      SK_TRAPS,           1),
     APT(SP_DEEP_DWARF,      SK_UNARMED_COMBAT, -1),
@@ -1246,9 +1184,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_FELID,           SK_ARMOUR,        -99),
     APT(SP_FELID,           SK_DODGING,         3),
     APT(SP_FELID,           SK_STEALTH,         4),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_FELID,           SK_STABBING,        3),
-#endif
     APT(SP_FELID,           SK_SHIELDS,       -99),
     APT(SP_FELID,           SK_TRAPS,           2),
     APT(SP_FELID,           SK_UNARMED_COMBAT,  0),
@@ -1283,9 +1219,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_OCTOPODE,        SK_ARMOUR,        -99),
     APT(SP_OCTOPODE,        SK_DODGING,         0),
     APT(SP_OCTOPODE,        SK_STEALTH,         4),
-#if TAG_MAJOR_VERSION == 34
     APT(SP_OCTOPODE,        SK_STABBING,        0),
-#endif
     APT(SP_OCTOPODE,        SK_SHIELDS,         0),
     APT(SP_OCTOPODE,        SK_TRAPS,           1),
     APT(SP_OCTOPODE,        SK_UNARMED_COMBAT,  0),

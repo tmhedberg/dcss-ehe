@@ -3218,9 +3218,7 @@ enum skill_type
     SK_ARMOUR,
     SK_DODGING,
     SK_STEALTH,
-#if TAG_MAJOR_VERSION == 34
     SK_STABBING,
-#endif
     SK_SHIELDS,
     SK_TRAPS,
     SK_UNARMED_COMBAT,
