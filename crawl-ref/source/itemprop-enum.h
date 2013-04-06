@@ -387,9 +387,7 @@ enum special_missile_type // to separate from weapons in general {dlb}
     SPMSL_SLOW,
     SPMSL_SLEEP,
     SPMSL_CONFUSION,
-#if TAG_MAJOR_VERSION == 34
     SPMSL_SICKNESS,
-#endif
     SPMSL_FRENZY,
     NUM_REAL_SPECIAL_MISSILES,
     SPMSL_BLINDING,

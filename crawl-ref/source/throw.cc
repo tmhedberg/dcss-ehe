@@ -951,7 +951,6 @@ static bool _slow_hit_victim(bolt &beam, actor* victim, int dmg)
     return true;
 }
 
-#if TAG_MAJOR_VERSION == 34
 static bool _sickness_hit_victim(bolt &beam, actor* victim, int dmg)
 {
     if (beam.is_tracer)
@@ -964,7 +963,6 @@ static bool _sickness_hit_victim(bolt &beam, actor* victim, int dmg)
     victim->sicken(40 + random2(dur));
     return true;
 }
-#endif
 
 static bool _rage_hit_victim(bolt &beam, actor* victim, int dmg)
 {
@@ -1129,9 +1127,7 @@ static bool _setup_missile_beam(const actor *agent, bolt &beam, item_def &item,
     const bool slow         = ammo_brand == SPMSL_SLOW;
     const bool sleep        = ammo_brand == SPMSL_SLEEP;
     const bool confusion    = ammo_brand == SPMSL_CONFUSION;
-#if TAG_MAJOR_VERSION == 34
     const bool sickness     = ammo_brand == SPMSL_SICKNESS;
-#endif
     const bool rage         = ammo_brand == SPMSL_FRENZY;
     const bool blinding     = ammo_brand == SPMSL_BLINDING;
 
@@ -1226,10 +1222,8 @@ static bool _setup_missile_beam(const actor *agent, bolt &beam, item_def &item,
             beam.hit_funcs.push_back(_sleep_hit_victim);
         if (confusion)
             beam.hit_funcs.push_back(_confusion_hit_victim);
-#if TAG_MAJOR_VERSION == 34
         if (sickness)
             beam.hit_funcs.push_back(_sickness_hit_victim);
-#endif
         if (rage)
             beam.hit_funcs.push_back(_rage_hit_victim);
     }

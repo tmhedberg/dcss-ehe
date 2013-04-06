@@ -1802,6 +1802,7 @@ static special_missile_type _determine_missile_brand(const item_def& item,
 
         rc = random_choose_weighted(20, SPMSL_SLEEP,
                                     20, SPMSL_SLOW,
+                                    20, SPMSL_SICKNESS,
                                     20, SPMSL_CONFUSION,
                                     10, SPMSL_PARALYSIS,
                                     10, SPMSL_FRENZY,

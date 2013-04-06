@@ -5714,11 +5714,9 @@ tileidx_t tileidx_known_brand(const item_def &item)
             return TILE_BRAND_PARALYSIS;
         case SPMSL_SLOW:
             return TILE_BRAND_SLOWING;
-#if TAG_MAJOR_VERSION == 34
         case SPMSL_SICKNESS:
             return TILE_BRAND_SICKNESS;
-#endif
-        case SPMSL_FRENZY:
+        case SPMSL_RAGE:
             return TILE_BRAND_FRENZY;
         case SPMSL_SLEEP:
             return TILE_BRAND_SLEEP;
