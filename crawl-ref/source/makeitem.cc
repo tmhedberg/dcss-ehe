@@ -1995,6 +1995,7 @@ static void _generate_missile_item(item_def& item, int force_type,
                                    10, MI_NEEDLE,
                                    3,  MI_TOMAHAWK,
                                    2,  MI_JAVELIN,
+                                   1,  MI_PIE,
                                    1,  MI_THROWING_NET,
                                    1,  MI_LARGE_ROCK,
                                    0);
@@ -2033,6 +2034,8 @@ static void _generate_missile_item(item_def& item, int force_type,
     {
         item.quantity = random_range(2, 8);
     }
+    else if (item.sub_type == MI_PIE)
+        item.quantity = random_range(1, 4);
     else if (get_ammo_brand(item) != SPMSL_NORMAL)
         item.quantity = 1 + random2(7) + random2(10) + random2(10);
     else
