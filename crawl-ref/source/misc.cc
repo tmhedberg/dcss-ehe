@@ -2554,7 +2554,7 @@ void maybe_id_resist(beam_type flavour)
 
     case BEAM_POISON:
     case BEAM_POISON_ARROW:
-    case BEAM_MEPHITIC:
+    case BEAM_POTION_MEPHITIC:
         _maybe_id_jewel(RING_POISON_RESISTANCE, NUM_JEWELLERY, ARTP_POISON);
         break;
 
