@@ -17,9 +17,4 @@ function callback.wall_jericho_tick(data, triggerable, triggerer, marker, ev)
   -- do nothing
 end
 
-function callback.fedhas_growing_garden_grow(data, triggerable,
-                                             triggerer, marker, ev)
-  -- do nothing
-end
-
 }}
