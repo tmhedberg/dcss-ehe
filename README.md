@@ -45,3 +45,4 @@ Changelog
   - Restore Cigotuvi's Degeneration
   - Restore Book of Morphology
   - Retain stabbing skill
+  - Retain splint mail
