@@ -214,7 +214,7 @@ SUBST: y = x..
 SUBST: ; = %A.....l
 : dgn.delayed_decay(_G, '%', 'dwarf skeleton')
 KITEM: A = any weapon race:dwarven w:20 / chain mail race:dwarven w:60 / \
-           plate armour race:dwarven w:19 / \
+           splint mail race:dwarven w:30 / plate armour race:dwarven w:19 / \
            crystal plate armour race:dwarven w:1
 : hell_entry_tier(_G, "mid")
 MAP
