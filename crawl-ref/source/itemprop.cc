@@ -72,6 +72,8 @@ static const armour_def Armour_prop[NUM_ARMOURS] =
         EQ_BODY_ARMOUR, SIZE_SMALL,  SIZE_MEDIUM },
     { ARM_CHAIN_MAIL,           "chain mail",             8, -15,  400,
         EQ_BODY_ARMOUR, SIZE_SMALL,  SIZE_MEDIUM },
+    { ARM_SPLINT_MAIL,          "splint mail",            9, -17,  550,
+        EQ_BODY_ARMOUR, SIZE_SMALL, SIZE_MEDIUM },
     { ARM_PLATE_ARMOUR,         "plate armour",          10, -19,  650,
         EQ_BODY_ARMOUR, SIZE_SMALL, SIZE_MEDIUM },
     { ARM_CRYSTAL_PLATE_ARMOUR, "crystal plate armour",  14, -24, 1200,
@@ -839,8 +841,12 @@ void set_equip_race(item_def &item, iflags_t flags)
             }
             break;
         case OBJ_ARMOUR:
-            if (item.sub_type == ARM_PLATE_ARMOUR || is_hard_helmet(item))
+            if (item.sub_type == ARM_SPLINT_MAIL
+                || item.sub_type == ARM_PLATE_ARMOUR
+                || is_hard_helmet(item))
+            {
                 return;
+            }
             break;
         default:
             break;

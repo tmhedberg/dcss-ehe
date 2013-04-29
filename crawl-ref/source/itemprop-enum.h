@@ -8,6 +8,7 @@ enum armour_type
     ARM_RING_MAIL,
     ARM_SCALE_MAIL,
     ARM_CHAIN_MAIL,
+    ARM_SPLINT_MAIL,
     ARM_PLATE_ARMOUR,
 
     ARM_CLOAK,

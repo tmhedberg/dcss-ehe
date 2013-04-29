@@ -2155,10 +2155,10 @@ static void _give_armour(monster* mon, int level, bool spectral_orcs)
             level = MAKE_GOOD_ITEM;
         item_race      = MAKE_ITEM_DWARVEN;
         item.base_type = OBJ_ARMOUR;
-        item.sub_type = random_choose_weighted(8, ARM_CHAIN_MAIL,
-                                               10, ARM_PLATE_ARMOUR,
-                                               1, ARM_CRYSTAL_PLATE_ARMOUR,
-                                               0);
+        item.sub_type = random_choose_weighted(3, ARM_CHAIN_MAIL,
+                            5, ARM_SPLINT_MAIL, 10, ARM_PLATE_ARMOUR,
+                            1, ARM_CRYSTAL_PLATE_ARMOUR,
+                            0);
         break;
 
     case MONS_JORGRUN:
@@ -2201,7 +2201,8 @@ static void _give_armour(monster* mon, int level, bool spectral_orcs)
     case MONS_IRONHEART_PRESERVER:
     case MONS_ANCIENT_CHAMPION:
         item.base_type = OBJ_ARMOUR;
-        item.sub_type  = random_choose(ARM_CHAIN_MAIL, ARM_PLATE_ARMOUR, -1);
+        item.sub_type  = random_choose(ARM_CHAIN_MAIL,   ARM_SPLINT_MAIL,
+                                       ARM_PLATE_ARMOUR, -1);
         break;
 
     case MONS_VAULT_SENTINEL:
@@ -2212,7 +2213,8 @@ static void _give_armour(monster* mon, int level, bool spectral_orcs)
 
     case MONS_FREDERICK:
         item.base_type = OBJ_ARMOUR;
-        item.sub_type  = random_choose(ARM_SCALE_MAIL,   ARM_CHAIN_MAIL, -1);
+        item.sub_type  = random_choose(ARM_SCALE_MAIL,   ARM_CHAIN_MAIL,
+                                       ARM_SPLINT_MAIL, -1);
         break;
 
     case MONS_MARGERY:
@@ -2255,7 +2257,8 @@ static void _give_armour(monster* mon, int level, bool spectral_orcs)
     case MONS_DEEP_DWARF_BERSERKER:
         item_race      = MAKE_ITEM_DWARVEN;
         item.base_type = OBJ_ARMOUR;
-        item.sub_type  = random_choose_weighted(7, ARM_CHAIN_MAIL,
+        item.sub_type  = random_choose_weighted(5, ARM_CHAIN_MAIL,
+                                                2, ARM_SPLINT_MAIL,
                                                 1, ARM_PLATE_ARMOUR,
                                                 0);
         break;

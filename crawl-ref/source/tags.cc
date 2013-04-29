@@ -3251,12 +3251,6 @@ void unmarshallItem(reader &th, item_def &item)
             origin_reset(item);
     }
 
-    if (th.getMinorVersion() < TAG_MINOR_NO_SPLINT
-        && item.base_type == OBJ_ARMOUR && item.sub_type > ARM_CHAIN_MAIL)
-    {
-        --item.sub_type;
-    }
-
     if (th.getMinorVersion() < TAG_MINOR_BOX_OF_BEASTS_CHARGES
         && item.base_type == OBJ_MISCELLANY && item.sub_type == MISC_BOX_OF_BEASTS)
     {
