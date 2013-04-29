@@ -1556,6 +1556,12 @@ spear
 A hunting weapon consisting of a wooden shaft with a pointed metal head
 fastened on one end.
 %%%%
+splint mail
+
+A heavy suit of body armour consisting of narrow strips of metal which are
+attached lengthwise to a thick leather backing. While offering great
+protection, splint mail is quite difficult to move in without proper training.
+%%%%
 staff
 
 A stout walking stick.

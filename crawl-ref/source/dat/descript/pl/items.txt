@@ -1367,6 +1367,12 @@ spear
 
 Broń myśliwych, składająca się z długiego patyka i prymitywnego grotu na końcu.
 %%%%
+splint mail
+
+Zbroja z prostokątnych metalowych płytek, połączonych metalowymi kółkami. Daje
+to bardzo dobrą ochronę przed ciosami — co prawda znacznie gorszą niż pełna
+zbroja płytowa, jednak umożliwia ona dużo większą swobodę ruchów.
+%%%%
 staff of air
 
 Ten kij zwiększa moc czarów Magii Powietrza, a także zapewnia ochronę przed
