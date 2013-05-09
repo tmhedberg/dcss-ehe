@@ -75,6 +75,7 @@ bool you_foodless_normally();
 
 void handle_starvation();
 string hunger_cost_string(const int hunger);
+void end_nausea();
 
 maybe_bool drop_spoiled_chunks(int weight_needed, bool whole_slot = false);
 #endif

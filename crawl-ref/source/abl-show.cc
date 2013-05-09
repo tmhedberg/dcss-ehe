@@ -1445,6 +1445,7 @@ static bool _check_ability_possible(const ability_def& abil,
             && you.intel(false) == you.max_intel()
             && you.dex(false) == you.max_dex()
             && !player_rotted()
+            && !you.duration[DUR_NAUSEA]
             && !you.duration[DUR_RETCHING]
             && !you.duration[DUR_WEAK])
         {

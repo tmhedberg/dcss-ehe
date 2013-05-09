@@ -95,6 +95,7 @@ bool potion_effect(potion_type pot_eff, int pow, item_def *potion, bool was_know
         you.rotting = 0;
         you.disease = 0;
         you.duration[DUR_CONF] = 0;
+        you.duration[DUR_NAUSEA] = 0;
         break;
 
     case POT_HEAL_WOUNDS:

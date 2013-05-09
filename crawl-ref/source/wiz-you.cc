@@ -310,6 +310,7 @@ void wizard_heal(bool super_heal)
     // Clear most status ailments.
     you.rotting = 0;
     you.disease = 0;
+    you.duration[DUR_NAUSEA]    = 0;
     you.duration[DUR_CONF]      = 0;
     you.duration[DUR_MISLED]    = 0;
     you.duration[DUR_POISONING] = 0;
@@ -817,9 +818,7 @@ static const char* dur_names[] =
     "petrifying",
     "shrouded",
     "tornado cooldown",
-#if TAG_MAJOR_VERSION == 34
     "nausea",
-#endif
     "ambrosia",
 #if TAG_MAJOR_VERSION == 34
     "temporary mutations",

@@ -4095,6 +4095,7 @@ int get_expiration_threshold(duration_type dur)
         return 15 * BASELINE_DELAY;
 
     case DUR_CONFUSING_TOUCH:
+    case DUR_NAUSEA:
         return 20 * BASELINE_DELAY;
 
     case DUR_ANTIMAGIC:
@@ -4363,6 +4364,7 @@ void display_char_status()
         STATUS_NET,
         DUR_POISONING,
         STATUS_SICK,
+        DUR_NAUSEA,
         STATUS_ROT,
         STATUS_CONTAMINATION,
         DUR_CONFUSING_TOUCH,
@@ -5583,7 +5585,7 @@ void dec_haste_player(int delay)
 
 void dec_disease_player(int delay)
 {
-    if (you.disease)
+    if (you.disease || you.duration[DUR_NAUSEA])
     {
         int rr = 50;
 
@@ -5605,12 +5607,18 @@ void dec_disease_player(int delay)
 
         rr = div_rand_round(rr * delay, 50);
 
-        you.disease -= rr;
-        if (you.disease < 0)
-            you.disease = 0;
+        if (you.disease)
+        {
+            you.disease -= rr;
+            if (you.disease < 0)
+                you.disease = 0;
 
-        if (you.disease == 0)
-            mprf(MSGCH_RECOVERY, "You feel your health improve.");
+            if (you.disease == 0)
+                mpr("You feel your health improve.", MSGCH_RECOVERY);
+        }
+
+        if (you.duration[DUR_NAUSEA] && (you.duration[DUR_NAUSEA] -= rr) <= 0)
+            end_nausea();
     }
 }
 
