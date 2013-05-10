@@ -349,7 +349,7 @@ KMONS: O = mummy priest name:mummy_summoner hd:15 col:white n_rpl n_des \
 SHUFFLE: dh, ei, fj, gk
 KITEM: d = book of callings
 KITEM: e = book of summonings
-KITEM: f = staff of channeling
+KITEM: f = staff of energy
 KITEM: g = rod of demonology
 MAP
 d.e
