@@ -1538,6 +1538,7 @@ void scorefile_entry::init(time_t dt)
         STATUS_HUNGER,
         STATUS_REGENERATION,
         STATUS_SICK,
+        DUR_NAUSEA,
         STATUS_SPEED,
         DUR_INVIS,
         DUR_POISONING,
