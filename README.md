@@ -46,3 +46,4 @@ Changelog
   - Restore Book of Morphology
   - Retain stabbing skill
   - Retain splint mail
+  - Retain sludge elves
