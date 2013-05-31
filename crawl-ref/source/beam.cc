@@ -4899,6 +4899,11 @@ static bool _ench_flavour_affects_monster(beam_type flavour, const monster* mon,
         rc = mon->can_polymorph();
         break;
 
+    case BEAM_DEGENERATE:
+        rc = (mon->holiness() == MH_NATURAL
+              && mon->type != MONS_PULSATING_LUMP);
+        break;
+
     case BEAM_ENSLAVE_SOUL:
         rc = (mon->holiness() == MH_NATURAL && mon->attitude != ATT_FRIENDLY);
         break;
@@ -5065,6 +5070,11 @@ mon_resist_type bolt::apply_enchantment_to_monster(monster* mon)
         else
             mon->banish(agent());
         obvious_effect = true;
+        return MON_AFFECTED;
+
+    case BEAM_DEGENERATE:
+        if (monster_polymorph(mon, MONS_PULSATING_LUMP))
+            obvious_effect = true;
         return MON_AFFECTED;
 
     case BEAM_DISPEL_UNDEAD:
@@ -5905,9 +5915,12 @@ bool bolt::nasty_to(const monster* mon) const
     if (flavour == BEAM_TELEPORT)
         return !mon->wont_attack();
 
-    // enslave soul
-    if (flavour == BEAM_ENSLAVE_SOUL)
-        return mon->holiness() == MH_NATURAL;
+    // degeneration / enslave soul
+    if (flavour == BEAM_DEGENERATE
+        || flavour == BEAM_ENSLAVE_SOUL)
+    {
+        return (mon->holiness() == MH_NATURAL);
+    }
 
     // sleep
     if (flavour == BEAM_HIBERNATION)
@@ -6158,6 +6171,7 @@ static string _beam_type_name(beam_type type)
     case BEAM_MALMUTATE:             return "malmutation";
     case BEAM_ENSLAVE:               return "enslave";
     case BEAM_BANISH:                return "banishment";
+    case BEAM_DEGENERATE:            return "degeneration";
     case BEAM_ENSLAVE_SOUL:          return "enslave soul";
     case BEAM_PAIN:                  return "pain";
     case BEAM_DISPEL_UNDEAD:         return "dispel undead";
