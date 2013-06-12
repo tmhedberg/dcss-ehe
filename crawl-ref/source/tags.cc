@@ -4176,9 +4176,6 @@ void unmarshallMonster(reader &th, monster& m)
     m.damage_total = unmarshallShort(th);
 
 #if TAG_MAJOR_VERSION == 34
-    if (m.type == MONS_LABORATORY_RAT)
-        unmarshallGhost(th), m.type = MONS_RAT;
-
     // MONS_SPECTRAL_WEAPON was inserted into the wrong place
     // (0.13-a0-1964-g2fab1c1, merged into trunk in 0.13-a0-1981-g9e80fb2),
     // and then had a ghost_demon structure added (0.13-a0-2055-g6cfaa00).

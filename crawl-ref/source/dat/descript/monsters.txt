@@ -1779,6 +1779,11 @@ with its tentacles and draws them into the depths. Fortunately, the tentacles
 are too big to embrace a small creature like you. Wait, did I say
 "fortunately"?
 %%%%
+laboratory rat
+
+A rat that has been subjected to a wizard's terrible experiments. Who knows
+what it is capable of?
+%%%%
 large abomination
 
 A large and hideous conglomeration of mangled body parts, demonically possessed

@@ -1320,13 +1320,14 @@ shout_type mons_shouts(monster_type mc, bool demon_shout)
 
 bool mons_is_ghost_demon(monster_type mc)
 {
-    return mc == MONS_UGLY_THING
+    return (mc == MONS_UGLY_THING
             || mc == MONS_VERY_UGLY_THING
             || mc == MONS_PLAYER_GHOST
             || mc == MONS_PLAYER_ILLUSION
             || mons_class_is_animated_weapon(mc)
             || mc == MONS_PANDEMONIUM_LORD
-            || mons_class_is_chimeric(mc);
+            || mons_class_is_chimeric(mc)
+            || mc == MONS_LABORATORY_RAT);
 }
 
 bool mons_is_pghost(monster_type mc)
@@ -2478,6 +2479,14 @@ void define_monster(monster* mons)
         mons->set_ghost(ghost);
         mons->uglything_init();
         break;
+    }
+
+    case MONS_LABORATORY_RAT:
+    {
+        ghost_demon ghost;
+        ghost.init_labrat();
+        mons->set_ghost(ghost);
+        mons->ghost_demon_init();
     }
 
     // Load with dummy values so certain monster properties can be queried

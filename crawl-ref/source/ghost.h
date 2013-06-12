@@ -10,6 +10,12 @@
 #include "itemprop-enum.h"
 #include "mon-enum.h"
 
+#ifdef USE_TILE
+int tile_offset_for_labrat_colour(colour_t l_colour);
+#endif
+string adjective_for_labrat_colour(colour_t l_colour);
+colour_t colour_for_labrat_adjective(string adjective);
+
 class ghost_demon
 {
 public:
@@ -52,6 +58,7 @@ public:
     bool init_chimera_for_place(monster* mon, level_id place,
                                 monster_type chimera_type, coord_def pos);
 
+    void init_labrat (colour_t force_colour = BLACK);
     void ugly_thing_to_very_ugly_thing();
 
 public:
