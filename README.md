@@ -48,3 +48,4 @@ Changelog
   - Retain splint mail
   - Retain sludge elves
   - Retain priests (of Zin)
+  - Retain laboratory rats and some removed bat species
