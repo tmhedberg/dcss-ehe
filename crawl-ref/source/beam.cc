@@ -3144,7 +3144,7 @@ bool bolt::is_harmless(const monster* mon) const
     case BEAM_PETRIFY:
         return mon->res_petrify() || mon->petrified();
 
-    case BEAM_MEPHITIC:
+    case BEAM_POTION_MEPHITIC:
         return mon->res_poison() > 0 || mon->is_unbreathing();
 
     case BEAM_GHOSTLY_FLAME:
