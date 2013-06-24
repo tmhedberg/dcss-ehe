@@ -49,3 +49,4 @@ Changelog
   - Retain sludge elves
   - Retain priests (of Zin)
   - Retain laboratory rats and some removed bat species
+  - Retain Pan in the Forest
