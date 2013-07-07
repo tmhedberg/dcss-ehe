@@ -575,7 +575,7 @@ KMONS: O = vampire name:enchanter n_suf hd:15 col:lightred \
 SHUFFLE: dh, ei, fj, gk
 KITEM: d = book of maledictions
 KITEM: e = book of enchantments
-KITEM: f = ring of life protection
+KITEM: f = ring of positive energy
 KITEM: g = scroll of torment
 MAP
 d.e
@@ -620,7 +620,7 @@ SHUFFLE: dh, ei, fj, gk
 KITEM: d = any armour good_item
 KITEM: e = any weapon ego:draining good_item
 KITEM: f = scroll of torment
-KITEM: g = ring of life protection
+KITEM: g = ring of positive energy
 MAP
 dZe
 ZOZ
