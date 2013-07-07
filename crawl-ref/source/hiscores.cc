@@ -2162,6 +2162,11 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
         desc += terse? "escaped" : "Escaped with the Orb";
         if (num_runes < 1)
             desc += "!";
+        else if (oneline)
+        {
+            snprintf(scratch, sizeof scratch, " and %d runes", num_runes);
+            desc += scratch;
+        }
         break;
 
     case KILLED_BY_QUITTING:
