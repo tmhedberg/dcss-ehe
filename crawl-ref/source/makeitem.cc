@@ -1577,7 +1577,6 @@ bool is_weapon_brand_ok(int type, int brand, bool strict)
     case SPWPN_ANTIMAGIC:
     case SPWPN_REAPING:
 #if TAG_MAJOR_VERSION == 34
-    case SPWPN_ORC_SLAYING:
     case SPWPN_RETURNING:
 #endif
         if (is_range_weapon(item))
