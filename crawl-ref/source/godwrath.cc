@@ -642,6 +642,10 @@ static bool _beogh_retribution()
         int num_created = 0;
         int num_to_create = (coinflip()) ? 1 : 2;
 
+        // Need a species check, in case this retribution is a result of
+        // drawing the Wrath card.
+        const bool am_orc = player_genus(GENPC_ORCISH);
+
         for (int i = 0; i < num_to_create; ++i)
         {
             const int wpn_type =
@@ -661,8 +665,19 @@ static bool _beogh_retribution()
                 ASSERT(mon->weapon() != NULL);
                 item_def& wpn(*mon->weapon());
 
-                set_equip_race(wpn, ISFLAG_ORCISH);
-                set_item_ego_type(wpn, OBJ_WEAPONS, SPWPN_ELECTROCUTION);
+                if (am_orc)
+                {
+                    set_equip_race(wpn, ISFLAG_NO_RACE);
+                    set_item_ego_type(wpn, OBJ_WEAPONS, SPWPN_ORC_SLAYING);
+                }
+                else
+                {
+                    set_equip_race(wpn, ISFLAG_ORCISH);
+                    set_item_ego_type(wpn, OBJ_WEAPONS, SPWPN_ELECTROCUTION);
+                }
+
+                if (coinflip())
+                    wpn.flags |= ISFLAG_CURSED;
 
                 wpn.plus  = random2(3);
                 wpn.plus2 = random2(3);
@@ -690,7 +705,8 @@ static bool _beogh_retribution()
             ostringstream msg;
             msg << " throws "
                 << (num_created == 1 ? "an implement" : "implements")
-                << " of electrocution at you.";
+                << " of " << (am_orc ? "orc slaying" : "electrocution")
+                << " at you.";
             simple_god_message(msg.str().c_str(), god);
             break;
         } // else fall through

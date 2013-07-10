@@ -134,6 +134,12 @@ static bool _god_fits_artefact(const god_type which_god, const item_def &item,
 
     switch (which_god)
     {
+    case GOD_BEOGH:
+        // Orc god: no orc slaying.
+        if (brand == SPWPN_ORC_SLAYING)
+            return false;
+        break;
+
     case GOD_ELYVILON:
         // Peaceful healer god: no berserking.
         if (artefact_wpn_property(item, ARTP_ANGRY)
@@ -755,6 +761,7 @@ static void _get_randart_properties(const item_def &item,
                 13, SPWPN_VAMPIRICISM,
                 13, SPWPN_PAIN,
                 13, SPWPN_ANTIMAGIC,
+                10, SPWPN_ORC_SLAYING,
                  3, SPWPN_DISTORTION,
                  0);
         }
