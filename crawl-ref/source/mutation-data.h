@@ -1540,6 +1540,7 @@
 
   "trample resistance"
 },
+#endif
 
 { MUT_CLING,                               0,  1, false, false, true,
   "cling",
@@ -1550,7 +1551,6 @@
 
   "cling"
 },
-#endif
 
 { MUT_EXOSKELETON,                         0,  2, false,  true,  true,
   "exoskeleton",

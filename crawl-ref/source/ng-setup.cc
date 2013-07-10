@@ -282,6 +282,7 @@ void give_basic_mutations(species_type speci)
         break;
     case SP_GARGOYLE:
         you.mutation[MUT_PETRIFICATION_RESISTANCE]   = 1;
+        you.mutation[MUT_CLING]                      = 1;
         you.mutation[MUT_NEGATIVE_ENERGY_RESISTANCE] = 1;
         you.mutation[MUT_SHOCK_RESISTANCE]           = 1;
         you.mutation[MUT_UNBREATHING]                = 1;
