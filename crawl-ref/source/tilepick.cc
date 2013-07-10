@@ -296,9 +296,7 @@ static tileidx_t _tileidx_feature_base(dungeon_feature_type feat)
         return TILE_DNGN_EXIT_PANDEMONIUM;
 
     // branch entry stairs
-#if TAG_MAJOR_VERSION == 34
     case DNGN_ENTER_DWARF:
-#endif
     case DNGN_ENTER_BLADE:
     case DNGN_ENTER_FOREST:
         return TILE_DNGN_ENTER;
@@ -336,9 +334,7 @@ static tileidx_t _tileidx_feature_base(dungeon_feature_type feat)
         return TILE_DNGN_ENTER_ZOT_CLOSED;
 
     // branch exit stairs
-#if TAG_MAJOR_VERSION == 34
     case DNGN_RETURN_FROM_DWARF:
-#endif
     case DNGN_RETURN_FROM_BLADE:
     case DNGN_RETURN_FROM_FOREST:
         return TILE_DNGN_RETURN;

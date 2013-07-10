@@ -44,7 +44,6 @@ const Branch branches[NUM_BRANCHES] =
       true, WHITE, ETC_ELVEN_BRICK,
       'E', true, 0 },
 
-#if TAG_MAJOR_VERSION == 34
     { BRANCH_DWARF, BRANCH_ELF, 2, 2, 1, 17,
       0, 0,
       DNGN_ENTER_DWARF, DNGN_RETURN_FROM_DWARF,
@@ -52,7 +51,6 @@ const Branch branches[NUM_BRANCHES] =
       NULL,
       true, BROWN, BROWN,
       'K', false, 0 },
-#endif
 
     { BRANCH_LAIR, BRANCH_DUNGEON, 8, 11, 8, 10,
       0, 0,

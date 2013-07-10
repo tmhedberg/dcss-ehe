@@ -519,9 +519,7 @@ static void _init_feat(feature_def &f, dungeon_feature_type feat)
     case DNGN_ENTER_ORC:
     case DNGN_ENTER_SLIME:
         f.flags |= FFT_EXAMINE_HINT;
-#if TAG_MAJOR_VERSION == 34
     case DNGN_ENTER_DWARF:
-#endif
     case DNGN_ENTER_LAIR:
     case DNGN_ENTER_VAULTS:
     case DNGN_ENTER_CRYPT:
@@ -568,9 +566,7 @@ static void _init_feat(feature_def &f, dungeon_feature_type feat)
         f.minimap     = MF_STAIR_BRANCH;
         break;
 
-#if TAG_MAJOR_VERSION == 34
     case DNGN_RETURN_FROM_DWARF:
-#endif
     case DNGN_RETURN_FROM_ORC:
     case DNGN_RETURN_FROM_LAIR:
     case DNGN_RETURN_FROM_SLIME:

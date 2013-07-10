@@ -376,6 +376,11 @@ static bool _mon_on_interesting_grid(monster* mon)
     case DNGN_RETURN_FROM_ELF:
         return mons_is_native_in_branch(mon, BRANCH_ELF);
 
+    // Same for dwarves and the Dwarven Hall.
+    case DNGN_ENTER_DWARF:
+    case DNGN_RETURN_FROM_DWARF:
+        return mons_is_native_in_branch(mon, BRANCH_DWARF);
+
     // Spiders...
     case DNGN_ENTER_SPIDER:
         return mons_is_native_in_branch(mon, BRANCH_SPIDER);

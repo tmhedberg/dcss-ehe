@@ -150,9 +150,7 @@ bool feat_is_travelable_stair(dungeon_feature_type feat)
     case DNGN_ENTER_GEHENNA:
     case DNGN_ENTER_COCYTUS:
     case DNGN_ENTER_TARTARUS:
-#if TAG_MAJOR_VERSION == 34
     case DNGN_ENTER_DWARF:
-#endif
     case DNGN_ENTER_ORC:
     case DNGN_ENTER_LAIR:
     case DNGN_ENTER_SLIME:
@@ -169,9 +167,7 @@ bool feat_is_travelable_stair(dungeon_feature_type feat)
     case DNGN_ENTER_SPIDER:
     case DNGN_ENTER_FOREST:
     case DNGN_ENTER_DEPTHS:
-#if TAG_MAJOR_VERSION == 34
     case DNGN_RETURN_FROM_DWARF:
-#endif
     case DNGN_RETURN_FROM_ORC:
     case DNGN_RETURN_FROM_LAIR:
     case DNGN_RETURN_FROM_SLIME:
@@ -246,9 +242,7 @@ command_type feat_stair_direction(dungeon_feature_type feat)
     case DNGN_STONE_STAIRS_UP_III:
     case DNGN_ESCAPE_HATCH_UP:
     case DNGN_EXIT_DUNGEON:
-#if TAG_MAJOR_VERSION == 34
     case DNGN_RETURN_FROM_DWARF:
-#endif
     case DNGN_RETURN_FROM_ORC:
     case DNGN_RETURN_FROM_LAIR:
     case DNGN_RETURN_FROM_SLIME:
@@ -288,9 +282,7 @@ command_type feat_stair_direction(dungeon_feature_type feat)
     case DNGN_ENTER_PANDEMONIUM:
     case DNGN_EXIT_PANDEMONIUM:
     case DNGN_TRANSIT_PANDEMONIUM:
-#if TAG_MAJOR_VERSION == 34
     case DNGN_ENTER_DWARF:
-#endif
     case DNGN_ENTER_ORC:
     case DNGN_ENTER_LAIR:
     case DNGN_ENTER_SLIME:
@@ -1618,20 +1610,14 @@ static const char *dngn_feature_names[] =
 "teleporter", "enter_portal_vault", "exit_portal_vault",
 "expired_portal",
 
-#if TAG_MAJOR_VERSION == 34
-"enter_dwarven_hall",
-#endif
-"enter_orcish_mines", "enter_lair",
+"enter_dwarven_hall", "enter_orcish_mines", "enter_lair",
 "enter_slime_pits", "enter_vaults", "enter_crypt",
 "enter_hall_of_blades", "enter_zot", "enter_temple",
 "enter_snake_pit", "enter_elven_halls", "enter_tomb",
 "enter_swamp", "enter_shoals", "enter_spider_nest",
 "enter_forest", "enter_depths",
 
-#if TAG_MAJOR_VERSION == 34
-"return_from_dwarven_hall",
-#endif
-"return_from_orcish_mines",
+"return_from_dwarven_hall", "return_from_orcish_mines",
 "return_from_lair", "return_from_slime_pits",
 "return_from_vaults", "return_from_crypt",
 "return_from_hall_of_blades", "return_from_zot",
