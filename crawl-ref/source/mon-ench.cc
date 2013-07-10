@@ -1013,6 +1013,14 @@ void monster::timeout_enchantments(int levels)
             break;
         }
 
+        case ENCH_FADING_AWAY:
+        {
+            const int actdur = speed_to_duration(speed) * levels;
+            if (lose_ench_duration(i->first, actdur))
+                spirit_fades(this);
+            break;
+        }
+
         case ENCH_PREPARING_RESURRECT:
         {
             const int actdur = speed_to_duration(speed) * levels;
@@ -1503,6 +1511,12 @@ void monster::apply_enchantment(const mon_enchant &me)
 
             monster_die(this, KILL_MISC, NON_MONSTER, true);
         }
+        break;
+
+    case ENCH_FADING_AWAY:
+        // Summon a nasty!
+        if (decay_enchantment(en))
+            spirit_fades(this);
         break;
 
     case ENCH_PREPARING_RESURRECT:
@@ -2000,11 +2014,7 @@ static const char *enchant_names[] =
 #endif
     "swift", "tide",
     "insane", "silenced", "awaken_forest", "exploding", "bleeding",
-    "tethered", "severed", "antimagic",
-#if TAG_MAJOR_VERSION == 34
-    "fading_away",
-#endif
-    "preparing_resurrect", "regen",
+    "tethered", "severed", "antimagic", "fading_away", "preparing_resurrect", "regen",
     "magic_res", "mirror_dam", "stoneskin", "fear inspiring", "temporarily pacified",
     "withdrawn", "attached", "guardian_timer", "flight",
     "liquefying", "tornado", "fake_abjuration",
@@ -2218,6 +2228,11 @@ int mon_enchant::calc_duration(const monster* mons,
         // This is used as a simple timer, when the enchantment runs out
         // the monster will create a giant spore.
         return random_range(475, 525) * 10;
+
+    case ENCH_FADING_AWAY:
+        // Also used as a simple timer. When it runs out, it will summon a
+        // greater holy being.
+        return (random_range(180, 230) * 10);
 
     case ENCH_PREPARING_RESURRECT:
         // A timer. When it runs out, the creature will cast resurrect.

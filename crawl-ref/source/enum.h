@@ -1625,9 +1625,7 @@ enum enchant_type
     ENCH_PORTAL_TIMER,
     ENCH_SEVERED,
     ENCH_ANTIMAGIC,
-#if TAG_MAJOR_VERSION == 34
     ENCH_FADING_AWAY,
-#endif
     ENCH_PREPARING_RESURRECT,
     ENCH_REGENERATION,
     ENCH_RAISED_MR,
@@ -2585,9 +2583,7 @@ enum monster_type                      // menv[].type
 #endif
     MONS_SHEDU,
     MONS_OPHAN,
-#if TAG_MAJOR_VERSION == 34
     MONS_SPIRIT,
-#endif
     MONS_PALADIN,
     MONS_APIS,
 

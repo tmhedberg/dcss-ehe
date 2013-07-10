@@ -2520,6 +2520,11 @@ spiny worm
 A great black worm, its many-segmented body covered in spiky plates of
 chitinous armour. Acidic venom drips from its toothy maw.
 %%%%
+spirit
+
+The soul of a holy creature, reft from its body. It is a slow and timid
+creature, but as something divine it is sure to be under celestial protection.
+%%%%
 spirit wolf
 
 A pale wolf-like apparition rimmed in ethereal light. It is a cunning pack

@@ -1609,6 +1609,17 @@
       }
     },
 
+    {  MST_SPIRIT,
+      {
+       SPELL_BLINK_AWAY,
+       SPELL_BLINK_AWAY,
+       SPELL_BLINK_AWAY,
+       SPELL_BLINK_AWAY,
+       SPELL_BLINK_AWAY,
+       SPELL_BLINK_AWAY
+      }
+    },
+
     {  MST_OPHAN,
       {
        SPELL_BOLT_OF_FIRE,
