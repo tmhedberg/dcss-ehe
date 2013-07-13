@@ -1195,7 +1195,7 @@ ENDMAP
 NAME:   grunt_snake_rune_serpentine_throne
 PLACE:  Snake:$
 ORIENT: north
-KMONS:  L = Lamia
+KMONS:  L = Lamia band
 KITEM:  O = serpentine rune of Zot
 KFEAT:  A = altar_okawaru / altar_makhleb / altar_trog
 MONS:   greater naga / naga warrior w:5 / naga mage w:5
