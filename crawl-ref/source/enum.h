@@ -2755,9 +2755,7 @@ enum monster_type                      // menv[].type
     MONS_FAUN,
     MONS_SATYR,
 
-#if TAG_MAJOR_VERSION == 34
     MONS_PAN,
-#endif
 
     MONS_TENGU_WARRIOR,
     MONS_TENGU_CONJURER,
