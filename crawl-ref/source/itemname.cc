@@ -2325,6 +2325,7 @@ void check_item_knowledge(bool unknown_items)
 
             if (i == OBJ_STAVES && j == STAFF_CHANNELING)
                 continue;
+#endif
 
             if (unknown_items ? you.type_ids[i][j] != ID_KNOWN_TYPE
                               : you.type_ids[i][j] == ID_KNOWN_TYPE)

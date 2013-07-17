@@ -414,7 +414,6 @@ enum beam_type                  // bolt::flavour
     BEAM_POTION_PURPLE_SMOKE,
     BEAM_POTION_RAIN,
     BEAM_GLOOM,
-#endif
     BEAM_INK,
     BEAM_HOLY_FLAME,
     BEAM_HOLY_LIGHT,

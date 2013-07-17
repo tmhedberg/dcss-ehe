@@ -136,7 +136,6 @@ static beam_type _cloud2beam(cloud_type flavour)
     case CLOUD_RAIN:         return BEAM_POTION_RAIN;
     case CLOUD_MUTAGENIC:    return BEAM_POTION_MUTAGENIC;
     case CLOUD_GLOOM:        return BEAM_GLOOM;
-#endif
     case CLOUD_INK:          return BEAM_INK;
     case CLOUD_HOLY_FLAMES:  return BEAM_HOLY_FLAME;
     case CLOUD_PETRIFY:      return BEAM_PETRIFYING_CLOUD;
