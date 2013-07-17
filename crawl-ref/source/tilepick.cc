@@ -5720,7 +5720,7 @@ tileidx_t tileidx_known_brand(const item_def &item)
             return TILE_BRAND_SLOWING;
         case SPMSL_SICKNESS:
             return TILE_BRAND_SICKNESS;
-        case SPMSL_RAGE:
+        case SPMSL_FRENZY:
             return TILE_BRAND_FRENZY;
         case SPMSL_SLEEP:
             return TILE_BRAND_SLEEP;
