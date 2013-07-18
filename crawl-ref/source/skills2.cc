@@ -502,7 +502,7 @@ void calc_mp()
 bool is_useless_skill(skill_type skill)
 {
 #if TAG_MAJOR_VERSION == 34
-    if (skill == SK_STABBING || skill == SK_TRAPS)
+    if (skill == SK_STABBING)
         return true;
 #endif
     return species_apt(skill) == -99;
