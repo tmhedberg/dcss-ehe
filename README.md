@@ -51,3 +51,4 @@ Changelog
   - Retain laboratory rats and some removed bat species
   - Retain Pan in the Forest
   - Retain player clinging (Gargoyles, Spider Form, etc.)
+  - Retain Traps skill
