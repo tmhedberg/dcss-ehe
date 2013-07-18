@@ -3278,15 +3278,6 @@ static void _place_traps()
             }
         }
 
-        // Only teleport, shaft, alarm and Zot traps are interesting enough to
-        // be placed randomly.  Until the formula is overhauled, let's just
-        // skip creation if the old code would pick a boring one.
-        if (trap_category(ts.type) == DNGN_TRAP_MECHANICAL)
-        {
-            ts.type = TRAP_UNASSIGNED;
-            continue;
-        }
-
         grd(ts.pos) = DNGN_UNDISCOVERED_TRAP;
         env.tgrid(ts.pos) = i;
         if (ts.type == TRAP_SHAFT && shaft_known(level_number, true))
