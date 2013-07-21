@@ -259,6 +259,9 @@ A staircase to the Orcish Mines
 
 Вход в Шахты Орков, наполненные орочьим золотом. Шахты обманчивы, и велика
 опасность попасть в западню.
+A staircase to the Dwarven Hall
+
+Вход в искусно сработанные Залы Гномов. Вам уже чудится запах эля.
 %%%%
 A stone staircase leading down
 

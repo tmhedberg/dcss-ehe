@@ -335,6 +335,10 @@ A staircase to the Orcish Mines
 这是兽人矿坑的入口。那里满是兽人采出来的黄金，但也有许多危险的卫兵
 ；你很容易被困在那里。
 %%%%
+A staircase to the Dwarven Hall
+
+这是矮人之厅的入口。你隐约能闻到酒的味道。
+%%%%
 A staircase to the Shoals
 
 这里是奇妙的地下海滩：这里有海浪，也有会使尽浑身解数对付你的海洋怪物。

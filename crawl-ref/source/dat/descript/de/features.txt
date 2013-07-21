@@ -399,6 +399,10 @@ A staircase to the Orcish Mines
 Ein Eingang zu den Minen der Orks, gefüllt mit ihrem Gold, aber heimtückisch
 und voller Fallen.
 %%%%
+A staircase to the Dwarven Hall
+
+Ein Eingang zur gut gemachten Halle der Zwerge. Du glaubst, Ale zu riechen.
+%%%%
 A staircase to the Enchanted Forest
 
 Am anderen Ende dieser Treppe liegt die bewaldete Heimat der Spriggans, Tengu,

@@ -408,6 +408,11 @@ A staircase to the Orcish Mines
 오크 광산으로 갈 수 있는 계단이다. 금으로 가득한 곳이지만, 보기보다 위험하며
 또한 갇히기도 쉬운 곳이다.
 %%%%
+A staircase to the Dwarven Hall
+
+잘 만들어진 계단으로, 드워프의 광장으로 갈 수 있는 계단이다. 저 멀리서 맥주
+냄새가 나는 것 같다.
+%%%%
 A staircase to the Enchanted Forest
 
 이 계단을 걸어 내려가면, 온갖 종류의 무서운 저주가 산재한 스프리건족과 텐구족,
