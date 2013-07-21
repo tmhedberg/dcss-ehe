@@ -304,7 +304,7 @@ If you get this description, it is a bug.
 Heroism ability
 
 Temporarily increase all of your combat skills, including the ability to sneak
-around.
+around or avoid traps.
 %%%%
 Finesse ability
 
