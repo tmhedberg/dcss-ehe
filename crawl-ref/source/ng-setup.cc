@@ -922,7 +922,8 @@ static void _give_items_skills(const newgame_def& ng)
         // This is meant to match the En/As start change-up, but Trolls have
         // claws, so they don't get a starting melee weapon (see above).
         // The +1 is meant to make this less sucky; it could be a better
-        // base type, but whips don't seem very hunter-ish.
+        // base type, but whips don't seem very hunter-ish and hammers are
+        // used almost nowhere.
         if (you.species == SP_OGRE)
         {
             you.inv[0].sub_type = WPN_CLUB;

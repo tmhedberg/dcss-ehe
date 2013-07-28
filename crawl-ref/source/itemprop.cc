@@ -1328,6 +1328,7 @@ int weapon_rarity(int w_type)
 
     case WPN_BOW:
     case WPN_FLAIL:
+    case WPN_HAMMER:
     case WPN_SABRE:
     case WPN_SHORT_SWORD:
     case WPN_SLING:
@@ -1390,7 +1391,6 @@ int weapon_rarity(int w_type)
     case WPN_TRISHULA:
     case WPN_STAFF:
     case WPN_ROD:
-    case WPN_HAMMER:
         // Zero value weapons must be placed specially -- see make_item() {dlb}
         return 0;
 
