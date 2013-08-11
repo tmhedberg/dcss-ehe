@@ -352,7 +352,7 @@ function arena_sprint_get_monster_set(round, boss)
                 "place:Slime",
                 "killer bee / queen bee / w:1 oklob plant",
                 "deep dwarf scion / deep dwarf artificer / deep dwarf death knight /\
-                    w:5 deep dwarf berserker / w:2 unborn deep dwarf",
+                    w:5 deep dwarf berserker / w:2 unborn",
                 "place:Crypt / w:2 josephine",
                 "common demon w:30 / kobold demonologist w:5 / frances w:3",
                 "mummy / w:5 guardian mummy / w:2 mummy priest / w:1 sphinx",
@@ -406,7 +406,7 @@ function arena_sprint_get_monster_set(round, boss)
                 "dancing weapon",
                 "place:Forest",
                 "deep dwarf artificer / deep dwarf death knight / wiglaf w:2 /\
-                    deep dwarf berserker / w:5 unborn deep dwarf",
+                    deep dwarf berserker / w:5 unborn",
                 "place:Crypt:$",
                 "common demon w:30 / greater demon w:5",
                 "mummy / w:5 guardian mummy / w:2 mummy priest / w:5 sphinx",
@@ -479,7 +479,7 @@ function arena_sprint_get_monster_set(round, boss)
                 "place:Forest:$ w:20 / spriggan defender / spriggan rider /\
                     spriggan air mage / spriggan druid w:3 / spriggan berserker",
                 "w:5 deep dwarf artificer / deep dwarf death knight / wiglaf w:2 /\
-                    deep dwarf berserker / unborn deep dwarf",
+                    deep dwarf berserker / unborn",
                 "place:Crypt:$ w:25 / w:3 lich / w:5 vampire knight /\
                     w:2 boris / w:2 curse skull",
                 "any demon w:30 / pandemonium lord",
@@ -556,7 +556,7 @@ function arena_sprint_get_monster_set(round, boss)
                 "dancing weapon ; bardiche",
                 "spriggan defender / spriggan air mage / spriggan druid /\
                     spriggan berserker / spriggan rider",
-                "deep dwarf death knight / w:20 deep dwarf berserker / unborn deep dwarf",
+                "deep dwarf death knight / w:20 deep dwarf berserker / unborn",
                 "lich / w:5 ancient lich / w:1 curse skull / w:5 curse toe",
                 "any demon w:20 / pandemonium lord",
                 "place:Tomb:$ w:30 / sphinx w:20 / greater mummy",
@@ -633,7 +633,7 @@ function arena_sprint_get_monster_set(round, boss)
                 "w:30 acid blob / azure jelly / giant eyeball / eye of draining",
                 "dancing weapon ; bardiche ego:speed",
                 "spriggan air mage",
-                "deep dwarf death knight / deep dwarf berserker / unborn deep dwarf",
+                "deep dwarf death knight / deep dwarf berserker / unborn",
                 "w:15 ancient lich / w:6 curse toe",
                 "greater demon / pandemonium lord",
                 "sphinx w:20 / greater mummy",

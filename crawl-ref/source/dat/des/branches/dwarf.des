@@ -427,7 +427,7 @@ KMONS:  1 = patrolling deep dwarf berserker w:5 / \
             patrolling deep dwarf scion / patrolling deep dwarf death knight w:5 / \
             patrolling deep dwarf artificer / patrolling deep dwarf necromancer w:5
 KMONS:  2 = patrolling deep dwarf death knight / \
-            patrolling unborn deep dwarf w:2
+            patrolling unborn w:2
 MAP
 cccc  cccc
 c*.c  c.*c
@@ -450,7 +450,7 @@ SUBST:  1 = 2 w:2 / 1 / .
 KMONS:  1 = patrolling deep dwarf berserker / \
             patrolling deep dwarf scion w:7 / patrolling deep dwarf death knight / \
             patrolling deep dwarf artificer w:5 / patrolling deep dwarf necromancer w:3
-KMONS:  2 = patrolling deep dwarf death knight / patrolling unborn deep dwarf
+KMONS:  2 = patrolling deep dwarf death knight / patrolling unborn
 MAP
 cccc  cccc
 c*.c  c.*c
@@ -474,7 +474,7 @@ KMONS:  1 = patrolling deep dwarf berserker / \
             patrolling deep dwarf scion w:1 / patrolling deep dwarf death knight / \
             patrolling deep dwarf artificer w:1 / patrolling deep dwarf necromancer w:1
 KMONS:  2 = patrolling deep dwarf death knight w:3 / \
-            patrolling unborn deep dwarf
+            patrolling unborn
 MAP
 cccc  cccc
 c*.c  c.*c
@@ -532,11 +532,11 @@ SUBVAULT: A : dhfh_hall_right
 SUBVAULT: B : dhfh_hall_right
 SUBVAULT: C : dhfh_hall_right
 SUBVAULT: D : dhfh_hall_right
-KMONS:    1 = patrolling unborn deep dwarf w:5 / \
+KMONS:    1 = patrolling unborn w:5 / \
               patrolling deep dwarf death knight / patrolling deep dwarf necromancer
 KMONS:    2 = shadow wraith / freezing wraith / troll / rock troll w:5 / \
               patrolling deep dwarf death knight w:3 / patrolling deep dwarf necromancer w:2 / \
-              patrolling unborn deep dwarf w:1
+              patrolling unborn w:1
 {{
   hook("post_place", function()
     dgn.place_maps{tag="dhfh_arrival"}

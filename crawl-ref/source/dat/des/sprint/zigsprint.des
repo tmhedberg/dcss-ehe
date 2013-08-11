@@ -331,7 +331,7 @@ function choose_mset_3(e)
   elseif rnd < 39 then
     e.kmons("1 = deep dwarf artificer / deep dwarf scion / deep dwarf necromancer /\
                deep dwarf death knight w:5 / deep dwarf berserker w:5 /\
-               unborn deep dwarf w:5")
+               unborn w:5")
 -- Abyss
   elseif rnd < 49 then
     e.kmons("1 = lesser demon w:5 / place:Abyss")
