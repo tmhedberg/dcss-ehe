@@ -1709,8 +1709,8 @@ MONS:    giant eyeball w:45 / bone dragon w:15 / tentacled monstrosity w:15 / \
 MONS:    centaur warrior / yaktaur w:5 / orc knight / \
          deep elf priest w:5 / deep troll / boggart w:5 / \
          rakshasa w:3 / wizard / necromancer / spriggan rider w:5 / \
-         vault sentinel w:2 / cyclops w:5 / kobold demonologist w:3 / \
-         skeletal warrior w:5 / vampire
+         vault sentinel w:2 / deep dwarf necromancer w:2 / cyclops w:5 / \
+         kobold demonologist w:3 / skeletal warrior w:5 / vampire
 KMONS:   8 = orc high priest / orc sorcerer / naga warrior w:5 / naga mage / \
          yaktaur captain w:5 / ogre mage / deep elf knight w:15 / \
          hell knight / efreet w:1 / deep elf conjurer / \

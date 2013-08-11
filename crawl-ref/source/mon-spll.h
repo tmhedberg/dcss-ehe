@@ -57,7 +57,6 @@
       }
     },
 
-#if TAG_MAJOR_VERSION == 34
     {  MST_DEEP_DWARF_NECROMANCER,
       {
        SPELL_PAIN,
@@ -68,7 +67,6 @@
        SPELL_VAMPIRIC_DRAINING
       }
     },
-#endif
 
     {  MST_UNBORN,
       {

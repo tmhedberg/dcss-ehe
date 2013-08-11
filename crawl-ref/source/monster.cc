@@ -1447,6 +1447,9 @@ bool monster::pickup_launcher(item_def &launch, int near, bool force)
 
 static bool _is_signature_weapon(const monster* mons, const item_def &weapon)
 {
+    if (mons->type == MONS_DEEP_DWARF_ARTIFICER)
+        return (weapon.base_type == OBJ_RODS);
+
     // Don't pick up items that would interfere with our special ability
     if (mons->type == MONS_RED_DEVIL)
         return weapon_skill(weapon) == SK_POLEARMS;
@@ -4108,7 +4111,7 @@ int monster::skill(skill_type sk, int scale, bool real) const
     switch (sk)
     {
     case SK_EVOCATIONS:
-        return hd;
+        return (type == MONS_DEEP_DWARF_ARTIFICER ? hd * 2 : hd);
 
     case SK_NECROMANCY:
         return (holiness() == MH_UNDEAD || holiness() == MH_DEMONIC) ? hd : hd/2;
