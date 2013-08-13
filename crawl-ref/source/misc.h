@@ -127,6 +127,7 @@ bool stop_attack_prompt(targetter &hitfunc, const char* verb,
                         bool (*affects)(const actor *victim) = 0,
                         bool *prompted = nullptr);
 
+bool is_orckind(const actor *act);
 bool is_dragonkind(const actor *act);
 
 void swap_with_monster(monster *mon_to_swap);
