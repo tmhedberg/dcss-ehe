@@ -3398,12 +3398,16 @@ void read_scroll(int slot)
         break;
 
     case SCR_AMNESIA:
-        if (!alreadyknown)
-            mpr(pre_succ_msg.c_str());
         if (you.spell_no == 0)
-            mpr("You feel forgetful for a moment.");
+        {
+            canned_msg(MSG_NOTHING_HAPPENS);
+            id_the_scroll = false;
+        }
         else if (!alreadyknown)
+        {
+            mpr(pre_succ_msg.c_str());
             cast_selective_amnesia();
+        }
         else
             cancel_scroll = (cast_selective_amnesia(&pre_succ_msg) == -1);
         break;
