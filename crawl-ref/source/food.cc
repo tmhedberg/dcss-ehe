@@ -1090,6 +1090,15 @@ public:
         if (is_bad_food(*food2) && !is_bad_food(*food1))
             return true;
 
+        if (!you.is_undead)
+        {
+            // Offer rotten chunks last.
+            if (food_is_rotten(*food1) && !food_is_rotten(*food2))
+                return false;
+            if (food_is_rotten(*food2) && !food_is_rotten(*food1))
+                return true;
+        }
+
         return food1->special < food2->special;
     }
 };
