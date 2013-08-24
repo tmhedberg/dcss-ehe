@@ -271,8 +271,8 @@ Apart from (de)selecting skills, you also have the following toggles:
 <w>_</w> :   Shows/hides skill modifiers, e.g. from god powers.
 
                                <h>Training restrictions</h>
-Fighting, Throwing, Armour, Dodging, Stealth, Stabbing Unarmed Combat, and
-Spellcasting can always be trained. For the rest:
+Fighting, Throwing, Armour, Dodging, Stealth, Stabbing, Traps, Unarmed Combat,
+and Spellcasting can always be trained. For the rest:
 * Weapon skills require carrying a weapon of the appropriate type.
 * Shields requires that you either be wearing a shield, or have the capacity
       to obtain one through divine means.
