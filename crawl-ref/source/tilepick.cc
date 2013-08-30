@@ -5725,7 +5725,7 @@ tileidx_t tileidx_corpse_brand(const item_def &item)
     if (rotten && !saprovorous)
         return TILE_FOOD_INEDIBLE;
 
-    // Harmful chunk effects > religious rules > reduced nutrition.
+    // Harmful chunk effects > religious rules > chance of sickness.
     if (is_poisonous(item))
         return TILE_FOOD_POISONED;
 
