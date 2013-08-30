@@ -513,10 +513,7 @@ static const char *trap_names[] =
     "dart", "arrow", "spear",
     "teleport", "alarm", "blade",
     "bolt", "net", "Zot", "needle",
-    "shaft", "passage", "pressure plate", "web",
-#if TAG_MAJOR_VERSION == 34
-    "gas",
-#endif
+    "shaft", "passage", "pressure plate", "web", "gas",
 };
 
 string trap_name(trap_type trap)
