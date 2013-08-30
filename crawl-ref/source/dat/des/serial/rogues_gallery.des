@@ -608,7 +608,7 @@ ENDMAP
 NAME: grunt_rogue_midk
 TAGS: grunt_rogue_subvault unrand patrolling uniq_grunt_rogue_mi uniq_grunt_rogue_dk
 KMONS: O = minotaur name:death_knight n_suf hd:15 god:yredelemnul col:magenta \
-           spells:.;animate_dead;mirror_damage;.;drain_life;drain_life \
+           spells:.;animate_dead;injury_mirror;.;drain_life;drain_life \
            priest_spells ; \
            great sword ego:draining good_item | \
            battleaxe ego:draining good_item | \
