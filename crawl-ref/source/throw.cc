@@ -982,7 +982,6 @@ static bool _rage_hit_victim(bolt &beam, actor* victim, int dmg)
     return true;
 }
 
-#if TAG_MAJOR_VERSION == 34
 static bool _blind_hit_victim(bolt &beam, actor* victim, int dmg)
 {
     if (beam.is_tracer)
@@ -1001,7 +1000,6 @@ static bool _blind_hit_victim(bolt &beam, actor* victim, int dmg)
 
     return true;
 }
-#endif
 
 static bool _setup_missile_beam(const actor *agent, bolt &beam, item_def &item,
                                 string &ammo_name, bool &returning)
@@ -1135,9 +1133,7 @@ static bool _setup_missile_beam(const actor *agent, bolt &beam, item_def &item,
     const bool sickness     = ammo_brand == SPMSL_SICKNESS;
 #endif
     const bool rage         = ammo_brand == SPMSL_FRENZY;
-#if TAG_MAJOR_VERSION == 34
     const bool blinding     = ammo_brand == SPMSL_BLINDING;
-#endif
 
     ASSERT(!exploding || !is_artefact(item));
 
@@ -1238,13 +1234,11 @@ static bool _setup_missile_beam(const actor *agent, bolt &beam, item_def &item,
             beam.hit_funcs.push_back(_rage_hit_victim);
     }
 
-#if TAG_MAJOR_VERSION == 34
     if (blinding)
     {
         beam.hit_verb = "blinds";
         beam.hit_funcs.push_back(_blind_hit_victim);
     }
-#endif
 
     if (disperses && item.special != SPMSL_DISPERSAL)
     {
