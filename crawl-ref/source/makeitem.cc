@@ -181,6 +181,9 @@ static int _missile_colour(const item_def &item)
     case MI_THROWING_NET:
         item_colour = MAGENTA;
         break;
+    case MI_PIE:
+        item_colour = YELLOW;
+        break;
     case MI_TOMAHAWK:
         item_colour = GREEN;
         break;
@@ -1834,6 +1837,9 @@ static special_missile_type _determine_missile_brand(const item_def& item,
                                     nw, SPMSL_NORMAL,
                                     0);
         break;
+    case MI_PIE:
+        rc = SPMSL_BLINDING;
+        break;
     case MI_TOMAHAWK:
         rc = random_choose_weighted(15, SPMSL_POISONED,
                                     10, SPMSL_SILVER,
@@ -1904,11 +1910,8 @@ bool is_missile_brand_ok(int type, int brand, bool strict)
     case SPMSL_FRENZY:
         return type == MI_NEEDLE;
 
-#if TAG_MAJOR_VERSION == 34
     case SPMSL_BLINDING:
-        // possible on ex-pies
-        return type == MI_TOMAHAWK && !strict;
-#endif
+        return type == MI_PIE || (type == MI_TOMAHAWK && !strict);
 
     default:
         if (type == MI_NEEDLE)
