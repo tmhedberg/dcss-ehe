@@ -1228,7 +1228,7 @@ void behaviour_event(monster* mon, mon_event_type event, const actor *src,
     int fleeThreshold = min(mon->max_hit_points / 4, 20);
 
     bool isSmart          = (mons_intel(mon) > I_ANIMAL);
-    bool isMobile         = !mons_is_stationary(mon);
+    bool isMobile         = !mon->is_stationary();
     bool wontAttack       = mon->wont_attack();
     bool sourceWontAttack = false;
     bool setTarget        = false;
