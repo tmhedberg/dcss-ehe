@@ -602,7 +602,6 @@ TILE_EQ: snakebite
 BRAND:   SPWPN_VENOM
 BOOL:    poison, tilerim
 
-# TAG_MAJOR_VERSION == 34
 NAME:     knife of Accuracy
 OBJ:      OBJ_WEAPONS/WPN_DAGGER
 TYPE:     knife
@@ -610,7 +609,7 @@ PLUS:     +27/-1
 COLOUR:   LIGHTCYAN
 TILE:     urand_knife_of_accuracy
 TILE_EQ:  knife_of_accuracy
-BOOL:     tilerim, nogen
+BOOL:     tilerim
 
 # A play on the spell of the same name.  Colour taken from crystal walls.
 ENUM:     CRYSTAL_SPEAR
