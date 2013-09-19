@@ -1776,7 +1776,7 @@ void monster::apply_enchantment(const mon_enchant &me)
 
         if (decay_enchantment(en))
         {
-            mons_word_of_recall(this, 3 + random2(5));
+            mons_word_of_recall(this);
             // This is the same delay as vault sentinels.
             mon_enchant breath_timeout =
                 mon_enchant(ENCH_BREATH_WEAPON, 1, this,
