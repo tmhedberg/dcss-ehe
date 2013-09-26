@@ -2383,6 +2383,9 @@ void check_item_knowledge(bool unknown_items)
         // Missiles
         for (int i = 0; i < NUM_MISSILES; i++)
         {
+            if (i == MI_PIE)
+                continue;
+
             item_def* ptmp = new item_def;
             if (ptmp != 0)
             {
