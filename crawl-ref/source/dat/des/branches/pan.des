@@ -324,7 +324,7 @@ ENDMAP
 
 NAME:   rand_demon_pan_entry_9
 TAGS:   mini_float transparent
-NSUBST: ^ = 4:1 / *:.
+NSUBST: ^ = 4:^ / 4:1 / *:.
 : pan_entry_feature(_G, 'O')
 : pan_entry_vault_contents(_G, 'O')
 MAP
@@ -1475,10 +1475,10 @@ MAP
 .xxxxxxxxxx.
 .x2+3+3+3xx.
 .x+xxxxxx2x.
-.x3x....x+x.
-.x+x.P..x2x.
-.x3x..1.x+x.
-.x+x....x3x.
+.x3x^^^^x+x.
+.x+x^P^^x2x.
+.x3x^^1^x+x.
+.x+x^^^^x3x.
 .x2xxxx+x+x.
 .xx2+2+3x3x.
 .xxxxxxxx=x.
