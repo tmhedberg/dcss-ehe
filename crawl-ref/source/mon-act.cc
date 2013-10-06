@@ -2404,9 +2404,16 @@ static void _post_monster_move(monster* mons)
     if (mons->type == MONS_ANCIENT_ZYME)
         ancient_zyme_sicken(mons);
 
-    if  (mons->type == MONS_ASMODEUS)
+    if  (mons->type == MONS_ASMODEUS
+         || mons->type == MONS_CHAOS_BUTTERFLY)
     {
-        cloud_type ctype = CLOUD_FIRE;
+        cloud_type ctype;
+        switch (mons->type)
+        {
+            case MONS_ASMODEUS:         ctype = CLOUD_FIRE;          break;
+            case MONS_CHAOS_BUTTERFLY:  ctype = CLOUD_RAIN;          break;
+            default:                    ctype = CLOUD_NONE;          break;
+        }
 
         for (adjacent_iterator ai(mons->pos()); ai; ++ai)
             if (!cell_is_solid(*ai)

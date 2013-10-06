@@ -866,6 +866,7 @@ static const pop_entry pop_abyss[] =
   {  1,  5,  334, FLAT, MONS_ANCIENT_ZYME },
   {  1,  5,  334, FLAT, MONS_STARCURSED_MASS },
   {  1,  5,  334, FLAT, MONS_THRASHING_HORROR },
+  {  1,  5,  334, FLAT, MONS_CHAOS_BUTTERFLY },
   {  1,  5,   89, FLAT, MONS_LURKING_HORROR },
   {  1, 10,  178, SEMI, MONS_SPATIAL_MAELSTROM },
   {  1,  5,   89, FLAT, MONS_APOCALYPSE_CRAB },
