@@ -2945,7 +2945,6 @@ struct spell_desc
      false
 },
 
-#if TAG_MAJOR_VERSION == 34
 {
     SPELL_SUMMON_TWISTER, "Summon Twister",
      SPTYP_SUMMONING | SPTYP_AIR,
@@ -2958,7 +2957,6 @@ struct spell_desc
      false,
      false
 },
-#endif
 
 {
     SPELL_DAZZLING_SPRAY, "Dazzling Spray",
