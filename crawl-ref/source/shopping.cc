@@ -1337,6 +1337,7 @@ unsigned int item_value(item_def item, bool ident)
             case SPWPN_FLAME:
             case SPWPN_FROST:
             case SPWPN_HOLY_WRATH:
+            case SPWPN_REACHING:
                 valued *= 50;
                 break;
 
