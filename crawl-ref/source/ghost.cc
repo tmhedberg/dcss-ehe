@@ -222,13 +222,15 @@ void ghost_demon::init_random_demon()
 #if TAG_MAJOR_VERSION == 34
                || brand == SPWPN_ORC_SLAYING
                || brand == SPWPN_RETURNING
-               || brand == SPWPN_REACHING
 #endif
                || brand == SPWPN_DRAGON_SLAYING
                || brand == SPWPN_PROTECTION
                || brand == SPWPN_EVASION
                || brand == SPWPN_FLAME
                || brand == SPWPN_FROST
+#if TAG_MAJOR_VERSION == 34
+               || brand == SPWPN_REACHING
+#endif
                );
     }
 

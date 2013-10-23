@@ -453,6 +453,9 @@ const char* weapon_brand_name(const item_def& item, bool terse)
     case SPWPN_SPEED: return terse ? "speed" : "speed";
     case SPWPN_PAIN: return terse ? "pain" : "pain";
     case SPWPN_DISTORTION: return terse ? "distort" : "distortion";
+#if TAG_MAJOR_VERSION == 34
+    case SPWPN_REACHING: return "";
+#endif
 
     case SPWPN_VAMPIRICISM:
         return terse ? "vamp" : ""; // non-terse already handled
