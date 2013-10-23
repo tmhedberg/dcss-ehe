@@ -3290,13 +3290,10 @@ void unmarshallItem(reader &th, item_def &item)
         item.sub_type = WPN_FLAIL;
     }
 
-    if (item.base_type == OBJ_WEAPONS
-        && (item.special == SPWPN_RETURNING
-            || item.special == SPWPN_REACHING
-            || item.special == SPWPN_ORC_SLAYING))
-    {
+    if (item.base_type == OBJ_WEAPONS && item.special == SPWPN_RETURNING)
         item.special = SPWPN_NORMAL;
-    }
+    if (item.base_type == OBJ_WEAPONS && item.special == SPWPN_REACHING)
+        item.special = SPWPN_NORMAL;
 #endif
 
     if (is_unrandom_artefact(item))
