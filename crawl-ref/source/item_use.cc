@@ -1771,6 +1771,7 @@ void zap_wand(int slot)
     // system will default to enemies. -- [ds]
     targ_mode_type targ_mode = TARG_HOSTILE;
 
+    beam.obvious_effect = false;
     beam.beam_source = MHITYOU;
 
     if (inv_count() < 1)
@@ -1824,6 +1825,7 @@ void zap_wand(int slot)
     }
 
     const bool alreadyknown = item_type_known(wand);
+    const bool alreadytried = item_type_tried(wand);
           bool invis_enemy  = false;
     const bool dangerous    = player_in_a_dangerous_place(&invis_enemy);
     targetter *hitfunc      = 0;
@@ -1982,8 +1984,8 @@ void zap_wand(int slot)
     if (wand.plus2 >= 0)
         wand.plus2++;
 
-    // Identify if unknown.
-    if (!alreadyknown)
+    // Identify if necessary.
+    if (!alreadyknown && (beam.obvious_effect || type_zapped == ZAP_FIREBALL))
     {
         set_ident_type(wand, ID_KNOWN_TYPE);
         if (wand.sub_type == WAND_RANDOM_EFFECTS)
@@ -1991,6 +1993,8 @@ void zap_wand(int slot)
 
         mprf_nocap("%s", wand.name(DESC_INVENTORY_EQUIP).c_str());
     }
+    else
+        set_ident_type(wand, ID_TRIED_TYPE);
 
     if (item_type_known(wand)
         && (item_ident(wand, ISFLAG_KNOW_PLUSES)
@@ -2015,7 +2019,7 @@ void zap_wand(int slot)
     count_action(CACT_EVOKE, EVOC_WAND);
     alert_nearby_monsters();
 
-    if (!alreadyknown && risky)
+    if (!alreadyknown && !alreadytried && risky)
     {
         // Xom loves it when you use an unknown wand and there is a
         // dangerous monster nearby...
