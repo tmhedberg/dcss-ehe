@@ -1010,6 +1010,7 @@ static void _get_status_lights(vector<status_light>& out)
         DUR_SPIRIT_HOWL,
         DUR_INFUSION,
         DUR_SONG_OF_SLAYING,
+        DUR_SONG_OF_SHIELDING,
         STATUS_DRAINED,
         DUR_TOXIC_RADIANCE,
         STATUS_RAY,

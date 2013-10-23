@@ -841,9 +841,7 @@ static const char* dur_names[] =
     "spirit howl",
     "infused",
     "song of slaying",
-#if TAG_MAJOR_VERSION == 34
     "song of shielding",
-#endif
     "toxic radiance",
     "reciting",
     "grasping roots",
