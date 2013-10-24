@@ -522,7 +522,6 @@ MAGIC:    60
 AC:       5
 BOOL:     elec
 
-# TAG_MAJOR_VERSION == 34
 NAME:    crossbow "Sniper"
 OBJ:     OBJ_WEAPONS/WPN_CROSSBOW
 PLUS:    +10/+0
@@ -530,7 +529,7 @@ COLOUR:  ETC_DARK
 TILE:    urand_sniper
 TILE_EQ: sniper
 BRAND:   SPWPN_VENOM
-BOOL:    seeinv, nogen
+BOOL:    seeinv
 
 NAME:    longbow "Piercer"
 OBJ:     OBJ_WEAPONS/WPN_LONGBOW
