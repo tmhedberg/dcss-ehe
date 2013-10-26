@@ -2827,7 +2827,6 @@ xxxxxxxxxxxxxxxxxxxxxx
 ENDMAP
 
 NAME:   dk_noncrumbling_1
-TAGS:   extra decor
 DEPTH:  D, Depths, Elf
 MAP
 xxxxxxxxxxxxxxxxxxxxxxxx
@@ -2838,7 +2837,6 @@ xxxxxxxxxxxxxxxxxxxxxxxx
 ENDMAP
 
 NAME:   dk_noncrumbling_2
-TAGS:   extra decor
 DEPTH:  D, Depths, Elf
 MAP
        xx+xx
@@ -2867,7 +2865,6 @@ xxxxxxxxx.xxxxxxxxxxx
 ENDMAP
 
 NAME:   dk_noncrumbling_3
-TAGS:   extra decor
 DEPTH:  D, Depths, Elf
 MAP
     xx+xx
@@ -2886,7 +2883,6 @@ xx.G.....G.xx
 ENDMAP
 
 NAME:   dk_noncrumbling_4
-TAGS:   extra decor
 DEPTH:  D, Depths, Elf
 MAP
     xx+xx
