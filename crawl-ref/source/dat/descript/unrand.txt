@@ -186,7 +186,6 @@ longbow "Piercer"
 
 An exceptionally large metal longbow.
 %%%%
-# TAG_MAJOR_VERSION == 34
 blowgun of the Assassin
 
 It is designed for easy concealment, but still packs a nasty punch.
