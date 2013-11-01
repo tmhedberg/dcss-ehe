@@ -4942,6 +4942,10 @@ void temperature_changed(float change)
 
     // For INCREMENTS:
 
+    // Warmed up enough to lose slow movement.
+    if (change > pos_threshold && temperature_tier(TEMP_COOL))
+        mpr("Your movements quicken.", MSGCH_DURATION);
+
     // Check these no-nos every turn.
     if (you.temperature >= TEMP_WARM)
     {
@@ -4984,6 +4988,10 @@ void temperature_changed(float change)
         mprf(MSGCH_DURATION, "Your skin cools and hardens.");
         you.redraw_armour_class = true;
     }
+
+    // Cooled down enough for slow movement.
+    if (change < neg_threshold && temperature_tier(TEMP_COOL))
+        mpr("Your movements slow.", MSGCH_DURATION);
 
     // If we're in this function, temperature changed, anyways.
     you.redraw_temperature = true;
@@ -5076,13 +5084,13 @@ string temperature_text(int temp)
         case TEMP_MIN:
             return "rF+";
         case TEMP_COOL:
-            return "";
+            return "Normal movement speed";
         case TEMP_WARM:
             return "rF++; lava magic boost; Stoneskin melts";
         case TEMP_HOT:
             return "rF+++; rC-; fire magic boost";
         case TEMP_FIRE:
-            return "Burn attackers";
+            return "Fast movement speed; burn attackers";
         case TEMP_MAX:
             return "Burn surroundings; cannot read scrolls";
         default:
