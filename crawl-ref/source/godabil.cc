@@ -763,8 +763,10 @@ int zin_check_recite_to_monsters(recite_type *prayertype)
 enum zin_eff
 {
     ZIN_NOTHING,
+    ZIN_SLEEP,
     ZIN_DAZE,
     ZIN_CONFUSE,
+    ZIN_FEAR,
     ZIN_PARALYSE,
     ZIN_BLEED,
     ZIN_SMITE,
@@ -850,6 +852,13 @@ bool zin_recite_to_single_monster(const coord_def& where,
             // This branch can't hit sleeping monsters - until they wake up.
 
             if (check < 5)
+#if 0
+            // Sleep doesn't really work well. This should be more
+            // 'forceful'. But how?
+            if (one_chance_in(4))
+                effect = ZIN_SLEEP;
+            else
+#endif
                 effect = ZIN_DAZE;
             else if (check < 10)
             {
@@ -859,13 +868,18 @@ bool zin_recite_to_single_monster(const coord_def& where,
                     effect = ZIN_DAZE;
             }
             else if (check < 15)
-                effect = ZIN_CONFUSE;
+            {
+                if (one_chance_in(3))
+                    effect = ZIN_FEAR;
+                else
+                    effect = ZIN_CONFUSE;
+            }
             else
             {
                 if (one_chance_in(3))
                     effect = ZIN_PARALYSE;
                 else
-                    effect = ZIN_CONFUSE;
+                    effect = ZIN_FEAR;
             }
         }
         else
@@ -978,7 +992,7 @@ bool zin_recite_to_single_monster(const coord_def& where,
         else if (check < 10)
         {
             if (coinflip())
-                effect = ZIN_CONFUSE;
+                effect = ZIN_FEAR;
             else
                 effect = ZIN_SILVER_CORONA;
         }
@@ -1005,6 +1019,15 @@ bool zin_recite_to_single_monster(const coord_def& where,
     case ZIN_NOTHING:
         break;
 
+    case ZIN_SLEEP:
+        if (mon->can_sleep())
+        {
+            mon->put_to_sleep(&you, 0);
+            simple_monster_message(mon, " nods off for a moment.");
+            affected = true;
+        }
+        break;
+
     case ZIN_DAZE:
         if (mon->add_ench(mon_enchant(ENCH_DAZED, degree, &you,
                           (degree + random2(spellpower)) * BASELINE_DELAY)))
@@ -1024,6 +1047,21 @@ bool zin_recite_to_single_monster(const coord_def& where,
                 simple_monster_message(mon, " is confused by your recitation.");
             else
                 simple_monster_message(mon, " stumbles about in disarray.");
+            affected = true;
+        }
+        break;
+
+    case ZIN_FEAR:
+        if (mon->add_ench(mon_enchant(ENCH_FEAR, degree, &you,
+                          (degree + random2(spellpower)) * BASELINE_DELAY)))
+        {
+            if (prayertype == RECITE_HERETIC)
+                simple_monster_message(mon, " is terrified by your recitation.");
+            else if (minor)
+                simple_monster_message(mon, " tries to escape the wrath of Zin.");
+            else
+                simple_monster_message(mon, " flees in terror at the wrath of Zin!");
+            behaviour_event(mon, ME_SCARE, 0, you.pos());
             affected = true;
         }
         break;
