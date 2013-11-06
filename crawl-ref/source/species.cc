@@ -431,10 +431,6 @@ bool is_valid_species(species_type species)
 
 bool is_species_valid_choice(species_type species)
 {
-#if TAG_MAJOR_VERSION == 34
-    if (species == SP_SLUDGE_ELF)
-        return false;
-#endif
     if ((species == SP_LAVA_ORC || species == SP_DJINNI)
         && Version::ReleaseType != VER_ALPHA)
     {
