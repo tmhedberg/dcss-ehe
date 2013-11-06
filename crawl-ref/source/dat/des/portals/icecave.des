@@ -15,7 +15,7 @@
 
 {{
 function ice_cave_portal(e)
-  local timeout_turns_long = crawl.random_range(2700, 3300)
+  local timeout_turns_long = crawl.random_range(1200, 1700)
   local timeout_turns_short = timeout_turns_long/10
 
   local messager =
