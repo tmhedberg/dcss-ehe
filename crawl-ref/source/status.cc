@@ -343,6 +343,16 @@ bool fill_status_info(int status, status_info* inf)
         }
         break;
 
+    case STATUS_SUPPRESSED:
+        if (you.suppressed())
+        {
+            inf->light_colour = LIGHTGREEN;
+            inf->light_text   = "Suppress";
+            inf->short_text   = "magically suppressed";
+            inf->long_text    = "You are enveloped in a field of magical suppression.";
+        }
+        break;
+
     case STATUS_NET:
         if (you.attribute[ATTR_HELD])
         {
@@ -1078,7 +1088,7 @@ static void _describe_missiles(status_info* inf)
     else
     {
         bool perm = player_mutation_level(MUT_DISTORTION_FIELD) == 3
-                    || you.scan_artefacts(ARTP_RMSL);
+                    || !you.suppressed() && you.scan_artefacts(ARTP_RMSL);
         inf->light_colour = perm ? WHITE : BLUE;
         inf->light_text   = "RMsl";
         inf->short_text   = "repel missiles";

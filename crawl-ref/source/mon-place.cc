@@ -450,7 +450,7 @@ static bool _is_not_zombifiable(monster_type mt)
 
 static bool _has_big_aura(monster_type mt)
 {
-    return mt == MONS_SILENT_SPECTRE;
+    return mt == MONS_MOTH_OF_SUPPRESSION || mt == MONS_SILENT_SPECTRE;
 }
 
 static bool _is_incompatible_monster(monster_type mt)
@@ -1408,7 +1408,8 @@ static monster* _place_monster_aux(const mgen_data &mg, const monster *leader,
     // Holy monsters need their halo!
     if (mon->holiness() == MH_HOLY)
         invalidate_agrid(true);
-    if (mg.cls == MONS_SILENT_SPECTRE || mg.cls == MONS_PROFANE_SERVITOR)
+    if (mg.cls == MONS_SILENT_SPECTRE || mg.cls == MONS_PROFANE_SERVITOR
+        || mg.cls == MONS_MOTH_OF_SUPPRESSION)
         invalidate_agrid(true);
 
     // If the caller requested a specific colour for this monster, apply

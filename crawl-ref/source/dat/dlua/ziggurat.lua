@@ -253,7 +253,7 @@ mset(with_props("place:Lair:$ w:85 / catoblepas w:6 / dire elephant w:6 / " ..
      with_props("place:Shoals:$ w:125 / merfolk aquamancer /  " ..
                 "merfolk impaler w:5 / merfolk javelineer", { weight = 5 }),
      "place:Spider:$ w:115 / ghost moth w:15 / red wasp / " ..
-                "orb spider",
+                "orb spider / moth of suppression w:5",
      "place:Crypt:$ w:250 / curse skull w:5 / profane servitor w:5 / " ..
                 "bone dragon / ancient lich / revenant",
      "place:Forest:$ w:180 / satyr / tengu reaver w:5 / " ..
