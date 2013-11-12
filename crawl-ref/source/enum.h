@@ -1846,6 +1846,13 @@ enum hunger_state_t                    // you.hunger_state
     HS_ENGORGED,
 };
 
+enum immolation_source_type
+{
+    IMMOLATION_SCROLL,
+    IMMOLATION_AFFIX,  // effect when fixing fire brand
+    IMMOLATION_TOME,   // a Tome of Destruction effect
+};
+
 enum item_status_flag_type  // per item flags: ie. ident status, cursed status
 {
     ISFLAG_KNOW_CURSE        = 0x00000001,  // curse status
