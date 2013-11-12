@@ -8,7 +8,7 @@ its origin, this deep cavern is filled with riches unheard of as well as with
 ample dangers to any intruder. Few have escaped alive, and even fewer have kept
 some sliver of sanity sufficient to tell the tale.
 
-The dungeon is 16 levels deep, but, honestly, this is only the beginning.
+The dungeon is 18 levels deep, but, honestly, this is only the beginning.
 %%%%
 Temple
 
@@ -329,6 +329,6 @@ Depths
 The Depths are the deepest part of the dungeon proper, subject to the
 corrupting influence of the Realm of Zot without being considered a part of it.
 
-The Depths are six levels deep and can be entered from the lowest floor of the
+The Depths are nine levels deep and can be entered from the lowest floor of the
 Dungeon while carrying at least one rune of Zot.
 %%%%
