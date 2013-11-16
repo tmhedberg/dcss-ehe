@@ -2093,6 +2093,9 @@ int exper_value(const monster* mon, bool real)
     else if (x_val > 15000)
         x_val = 15000;
 
+    // Reduce by 10% overall
+    x_val *= .9;
+
     return x_val;
 }
 
