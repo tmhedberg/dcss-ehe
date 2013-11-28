@@ -523,7 +523,7 @@ static void _init_feat(feature_def &f, dungeon_feature_type feat)
     case DNGN_ENTER_DWARF:
 #endif
     case DNGN_ENTER_LAIR:
-    case DNGN_ENTER_DEPTHS:
+    case DNGN_ENTER_VAULTS:
     case DNGN_ENTER_CRYPT:
     case DNGN_ENTER_BLADE:
     case DNGN_ENTER_TEMPLE:
@@ -542,7 +542,7 @@ static void _init_feat(feature_def &f, dungeon_feature_type feat)
         f.minimap     = MF_STAIR_BRANCH;
         break;
 
-    case DNGN_ENTER_VAULTS:
+    case DNGN_ENTER_DEPTHS:
         f.colour      = LIGHTGREEN;
         f.dchar       = DCHAR_ARCH;
         f.flags      |= FFT_NOTABLE;
