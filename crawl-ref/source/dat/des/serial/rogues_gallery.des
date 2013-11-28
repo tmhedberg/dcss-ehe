@@ -555,7 +555,7 @@ KMONS: O = centaur warrior name:centaur_hunter n_rpl n_des n_noc \
            hd:15 god:okawaru ; \
            longbow good_item . \
            arrow ego:poisoned q:20 | arrow ego:flame q:20 | \
-           arrow ego:ice q:20
+           arrow ego:frost q:20
 SHUFFLE: dh, ei, fj, gk
 KITEM: d = longbow good_item
 KITEM: efg = arrow good_item q:20
