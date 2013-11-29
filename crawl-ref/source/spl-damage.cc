@@ -1124,7 +1124,7 @@ static int _shatter_items(coord_def where, int pow, actor *)
     if (broke_stuff)
     {
         if (player_can_hear(where))
-            mpr("You hear glass break.", MSGCH_SOUND);
+            mprf(MSGCH_SOUND, "You hear glass break.");
 
         return 1;
     }

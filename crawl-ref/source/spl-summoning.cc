@@ -235,7 +235,7 @@ spret_type cast_sticks_to_snakes(int pow, god_type god, bool fail)
     }
     else
     {
-        mpr(abort_msg);
+        mpr(abort_msg.c_str());
         return SPRET_ABORT;
     }
 

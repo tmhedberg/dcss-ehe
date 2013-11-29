@@ -5619,7 +5619,7 @@ void dec_disease_player(int delay)
                 you.disease = 0;
 
             if (you.disease == 0)
-                mpr("You feel your health improve.", MSGCH_RECOVERY);
+                mprf(MSGCH_RECOVERY, "You feel your health improve.");
         }
 
         if (you.duration[DUR_NAUSEA] && (you.duration[DUR_NAUSEA] -= rr) <= 0)

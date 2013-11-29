@@ -4944,7 +4944,7 @@ void temperature_changed(float change)
 
     // Warmed up enough to lose slow movement.
     if (change > pos_threshold && temperature_tier(TEMP_COOL))
-        mpr("Your movements quicken.", MSGCH_DURATION);
+        mprf(MSGCH_DURATION, "Your movements quicken.");
 
     // Check these no-nos every turn.
     if (you.temperature >= TEMP_WARM)
@@ -4991,7 +4991,7 @@ void temperature_changed(float change)
 
     // Cooled down enough for slow movement.
     if (change < neg_threshold && temperature_tier(TEMP_COOL))
-        mpr("Your movements slow.", MSGCH_DURATION);
+        mprf(MSGCH_DURATION, "Your movements slow.");
 
     // If we're in this function, temperature changed, anyways.
     you.redraw_temperature = true;
