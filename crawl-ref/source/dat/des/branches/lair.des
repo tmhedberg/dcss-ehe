@@ -1704,7 +1704,7 @@ TAGS:    no_wall_fixup no_monster_gen no_rotate
 ORIENT:  southeast
 MONS:    plant
 MONS:    elephant slug / agate snail, worm, brain worm
-MONS:    spiny worm / giant leech w:8, lindwurm, fire dragon
+MONS:    spiny worm / giant leech w:8 / rock worm w:5, lindwurm, fire dragon
 KMONS:   8 = giant firefly
 SHUFFLE: ABC
 SUBST:   P = 11.
