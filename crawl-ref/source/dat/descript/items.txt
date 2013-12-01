@@ -918,6 +918,10 @@ pair of bracers
 
 A pair of bracers.
 %%%%
+pair of gauntlets
+
+A pair of gauntlets.
+%%%%
 pair of gloves
 
 A pair of gloves.
