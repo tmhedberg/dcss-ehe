@@ -1504,7 +1504,15 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
                                                    : "buggy ");
         }
 
-        buff << item_base_name(*this);
+        if (!basename && item_typ == ARM_GLOVES)
+        {
+            if (special == SPARM_ARCHERY)
+                buff << "bracers";
+            else
+                buff << "gloves";
+        }
+        else
+            buff << item_base_name(*this);
 
         if (know_ego && !is_artefact(*this))
         {
