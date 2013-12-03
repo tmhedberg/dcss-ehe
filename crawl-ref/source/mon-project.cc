@@ -398,6 +398,7 @@ move_again:
             if (!iood) // boulders need to stop now
             {
                 _iood_stop(mon);
+                // Can't hurt dryads anyway.
                 return true;
             }
         }

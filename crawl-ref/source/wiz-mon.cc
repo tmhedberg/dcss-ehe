@@ -536,6 +536,7 @@ static const char* ht_names[] =
     "lava",
     "rock",
     "incorporeal",
+    "forest",
 };
 
 // Prints a number of useful (for debugging, that is) stats on monsters.
