@@ -615,11 +615,9 @@ void item_colour(item_def &item)
             item.colour = CYAN;
             break;
 
-#if TAG_MAJOR_VERSION == 34
         case MISC_BOTTLED_EFREET:
             item.colour = RED;
             break;
-#endif
 
         // MAGENTA is for ornate decks
 
